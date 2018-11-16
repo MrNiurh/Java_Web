@@ -1,0 +1,420 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+}
+dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a:link,a:visited,body,html{
+    color: #1c1f21;
+}
+a:hover{
+    text-decoration: none;
+}
+a:focus{text-decoration: none}
+:link{
+    text-decoration: none;
+}
+caption, cite, code, dfn, em, strong, th, var, optgroup {
+    font-style: normal;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+
+#main{
+    background-color: #f3f5f7;
+    min-height: 750px;
+    padding: 20px 0;
+    padding-top: 0;
+}
+.wrap{
+    width: 100%;
+    background-color: #fff;
+    padding-bottom: 12px;
+    box-shadow: 0 4px 8px 0 rgba(28, 31,33, .1);
+}
+.top{
+    max-width: 1386px;
+    margin: auto;
+}
+.course-top{
+    clear: both;
+    border-bottom: 1px solid rgba(28, 31, 33, .2);
+    padding-bottom: 5px;/*为bootstrap加的*/
+}
+.top-header{
+    margin-top: 20px;
+    display: inline-block;
+}
+.adv-2{
+    display: inline-block;
+    margin-left: 16px;
+}
+.course-top-search{
+    position: relative;
+    float: right;
+    width: 520px;
+    margin: 8px 0;
+}
+.search-area{
+    float: right;
+    padding-right: 40px;
+    margin: 12px 0;
+    width: 506px;/*为了bootstrap原来466后来加40*/
+    height: 36px;
+    line-height: 36px;
+    background: #f3f5f6;
+    border-radius: 8px;
+    border: 0;
+    position: relative;
+}
+.search-input{
+    padding: 0 16px;
+    color: #1c1f21;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    border: 0;
+    background-color: transparent;
+    float: left;
+    transition: background-color .3s;
+    outline: 0;
+}
+.showhide-search{
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    color: #9199a1;
+    text-align: right;
+    position: absolute;
+    display: inline-block;
+    right: 16px;
+    bottom: 18px;
+    cursor: pointer;
+}
+.icon-search{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+.course-content{
+    float: none;
+    width: 100%;
+    box-shadow: none;
+}
+.course-nav-row{
+    position: relative;
+    padding: 16px 0 5px;
+    border-bottom: 1px solid #edf1f2;
+}
+.hd{
+    width: 52px;
+    height: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #07111b;
+    text-align: left;
+}
+.l{
+    float: left;/*可能就是为了固定位置*/
+}
+.bd{
+    margin-left: 50px;
+    
+}
+.course-nav-item{
+    display: inline-block;
+    margin: 0 4px;      /*每一个小元素*/
+}
+.on a{          /*点击上面a标签改变颜色相当于active*/
+    background: rgba(242,13,13,.06);
+    border-radius: 6px;
+    font-weight: 700;
+    color: #F20D0D;
+}
+.course-nav-item a{
+    display: block;
+    line-height: 14px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+.course-nav-skills{
+    max-height: 153px;/*为了bootstrap原来132后来加21*/
+    
+}
+.course-nav-skills.bd{   /*同时包含两个类*/
+    max-height: 132px;
+    overflow: hidden;
+}
+.course-nav-item a:hover{
+   color: #F20D0D;
+   text-decoration: none;
+}
+.course-skills-box{
+    position: relative;
+    z-index: 1;
+}
+.course-skills-box:hover {
+    top: -17px;
+    margin: 0 -10px;
+    padding: 16px 9px;
+    background: #FFF;
+    border: 1px solid rgba(28,31,33,.1);
+    box-shadow: 0 8px 16px 0 rgba(28,31,33,.2);
+    border-radius: 8px;
+}
+.course-skills-box:hover .bd {
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: skillIn;
+    animation-name: skillIn;
+    max-height: 300px\9;
+}
+.course-nav-row {
+    position: relative;
+    padding: 16px 0 5px;
+    border-bottom: 1px solid #edf1f2;
+}
+.border_bottom_none {
+    border-bottom: none!important;
+}
+.course-recommend {
+    width: 240px;
+    background-image: url(../img/course-recommend.png);
+    background-size: cover;
+}
+.course-recommend, .course-recommend-discount {
+    height: 32px;
+    top: 16px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+.course-tool-bar {
+    position: relative;
+    padding-top: 26px;
+    padding-bottom: 26px;/*本来16px为了该死bootstrap改成26*/
+    overflow: hidden;
+    height: 14px!important;
+    margin-top: -1px;
+    padding-right: 15px;
+    font-size: 12px;
+}
+.container {
+    width: 1152px;
+    margin: 0 auto;
+    padding: 0;/*为了该死bootstrap加的*/
+}
+.container {
+    width: 1386px;
+    padding: 0;/*为了该死bootstrap加的*/
+}
+
+.moco-change-smalle-btn.active {
+    color: #FFFFFF;
+    background: #9199a1;
+    cursor: default;
+}
+.course-tool-bar .tool-right {
+    margin-top: -5px;
+    color: #787d82;
+}
+.r{
+    float: right;
+}
+.course-tool-bar .total-num {
+    display: none;
+    color: #b4b9be;
+    float: left;
+    margin-top: 2px;
+}
+.course-tool-bar .tool-item {
+    display: inline-block;
+    line-height: 20px;
+    margin: 0 8px;
+    vertical-align: middle;
+}
+.course-tool-bar .tool-right {
+    margin-top: -5px;
+    color: #787d82;
+}
+.moco-change-smalle-btn {
+    margin-right: 12px;
+    background: #f3f5f7;
+}
+.moco-change-smalle-btn {
+    padding: 4px 12px;
+    font-size: 12px;
+    color: #545c63;
+    line-height: 16px;
+    background: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.course-tool-bar .pager-num {
+    float: left;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+.course-tool-bar .tool-right b {
+    font-weight: 400;
+}
+.course-tool-bar .pager-cur {
+    color: #f01400;
+}
+/*到下面的列表了*/
+.course-list {
+    padding: 10px 0 20px;
+}
+.moco-course-list {
+    margin: 0 0 0 -18px;
+    display: inline-block;
+}
+.course-card-container {
+    float: left;
+    margin: 0 0 18px 18px;
+    height: 256px;
+    z-index: 0;
+}
+.course-card-container {
+    width: 216px;
+    position: relative;
+    transition: .3s all linear;
+}
+.course-card-container .course-card-top {
+    width: 216px;
+    height: 120px;
+    position: relative;
+    border-radius: 8px;
+    transition: all .3s;
+}
+.course-banner {
+    width: 100%;
+    height: 100%;
+    background-color: #f3f5f7;
+    border-radius: 8px;
+    display: inline-block;
+}
+.course-card-container .course-card-top .course-label {
+    position: absolute;
+    bottom: 6px;
+    left: 8px;
+    font-size: 12px;
+    color: #FFF;
+    line-height: 16px;
+}
+.course-label label {
+    display: inline-block;
+    background: rgba(7,17,27,.4);
+    border-radius: 12px;
+    padding: 4px 8px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    font-weight: 200;
+}
+ .course-card-name {
+    font-size: 16px;
+    color: #07111B;
+    line-height: 24px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 46px;
+    transition: all .3s;
+}
+.course-card-name:hover{
+    color: #F20D0D;
+    text-decoration: none;
+}
+ .course-card-info {
+    font-size: 12px;
+    color: #93999F;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+ .course-card-info span {
+    display: inline-block;
+    margin-right: 12px;
+}
+.course-card-desc {
+    font-size: 12px;
+    font-weight: 300;
+    color: #93999F;
+    line-height: 22px;
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 44px;
+}
+@media screen and (max-width: 1440px){
+    .container {
+        width: 1152px;
+    }
+    }
+@media screen and (max-width: 1440px){
+    .top {
+        min-width: 1200px;
+    }
+    }
+@media screen and (max-width: 1440px){
+    .wrap {
+            min-width: 1200px;
+        }
+        }
+@media screen and (max-width: 1440px){
+            #main {
+                    min-width: 1200px;
+                }
+                }
+/*下面开始分页*/
+.page {
+    margin: 25px 0 auto;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+}
+.page a {
+    margin: 0 8px;
+    color: #4d555d;
+    border-radius: 16px;
+    -webkit-transition: border-color .2s;
+    -moz-transition: border-color .2s;
+    transition: border-color .2s;
+}
+.page span, .page-disabled {
+    height: 32px;
+    color: #c8cdd2;
+}
+.page a, .page span, .page-disabled {
+    padding: 0 4px;
+    min-width: 34px;/*傻逼bootstrap改我原来24*/
+    line-height: 32px;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+}
+.page a.text-page-tag.active {
+    background: #4d555d;
+    color: #fff;
+}
