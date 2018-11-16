@@ -19,7 +19,7 @@
     <script src="<%=path %>/js/whp/lesson.js"></script>
     <title>lesson</title>
 </head>
-
+<!-- 测试提交 -->
 <body>
     <div class="container">
         <div class="learn_lesson">
@@ -63,7 +63,7 @@
                         <div class="lesson_introduce">
                             <div class="logo"></div>
                             <div class="author">
-                                <p style="margin-top: 4px;font-size: 15px"><span >连胜<img style="float: right;" src="img/imooc.png" alt="" ></span></p>
+                                <p style="margin-top: 4px;font-size: 15px"><span >连胜<img style="float: right;" src="<%=path %>/imgs/whp/imooc.png" alt="" ></span></p>
                                 <p>全栈工程师</p>
                             </div>
                             <div class="lesson_tags">
@@ -101,7 +101,7 @@
                             <p> 本章节什么是微信小程序，小程序有哪些宣传方式，小程序官方文档介绍，小程序开发流程，如何注册小程序，新建小程序项目，小程序开发工具讲解，小程序代码结构 讲解，代码编写-tabbar的配置。
                             </p>
                             <div class="lesson_name">
-                                <img src="img/video.png" class="video-png" alt="">
+                                <img src="<%=path %>/imgs/whp/video.png" class="video-png" alt="">
                                 <a href="" >1-1什么是微信小程序
                                     <span>(01:44)</span>
                                 </a>

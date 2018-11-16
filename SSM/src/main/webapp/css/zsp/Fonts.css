@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body{margin:0;padding:0}
+.top{ background:#333; height:75px}
+.top_left{ width:20%; height:100%; float:left;}
+.top_middle{ height:100%; width:60%; margin:0; float:left;margin:0 auto}
+.top_right{right:0;top:0; width:20%; height:100%; position:absult; float:left}
+.lianjie{width:16.6%; float:left; margin:25px 0px;}
+.tubiao{float:left; margin:20px 90px 20px 60px;}
+.logo{display:inline-block;width:50px; height:50px}
+
+.middle{ height:800px; margin:20px 30px 20px 30px}
+.middle_left{ width:70%; height:100%; float:left; margin-right:20px}
+
+.middle_right{ height:100%; float:left; width:20%; }
+.middle_button{display: block;
+    text-align:center;
+    width: 50%;
+    height: 50px;
+    text-decoration: none;
+    line-height: 50px;
+    color: red;
+    font-family: Arial;
+    border: 2px solid;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+.question{width:100px; height:100px; margin-left:20%; margin-top:50px}
+
+.foot{background:blue;height:100px; }
