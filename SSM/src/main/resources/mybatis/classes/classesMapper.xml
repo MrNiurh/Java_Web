@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="classes.classesMapper">
+
+	<!-- 所有课程信息 -->
+	<select id="getAllClasses" parameterType="pd" resultType="pd">
+		select
+		* from classes
+	</select>
+
+	<!-- 单个课程信息 -->
+	<select id="getOneClass" parameterType="pd" resultType="pd">
+		select * from classes
+		<where>
+			<if test="id != null and id != ''">
+				id=#{id}
+			</if>
+		</where>
+	</select>
+
+	<!-- 根据大类型查询 -->
+	<select id="selectCLassByClassType" parameterType="pd"
+		resultType="pd">
+		select * from classes
+		where
+		class_type=(select id from
+		lesson_type where lesson_type=#{lesson_type})
+	</select>
+
+	<!-- 根据小类型查询 -->
+	<select id="selectClassByCLassTags" parameterType="pd"
+		resultType="pd">
+		select * from classes
+		where class_tags LIKE
+		"%"#{classTags}"%"
+	</select>
+
+</mapper>

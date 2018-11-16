@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="userQuestion.userQuestionMapper">
+	<!-- 查询所有回答 -->
+	<select id="selectAllQuestions">
+		select * from user_question where class_id =
+		#{classId}
+	</select>
+</mapper>
