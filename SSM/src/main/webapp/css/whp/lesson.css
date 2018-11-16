@@ -1,0 +1,264 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei"；
+}
+.container{
+width: 100%;
+height:auto;
+padding: 0;
+overflow: hidden;
+}
+.header{
+    height: 72px;
+    width: 100%;
+    background :black;
+}
+.mainer{
+height:auto;
+width: 100%;
+}
+.mainertop{
+min-height: 200px;
+height:auto;
+background: linear-gradient(to right,#172E19,#3B9F58)
+}
+.mainertop-content{
+    width: 62%;
+    height: 100%;
+    margin: 0 auto;
+    /* background: white; */
+}
+.path{
+    width:auto;
+    padding-top:16px;
+    padding-bottom: 24px;
+    color:gray;
+}
+.patha{
+color:gray;
+text-decoration: none;
+font-size: 12px;
+}
+.patha:hover{
+    color: white;
+    text-decoration: none;
+}
+.lessoncontent{
+   clear: both;
+    height:104px;
+    
+}
+.lessoncontent h2{
+    margin:10px 0 0;
+    font-weight: 500;
+    color: white;
+}
+.lesson_introduce{
+    height: 49px;
+    width: auto;
+    margin-top: 10px;
+    
+}
+.logo{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border:0.5px solid black;
+    float: left;
+}
+.author{
+    height: 48px;
+    width: 60px;
+    margin-left: 5px;
+    float: left;
+}
+.author p{
+    margin:0;
+    font-size:12px; 
+    color: white;
+}
+.lesson_tags{
+    height: 48px;
+    width: auto;
+   float: left;
+   color: white;
+}
+.tag_text{
+    line-height: 48px;
+    height: 48px;
+    margin-left: 60px;
+    font-size: 12px;
+    font-weight: 500;
+    }
+.tag_text span{
+    margin:0 10px; 
+}
+.learn_lesson{
+    position: absolute;
+    z-index: 10;
+    width:320px;
+    height: 450px;
+    background: white; 
+    top:182px;
+    right:310px;
+    border-radius: 10px;
+}
+.learn_text{
+    margin:30px;
+    width: 260px;
+    height:390px;
+    
+}
+.learn_btn{
+    font-size:15px;
+    color:white;
+    display: inline-block;
+    
+    padding: 11px 100px;
+    background: red;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.learn_btn:hover{
+    background:#C20A0A;
+    color:white;
+}
+.lesson_info{
+    width: 100%;
+    height:auto;
+    margin-top: 20px;
+}
+.lesson_info p{
+    font-size: 12px;
+    margin-bottom:5px;
+    color:#545C63;
+}
+.navigation{
+    height: auto;
+    width: 100%;
+    background: #F8FAFC;
+}
+.intro{
+     width: 46%;
+    height: auto;
+    min-height: 500px;
+    margin-top:40px;
+    margin-left: 18%;
+}
+.navigation_top{
+    width: 100%;
+     background: white;
+}
+.navigation_main{
+    width: 62%;
+    height: 68px;
+    margin:0 auto; 
+   
+}
+.function_item{
+    height: 68px;
+    line-height: 68px;
+    margin-right: 8%;
+    font-size: 17px;
+}
+.function_item a{
+    text-decoration: none;
+    color:black;
+    font-weight: 500;
+}
+.function_item a:hover{
+    color:red;
+}
+.active{
+    color:red !important;
+}
+.lesson_intro{
+    height: 90px;
+    background:white;
+    border-radius:10px;
+    
+    min-width: 62%;
+   overflow: hidden;
+}
+.lesson_intro span{
+    min-height: 90px;
+    height: auto;
+    width: 100%;
+    line-height: 90px;
+    margin-left: 30px;
+    
+}
+.lesson_intro p{
+    display: inline-block;
+    min-height: 90px;
+    max-height: 100px;
+    width: 100%;
+    line-height: 90px;
+    margin-left: 30px;
+    
+}
+.lesson_section{
+    height:auto;
+    background: white;
+    margin-top: 20px;
+}
+.lesson_section_main{
+    font-size: 17px;
+    font-weight: 500;
+    padding:25px; 
+}
+.lesson_section_main p{
+    font-size: 12px;
+   
+}
+.lesson_name{
+    font-size: 15px;
+    margin-left: 20px;
+    
+   padding: 10px 0;
+    
+}
+.lesson_name a{
+    color:black;
+    text-decoration: none;
+}
+.lesson_btn{
+    float: right;
+}
+.lesson_item_learn{
+    
+    padding:  5px 10px;
+    background: red;
+    color:white !important;   
+    border-radius:10px;
+    font-size: 12px;
+}
+.lesson_item_active{
+    background: #FFF2F2;
+    font-color:red;
+
+}
+.video-png{
+    height: 20px;
+    width:20px;
+    margin-right: 5px;
+}
+.lesson_item_name{
+    color:red;
+}
+.bottom{
+    height: 100px;
+    width: 100%;
+    padding: 27px 0;
+    background: black;
+}
+.dian{
+    margin:0 5px; 
+}
+.hide{
+    display: none;
+}
+a:hover{
+    color: red;
+}
