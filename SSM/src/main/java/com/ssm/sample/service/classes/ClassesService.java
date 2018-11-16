@@ -2,9 +2,11 @@ package com.ssm.sample.service.classes;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.ssm.sample.service.base.BaseService;
 import com.ssm.sample.util.PageData;
-
+@Service("ClassesService")
 public class ClassesService extends BaseService {
 
 	public List<PageData> getAllClasses(PageData pd) {
