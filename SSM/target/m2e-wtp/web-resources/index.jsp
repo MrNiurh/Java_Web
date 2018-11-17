@@ -1,7 +1,7 @@
 <html>
 <body>
 	<%
-	String redirectPath= request.getContextPath()+"/main/home";	
+	String redirectPath= request.getContextPath()+"/videos/video";	
 		response.sendRedirect(redirectPath);
 	%>
 </body>

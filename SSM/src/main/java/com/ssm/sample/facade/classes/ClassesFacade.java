@@ -29,19 +29,11 @@ public class ClassesFacade extends BaseFacade{
 		
 	}
 	/*
-	 * 根据大类型查询
+	 * 根据大类型，小类型，难度查询
 	 * 
 	 */
 	public List<PageData> selectCLassByClassType(PageData pd){
 		List<PageData> list = this.classesService.selectCLassByClassType(pd);
-		return list;
-	}
-	/*
-	 * 根据小类型查询
-	 * 
-	 */
-	public List<PageData> selectClassByCLassTags(PageData pd){
-		List<PageData> list = this.classesService.selectClassByCLassTags(pd);
 		return list;
 	}
 }

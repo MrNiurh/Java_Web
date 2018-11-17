@@ -14,7 +14,7 @@ public class Logger {
 	/**
 	 * 获取构造器，根据类初始化Logger对象
 	 * 
-	 * @param Class
+	 * @param Classes
 	 *            Class对象
 	 * @return Logger对象
 	 */

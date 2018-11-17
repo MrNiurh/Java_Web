@@ -2,18 +2,29 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="classes.classesMapper">
 
+
 	<!-- 所有课程信息 -->
 	<select id="getAllClasses" parameterType="pd" resultType="pd">
 		select
 		* from classes
+		<where>
+			<if test="class_level!=null and class_level != ''">
+				class_level ="初级" or class_level ="入门"
+			</if>
+				
+		</where>
 	</select>
 
 	<!-- 单个课程信息 -->
 	<select id="getOneClass" parameterType="pd" resultType="pd">
 		select * from classes
 		<where>
+			<if test="class_level!=null and class_level != ''">
+				class_level ="初级" or class_level ="入门"
+			</if>
+				
 			<if test="id != null and id != ''">
-				id=#{id}
+				and id=#{id}
 			</if>
 		</where>
 	</select>
@@ -22,17 +33,25 @@
 	<select id="selectCLassByClassType" parameterType="pd"
 		resultType="pd">
 		select * from classes
-		where
-		class_type=(select id from
-		lesson_type where lesson_type=#{lesson_type})
-	</select>
+		<where>
+			<if test="class_level!=null and class_level != ''">
+				class_level ="初级" or class_level ="入门"
+			</if>
+				
+			<if test="lesson_type!=null and lesson_type !=''">
+				and class_type=(select id from
+				lesson_type where
+				lesson_type=#{lesson_type})
+			</if>
+			<if test="classTags!=null and classTags !=''">
+				and class_tags LIKE
+				"%"#{class_tags}"%"
+			</if>
+			<if test="class_level！=null and class_level !=''">
+				and class_level = #{class_level}
+			</if>
+		</where>
 
-	<!-- 根据小类型查询 -->
-	<select id="selectClassByCLassTags" parameterType="pd"
-		resultType="pd">
-		select * from classes
-		where class_tags LIKE
-		"%"#{classTags}"%"
 	</select>
 
 </mapper>
