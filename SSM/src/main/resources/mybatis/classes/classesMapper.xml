@@ -3,6 +3,17 @@
 <mapper namespace="classes.classesMapper">
 
 
+	<!-- 搜索框查询 -->
+	<select id="searchAllClasses" parameterType="pd" resultType="pd">
+		select
+		* from classes
+		<where>
+			<if test="key!=null and key != ''">
+				class_name like "%"#{key}"%"
+			</if>
+		</where>
+	</select>
+	
 	<!-- 所有课程信息 -->
 	<select id="getAllClasses" parameterType="pd" resultType="pd">
 		select
@@ -10,6 +21,16 @@
 		<where>
 			<if test="class_level!=null and class_level != ''">
 				class_level ="初级" or class_level ="入门"
+			</if>
+		</where>
+	</select>
+	<!-- 所有课程信息 -->
+	<select id="getAllHClasses" parameterType="pd" resultType="pd">
+		select
+		* from classes
+		<where>
+			<if test="class_level!=null and class_level != ''">
+				class_level ="中级" or class_level ="高级"
 			</if>
 				
 		</where>
@@ -22,7 +43,18 @@
 			<if test="class_level!=null and class_level != ''">
 				class_level ="初级" or class_level ="入门"
 			</if>
-				
+			<if test="id != null and id != ''">
+				and id=#{id}
+			</if>
+		</where>
+	</select>
+	<!-- 单个课程信息 -->
+	<select id="getOneHClass" parameterType="pd" resultType="pd">
+		select * from classes
+		<where>
+			<if test="class_level!=null and class_level != ''">
+				class_level ="中级" or class_level ="高级"
+			</if>
 			<if test="id != null and id != ''">
 				and id=#{id}
 			</if>
@@ -37,7 +69,6 @@
 			<if test="class_level!=null and class_level != ''">
 				class_level ="初级" or class_level ="入门"
 			</if>
-				
 			<if test="lesson_type!=null and lesson_type !=''">
 				and class_type=(select id from
 				lesson_type where
@@ -51,7 +82,29 @@
 				and class_level = #{class_level}
 			</if>
 		</where>
-
+	</select>
+	
+	<!-- 根据大类型查询 -->
+	<select id="selectHCLassByClassType" parameterType="pd"
+		resultType="pd">
+		select * from classes
+		<where>
+			<if test="class_level!=null and class_level != ''">
+				class_level ="初级" or class_level ="入门"
+			</if>
+			<if test="lesson_type!=null and lesson_type !=''">
+				and class_type=(select id from
+				lesson_type where
+				lesson_type=#{lesson_type})
+			</if>
+			<if test="classTags!=null and classTags !=''">
+				and class_tags LIKE
+				"%"#{class_tags}"%"
+			</if>
+			<if test="class_level！=null and class_level !=''">
+				and class_level = #{class_level}
+			</if>
+		</where>
 	</select>
 
 </mapper>

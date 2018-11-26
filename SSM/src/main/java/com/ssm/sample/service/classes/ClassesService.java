@@ -28,4 +28,16 @@ public class ClassesService extends BaseService {
 		return list;
 	}
 
+	public List<PageData> searchAllClasses(PageData pd) {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.sqlSessionTemplate.selectList("classes.classesMapper.searchAllClasses", pd);
+		return list;
+	}
+
+	public List<PageData> getAllHClasses(PageData pd) {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.sqlSessionTemplate.selectList("classes.classesMapper.getAllHClasses", pd);
+		return list;
+	}
+
 }
