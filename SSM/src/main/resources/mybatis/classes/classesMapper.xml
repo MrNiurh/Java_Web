@@ -13,8 +13,7 @@
 			</if>
 		</where>
 	</select>
-	
-	<!-- 所有课程信息 -->
+	<!-- 所有free课程信息 -->
 	<select id="getAllClasses" parameterType="pd" resultType="pd">
 		select
 		* from classes

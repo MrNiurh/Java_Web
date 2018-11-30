@@ -241,6 +241,11 @@
 			<version>3.5</version>
 		</dependency>
 		<!-- Apache common end -->
+		<dependency>
+			<groupId>com.github.pagehelper</groupId>
+			<artifactId>pagehelper</artifactId>
+			<version>5.0.0</version>
+		</dependency>
 
 
 	</dependencies>
