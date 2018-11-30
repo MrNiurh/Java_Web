@@ -1,0 +1,288 @@
+.container-fluid {
+
+    height: 500px;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 72px;
+    background: black;
+}
+
+.mainer {
+    height: 600px;
+}
+
+.container {
+    width: 1300px;
+    margin: 30px  auto 0;
+    /*border: 0.1px solid black;*/
+    height: 650px;
+}
+
+.user_functions {
+    width: 216px;
+    float: left;
+    height: 600px;
+    background: #F8FAFC;
+
+
+}
+
+.user_info {
+    width: 216px;
+    height: 226.5px;
+    padding: 32px 0 24px 0;
+
+}
+
+.user_logo {
+    width: 92px;
+    height: 92px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user_logo img {
+    display: inline-block;
+    width: 92px;
+    height: 92px;
+}
+
+.user_id {
+    width: 160px;
+    height: 44px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    line-height: 44px;
+    min-width: 160px;
+}
+
+.function_dis {
+    width: 936px;
+    float: left;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 35px;
+    /*background: gray;*/
+}
+
+.user_binding {
+    margin: 10px auto 0;
+    width: 150px;
+    height: 30px;
+}
+
+.bind_logo {
+    width: 20px;
+    height: 20px;
+}
+
+.user_identitys {
+    display: inline-block;
+    float: left;
+    padding: 6px;
+    border-radius: 50%;
+    background: white;
+    margin-right: 5px;
+}
+
+.user_ops {
+    width: 216px;
+    height: 354px;
+
+}
+
+.user_op_info {
+    height: auto;
+    width: 176px;
+    padding: 0 0 10px 20px;
+}
+
+.main_edit:hover{
+    colorL:#008CC8;
+}
+
+.user_op_a {
+    display: block;
+    position: relative;
+    padding: 0 0 0 54px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-decoration: none !important;
+    font-size: 15px;
+    transition: background-color .3s ease;
+    color: black;
+}
+
+.user_op_a:hover {
+    color: red;
+}
+
+.user_op_logo {
+    padding: 0 0 0 60px;
+
+}
+
+.on {
+    background: red;
+    color: white;
+}
+
+.on:hover {
+    color: white;
+}
+
+.oplog-tip {
+    line-height: 40px;
+    font-size: 12px;
+    color: #f56108;
+    background-color: #fff4e5;
+    padding: 0 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.common-title {
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.common-title .title-tips {
+    font-size: 12px;
+    color: #93999f;
+    margin-left: 18px;
+    font-weight: 400;
+}
+
+.color-red {
+    color: red;
+}
+
+.pull-right {
+    font-size: 12px;
+    color: #93999f;
+    font-weight: 400;
+
+}
+.pull-left {
+   float: left;
+
+}
+.itemBoxs{
+    width: 100%;
+    height: auto;
+    margin-top:10px;
+}
+.itemBox {
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    border-top: 1px solid #d9dde1;
+}
+.itemBox label{
+    width: 120px;
+    line-height: 20px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f3f5f7;
+    color: #07111b;
+    font-weight: 700;
+}
+.left{
+        width: 60px;
+    float: left;
+    font-size: 36px;
+    color: #d9dde1;
+    line-height: 98px;
+    padding-left: 24px;
+}
+
+.mailbox{
+    width: 30px;
+    height: 30px;
+    margin: -20px 20px 0 0;
+}
+.center{
+    width:510px;
+    margin-left: 30px;
+    float: left;
+    margin-top: 20px;
+}
+.font1{
+    font-size: 18px;
+}
+.right{
+    float: right;
+    padding-right: 12px;
+    margin-top: 28px;
+}
+.bindbtn{
+    padding: 7px 15px;
+    display: inline-block;
+    border:1px gray solid ;
+    text-decoration: none;
+    border-radius: 20px;
+    color:gray;
+}
+.font2{
+    color:gray;
+    font-size: 13px;
+}
+.bind_users{
+    width: 672px;
+    height: 80px;
+    margin:20px auto 0;
+}
+.inner-i-box {
+    width: 200px;
+    float: left;
+    margin-right: 24px;
+    height: 80px;
+   /* background: gray*/
+}
+.bind_user_logo{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.bind_user_details{
+    float: left;
+    width:120px;
+    height: 80px;
+    padding-left: 20px;
+}
+.bind_user_details p{
+    margin:0;
+    line-height: 24px;
+}
+.font3{
+    font-size: 16px;
+
+}
+.font4{
+    font-size: 12px;
+}
+.bind_user_a{
+    display: inline-block;
+    padding: 1px 5px;
+    border: 0.1px solid #d9dde1;
+    color: gray;
+}
+.bind_user_a:hover{
+    color: gray;
+}
+.bottom {
+    height: 99px;
+    padding: 27px 0;
+    background: black;
+}

@@ -1,0 +1,133 @@
+.certificate_form {
+    float: left;
+    height: 392px;
+    width: 372px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.certificate_infos {
+    float: left;
+    height: 328px;
+    width: 320px;
+    margin-left: 120px;
+    margin-top: 25px;
+}
+
+.x_notice {
+    width: 328px;
+    font-size: 13px;
+    float: right;
+    text-align: left;
+}
+
+.x_info {
+    font-size: 12px;
+    color: #ff9600;
+    line-height: 12px;
+}
+
+.x_in_label {
+    float: left;
+    width: 80px;
+    text-align: left;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #07111b;
+}
+
+.x_in_input {
+    float: left;
+
+}
+
+.user_input {
+
+    display: block;
+    height: 36px;
+    border: 1px solid #d9dde1;
+    box-sizing: border-box;
+    padding: 0 10px;
+    font-size: 12px;
+    color: #4d555d;
+    transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.user_input_details {
+    margin-top: 24px;
+    height: 36px;
+    position: relative;
+}
+
+.x_upload_wrap {
+    float: left;
+    position: relative;
+    width: 180px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #93999f;
+    background-color: #f3f5f7;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.x_upload {
+    opacity: 0;
+    display: none;
+}
+
+.x_upload_cont {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.x_ra {
+    float: left;
+    font-size: 12px;
+    color: red;
+    line-height: 36px;
+    margin-left: 12px;
+    transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+
+.error {
+    position: absolute;
+    top: 36px;
+    left: 80px;
+    right: 0;
+    line-height: 24px;
+    height: 24px;
+    color: #f01414;
+    font-size: 12px;
+}
+
+.user_submit{
+    width: 88px;
+    height: 36px;
+    line-height: 24px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    -weibkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    color: #fff;
+    background-color: #1481b8;
+    border-color: #1481b8;
+    opacity: 1;
+    padding: 5px 8px;
+    border-radius: 16px;
+}

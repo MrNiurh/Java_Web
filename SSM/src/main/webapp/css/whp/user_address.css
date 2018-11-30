@@ -1,0 +1,29 @@
+.add_address{
+	width: 936px;
+	height: 247px;
+	margin-top: 24px;
+
+}
+.add_address_op{
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 24px;
+    width: 296px;
+    height: 227px;
+    border: 1px solid #d0d6d9;
+    box-sizing: border-box;
+}
+.add-box{
+	width: 246px;
+	height: 89px;
+	margin:48px auto 0; 
+	text-align: center;
+}
+.add_address_logo{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin-bottom: 10px;
+
+}
