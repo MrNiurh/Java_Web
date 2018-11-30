@@ -1,0 +1,83 @@
+#footer {
+    background: #1c1f21;
+    border-top: 1px solid #e2e4e6;
+    font-size: 12px;
+    color: #787d82;
+    padding: 27px 0;
+    min-width: 620px;
+    margin-top: 60px;
+}
+.waper {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.followus {
+    margin-right: 34px;
+    padding-left: 30px;
+    z-index: 3;
+}
+.footer_intro {
+    padding-left: 40px;
+}
+.followus-weixin {
+    background-position: 0 -279px;
+}
+.followus-weibo {
+    background-position: 0 -321px;
+}
+.followus-qzone {
+    background-position: 0 -363px;
+}
+.followus a {
+    float: left;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-image: url(../../imgs/wkx/footer-sprite.png);
+    background-repeat: no-repeat;
+    margin: 3px 6px 0;
+    opacity: .5;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    transition: opacity .2s;
+}
+.footer_link {
+    margin-bottom: 4px;
+    line-height: 1.8;
+}
+.footer_link ul {
+    overflow: hidden;
+    margin-top: -1px;
+}
+.footer_link li {
+    margin-right: 30px;
+    text-align: center;
+    float: left;
+}
+#footer p {
+    line-height: 1.7;
+}
+.footer_link a:active, .footer_link a:link, .footer_link a:visited {
+    color: #c8cdd2;
+}
+
+.followus a:hover {
+    opacity: 1;
+}
+.footer_link a:hover {
+    color: #fff;
+}
+.followus-weixin:hover .flw-weixin-box {    /*可以直接这样用*/
+    display: block;
+}
+.flw-weixin-box {   /*这是鼠标放上去会出现那个微信二维码*/
+    position: absolute;
+    display: none;
+    width: 170px;
+    height: 220px;
+    left: -69px;
+    bottom: 35px;
+    background: url(../../imgs/wkx/footer-sprite.png) no-repeat 0 0;
+    z-index: 3;
+}

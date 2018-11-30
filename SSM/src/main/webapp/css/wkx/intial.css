@@ -1,0 +1,61 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
+}
+div,dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td{
+    margin: 0;
+    padding: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a:link,a:visited,body,html{
+    color: #1c1f21;
+}
+a:hover{
+    text-decoration: none;
+}
+a:focus{text-decoration: none}
+:link{
+    text-decoration: none;
+}
+caption, cite, code, dfn, em, strong, th, var, optgroup {
+    font-style: normal;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+fieldset, img {
+    border: 0;
+}
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+.clearfix:after {       /*新增一个知识，当父div只包含浮动属性的div会使父div高度为零需解决伪元素是其中一个方法*/
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+a, button, input {
+    outline: 0;
+}
+.pr {
+    position: relative;
+}
+.errorHint {
+    height: 25px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #f01414;
+}
+.color-red {
+    color: #EF1300!important;
+}

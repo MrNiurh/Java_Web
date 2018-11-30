@@ -1,0 +1,175 @@
+#header{
+    background: #07111b;
+}
+.new-header {
+    width: 1152px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+#header .new-header .nav-item li {
+    float: left;
+    margin-right: 12px;
+}
+#header .new-header .nav-item li a {
+    display: block;
+    padding: 0 12px;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(255,255,255,.6);
+    -webkit-transition: background-color .3s;
+    -moz-transition: background-color .3s;
+    transition: background-color .3s;
+    position: relative;
+}
+.icn-new {
+    position: absolute;
+    display: inline-block;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background: url(../../imgs/wkx/new.png) no-repeat 0 0;
+}
+.header-right {
+    float: right;
+}
+.app-download {
+    float: left;
+    color: rgba(255,255,255,.6);
+    position: relative;
+}
+.app-load-box {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 304px;
+    padding: 10px 24px 22px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #4d555d;
+    line-height: 16px;
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    z-index: 99999;
+    font-size: 12px;
+}
+.browser-load-box {
+    display: none;
+    overflow: hidden;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d3d6d9;
+}
+.app-download .app-load-box h4 {
+    margin: 12px 0;
+    font-size: 14px;
+    color: #1c1f21;
+    text-align: center;
+    line-height: 22px;
+}
+.browser-load-box a.app-load-btn {
+    margin: 0 auto;
+}
+.app-load-box a.app-load-btn {
+    display: block;
+    color: #fff;
+    width: 132px;
+    height: 36px;
+    margin-bottom: 8px;
+    line-height: 36px;
+    background: #4d555d;
+    border-radius: 18px;
+    text-align: center;
+}
+.app-load-box img {
+    width: 108px;
+    height: 108px;
+}
+.app-load-box p {
+    margin-top: 12px;
+    text-align: center;
+}
+.shop-cart {
+    float: left;
+    margin-left: 12px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.shop-cart-icon {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 12px;
+    border-radius: 18px;
+}
+.imv2-cart {
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+    margin-right: 8px;
+}
+.shop-cart-icon span {
+    color: rgba(255,255,255,.6);
+}
+.shop-cart:hover .shop-cart-icon span{
+    color: #fff;
+}
+#login-area {
+    float: left;
+    position: relative;
+}
+.header-unlogin {
+    margin-left: 24px;
+}
+.header-unlogin .header-signin {
+    color: #fff;
+}
+.header-unlogin li {
+    float: left;
+}
+.header-signin a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(255,255,255,.6);
+    font-weight: 700;
+    color: #fff;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    transition: background-color .2s;
+}
+.header-signin a:hover{
+    color: #f01414;
+}
+#header .new-header .nav-item li a:hover {
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+.app-download>a{
+    color:rgba(255,255,255,.6); 
+}
+.app-download>a:hover{
+    color: #fff;
+}
+.app-download>a:hover #yincang{
+    display: block;
+}
+#header .new-header .app-download>a, #header .new-header .remind_warp>a, #header .new-header .user-card-box>a {
+    width: auto;
+    padding: 0 12px;
+    height: 40px;
+    line-height: 40px;
+    
+}
+#new_header .new-header .header-right .app-download>a {
+    display: inline-block;
+    padding: 0 12px;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(255,255,255,.6);
+}
+a.app-load-btn:hover {
+    background-color: #07111b;
+}
