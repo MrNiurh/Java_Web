@@ -3,7 +3,7 @@ body{
     padding: 0;
     font-family: "Microsoft YaHei"；
 }
-.container{
+.containers{
 width: 100%;
 height:auto;
 padding: 0;
@@ -36,7 +36,7 @@ background: linear-gradient(to right,#172E19,#3B9F58)
     color:gray;
 }
 .patha{
-color:#5E5E5E;
+color:white;
 text-decoration: none;
 font-size: 12px;
 }

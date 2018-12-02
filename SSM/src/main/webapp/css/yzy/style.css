@@ -12,9 +12,7 @@ li{
 body, html {
     font: 14px/1.5 "PingFang SC","微软雅黑","Microsoft YaHei",Helvetica,"Helvetica Neue",Tahoma,Arial,sans-serif;
 }
-a:link, a:visited, body, html {
-    color: #1c1f21;
-}
+
 .nav_box{
 	width: 100%;
     height: 68px;

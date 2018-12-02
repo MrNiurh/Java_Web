@@ -12,8 +12,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    
+   
     <link rel="stylesheet" href="<%=path %>/css/whp/lesson.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="<%=path %>/js/whp/lesson.js"></script>
@@ -21,7 +20,7 @@
 </head>
 <!-- 测试提交 -->
 <body>
-    <div class="container">
+    <div class="containers">
         <div class="learn_lesson">
             <div class="learn_text">
                 <a href="" class="learn_btn" style="text-decoration: none;color:white;">开始学习</a>
