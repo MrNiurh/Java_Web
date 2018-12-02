@@ -13,26 +13,32 @@
 			</if>
 		</where>
 	</select>
+
 	<!-- 所有free课程信息 -->
 	<select id="getAllClasses" parameterType="pd" resultType="pd">
 		select
-		* from classes
-		<where>
-			<if test="class_level!=null and class_level != ''">
-				class_level ="初级" or class_level ="入门"
-			</if>
-		</where>
+		* from classes where
+		class_level ="初级" or class_level ="入门"
 	</select>
+	<!-- 所有free课程信息 -->
+	<select id="getClassesByType" parameterType="pd" resultType="pd">
+		select
+		* from classes where
+		class_level ="初级" or class_level ="入门"
+		
+	</select>
+	
 	<!-- 所有课程信息 -->
 	<select id="getAllHClasses" parameterType="pd" resultType="pd">
 		select
-		* from classes
-		<where>
-			<if test="class_level!=null and class_level != ''">
-				class_level ="中级" or class_level ="高级"
-			</if>
-				
-		</where>
+		* from classes where
+		class_level ="中级" or class_level ="高级"
+	</select>
+		<!-- 所有free课程信息 -->
+	<select id="getHClassesByType" parameterType="pd" resultType="pd">
+		select
+		* from classes where
+		class_level ="初级" or class_level ="入门"
 	</select>
 
 	<!-- 单个课程信息 -->
@@ -82,7 +88,7 @@
 			</if>
 		</where>
 	</select>
-	
+
 	<!-- 根据大类型查询 -->
 	<select id="selectHCLassByClassType" parameterType="pd"
 		resultType="pd">

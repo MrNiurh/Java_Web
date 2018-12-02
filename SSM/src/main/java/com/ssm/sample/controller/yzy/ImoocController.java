@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.ssm.sample.controller.base.BaseController;
 @Controller
-@RequestMapping({ "/imooc" })
+@RequestMapping({ "/hmooc" })
 public class ImoocController extends BaseController{	
 	@RequestMapping(value = "/main")
 	public ModelAndView home() {

@@ -8,7 +8,6 @@
 %>
 <!DOCTYPE html>
 <html class="no-js">
-
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -156,8 +155,6 @@
 									<li class="course-nav-item on"><a href="">全部</a></li>
 									<li class="course-nav-item"><a href="">入门</a></li>
 									<li class="course-nav-item"><a href="">初级</a></li>
-									<li class="course-nav-item"><a href="">中级</a></li>
-									<li class="course-nav-item"><a href="">高级</a></li>
 								</ul>
 							</div>
 						</div>
@@ -175,7 +172,8 @@
 				<div class="tool-right r">
 					<span class="tool-item total-num"></span> <span
 						class="tool-item tool-pager"> <span class="pager-num">
-							<b class="pager-cur">1</b>/ <em class="pager-total">32</em>
+							<b class="pager-cur">${classes.pageNum}</b>/ <em
+							class="pager-total">${classes.pages}</em>
 					</span>
 					</span>
 				</div>
@@ -197,7 +195,7 @@
 									<h3 class="course-card-name">${course.class_name}</h3>
 									<div class="course-card-bootom">
 										<div class="course-card-info">
-											<span>入门</span> <span>12345</span>
+											<span>${course.class_level}</span> <span>12345</span>
 										</div>
 										<p class="course-card-desc">${course.lesson_info}</p>
 									</div>
@@ -208,10 +206,10 @@
 					</c:forEach>
 				</div>
 				<div class="page">
-					<a href="<%=basePath%>course/list?pn=1"><span>首页</span></a>
+					<a href="<%=basePath%>course/list?pn=1">首页</a>
 					<c:if test="${classes.hasPreviousPage}">
-						<a href="<%=basePath%>course/list?pn=${classes.pageNum-1}"
-							style="color: black"> <span>上一页</span></a>
+						<a href="<%=basePath%>course/list?pn=${classes.pageNum-1}">
+							上一页 </a>
 					</c:if>
 					<c:forEach items="${classes.navigatepageNums}" var="page_Num">
 						<c:if test="${page_Num==classes.pageNum }">
