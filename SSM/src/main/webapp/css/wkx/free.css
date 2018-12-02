@@ -10,9 +10,9 @@ dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, i
 ol,ul{
     list-style: none;
 }
-a:link,a:visited,body,html{
+/* a:link,a:visited,body,html{
     color: #1c1f21;
-}
+} */
 a:hover{
     text-decoration: none;
 }
@@ -151,11 +151,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .course-nav-skills{
     max-height: 153px;/*为了bootstrap原来132后来加21*/
-    
+   
 }
 .course-nav-skills.bd{   /*同时包含两个类*/
     max-height: 132px;
     overflow: hidden;
+}
+/*加le*/
+.abcde{
+	top: -17px;
+    margin: 0 -10px;
+    padding: 16px 9px;
+    background: #FFF;
+    border: 1px solid rgba(28,31,33,.1);
+    box-shadow: 0 8px 16px 0 rgba(28,31,33,.2);
+    border-radius: 8px;
+    max-height:none;
 }
 .course-nav-item a:hover{
    color: #F20D0D;
@@ -173,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid rgba(28,31,33,.1);
     box-shadow: 0 8px 16px 0 rgba(28,31,33,.2);
     border-radius: 8px;
-}
+}  
 .course-skills-box:hover .bd {
     -webkit-animation-duration: .3s;
     animation-duration: .3s;

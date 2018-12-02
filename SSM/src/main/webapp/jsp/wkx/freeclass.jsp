@@ -78,7 +78,7 @@
 							</div>
 						</div>
 						<div class="course-nav-row course-nav-skills clearfix">
-							<div class="js-course-skills course-skills-box">
+							<div class="js-course-skills  ">
 								<span class="hd l">分类：</span>
 								<div class="bd course-nav-skills" id="jstest">
 									<ul>
