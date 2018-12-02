@@ -22,8 +22,7 @@
 
 <body>
     <div class="container-fluid">
-        <div class="header">
-        </div>
+       
         <div class="mainer">
             <div class="container">
                 <div class="user_functions">
@@ -69,8 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bottom">
-                </div>
+              
             </div>
 </body>
 

@@ -24,7 +24,7 @@
     <div class="container">
         <div class="learn_lesson">
             <div class="learn_text">
-                <a href="" class="learn_btn" style="text-decoration: none">开始学习</a>
+                <a href="" class="learn_btn" style="text-decoration: none;color:white;">开始学习</a>
                 <div class="lesson_info">
                     <b>课程须知</b>
                     <p>1. 对html基础知识已经掌握</p>
@@ -42,8 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="header">
-        </div>
+        
         <div class="mainer">
             <div class="mainertop">
                 <div class="mainertop-content">
@@ -134,9 +133,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bottom">
-                
-            </div>
+
         </div>
 </body>
 
