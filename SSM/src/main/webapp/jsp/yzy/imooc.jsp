@@ -2295,39 +2295,39 @@ Github：https://github.com/enbandari</span> </a>
 					</div>
 				</div>
 				<!-- 全明星模块 -->
-				<div class="bgfff">
+							<div class="bgfff">
 					<div class="container-types clearfix">
 						<h3 class="types-title">			<span class="tit-icon icon-star-l tit-icon-l"></span><em>吊</em>／<em>炸</em>／<em>天</em>／<em>全</em>／<em>明</em>／<em>星</em><span class="tit-icon icon-star-r tit-icon-r"></span>		</h3>
 						<div class="star-list clearfix">
 							<dl class="lead-list clearfix js-lead-list">
 								<dd>
 									<div class="lead-item-photo">
-										<a target="_blank" href="https://www.imooc.com/u/6520952"><img src="<%=path %>/imgs/yzy/545861e40001199702200220-100-100.jpg"></a> <span class="purple"></span> </div>
+										<a target="_blank" href="https://www.imooc.com/u/6520952"><img src="https://img2.sycdn.imooc.com/545861e40001199702200220-100-100.jpg"></a> <span class="purple"></span> </div>
 									<p class="lead-item-name ellipsis">chrismorgen</p>
 									<p class="lead-item-tit">风骚课程学霸</p>
 								</dd>
 								<dd>
 									<div class="lead-item-photo">
-										<a target="_blank" href="https://www.imooc.com/u/261916"><img src="<%=path %>/imgs/yzy/533e4ca50001117901990200-100-100.jpg"></a> <span class="green"></span> </div>
+										<a target="_blank" href="https://www.imooc.com/u/261916"><img src="https://img2.sycdn.imooc.com/533e4ca50001117901990200-100-100.jpg"></a> <span class="green"></span> </div>
 									<p class="lead-item-name ellipsis">pardon110</p>
 									<p class="lead-item-tit">神秘解疑大神</p>
 								</dd>
 								<dd>
 									<div class="lead-item-photo">
-										<a target="_blank" href="https://www.imooc.com/u/3931598"><img src="<%=path %>/imgs/yzy/5a5d1f3a0001cab806380638-100-100.jpg"></a> <span class="blue"></span> </div>
+										<a target="_blank" href="https://www.imooc.com/u/3931598"><img src="https://img2.sycdn.imooc.com/5a5d1f3a0001cab806380638-100-100.jpg"></a> <span class="blue"></span> </div>
 									<p class="lead-item-name ellipsis">天涯明月笙</p>
 									<p class="lead-item-tit">智慧文章王者</p>
 								</dd>
 								<dd>
 									<div class="lead-item-photo">
-										<a target="_blank" href="javascript:void(0);"><img src="<%=path %>/imgs/yzy/tuhao.png"></a> <span class="yellow"></span> </div>
+										<a target="_blank" href="javascript:void(0);"><img src="https://img2.sycdn.imooc.com/tuhao.png"></a> <span class="yellow"></span> </div>
 									<p class="lead-item-name ellipsis">dudefu</p>
 									<p class="lead-item-tit">慕课第一土豪</p>
 								</dd>
 							</dl>
 							<dl class="other-list clearfix js-other-list">
 								<dd class="other-item green ">
-									<a target="_blank" href="https://www.imooc.com/u/7301900"> <img src="<%=path %>/imgs/yzy/5bf9f693000128f606400640-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/7301900"> <img src="https://img2.sycdn.imooc.com/5bf9f693000128f606400640-100-100.jpg">
 										<div>
 											<p class="title">="神秘解疑大神"=</p>
 											<p class="nickname">板仔f</p>
@@ -2335,7 +2335,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item purple ">
-									<a target="_blank" href="https://www.imooc.com/u/1961093"> <img src="<%=path %>/imgs/yzy/57df9bcd000195e810231024-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/1961093"> <img src="https://img2.sycdn.imooc.com/57df9bcd000195e810231024-100-100.jpg">
 										<div>
 											<p class="title">="风骚课程学霸"=</p>
 											<p class="nickname">Mushishi_Xu</p>
@@ -2343,7 +2343,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item blue ">
-									<a target="_blank" href="https://www.imooc.com/u/6825612"> <img src="<%=path %>/imgs/yzy/5333a1a90001c8d802000200-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6825612"> <img src="https://img2.sycdn.imooc.com/5333a1a90001c8d802000200-100-100.jpg">
 										<div>
 											<p class="title">="智慧文章王者"=</p>
 											<p class="nickname">慕的地10843</p>
@@ -2351,7 +2351,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item blue ">
-									<a target="_blank" href="https://www.imooc.com/u/6798199"> <img src="<%=path %>/imgs/yzy/54584eff000195a302200220-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6798199"> <img src="https://img2.sycdn.imooc.com/54584eff000195a302200220-100-100.jpg">
 										<div>
 											<p class="title">="智慧文章王者"=</p>
 											<p class="nickname">慕虎7371278</p>
@@ -2359,7 +2359,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item purple ">
-									<a target="_blank" href="https://www.imooc.com/u/4698985"> <img src="<%=path %>/imgs/yzy/5b3c3d0b000158f406000337-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/4698985"> <img src="https://img2.sycdn.imooc.com/5b3c3d0b000158f406000337-100-100.jpg">
 										<div>
 											<p class="title">="风骚课程学霸"=</p>
 											<p class="nickname">悬崖上的金魚姬</p>
@@ -2367,7 +2367,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item purple ">
-									<a target="_blank" href="https://www.imooc.com/u/6299649"> <img src="<%=path %>/imgs/yzy/5a4ae8860001f12903260326-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6299649"> <img src="https://img2.sycdn.imooc.com/5a4ae8860001f12903260326-100-100.jpg">
 										<div style="display: none;">
 											<p class="title">="风骚课程学霸"=</p>
 											<p class="nickname">Sheep_Lay</p>
@@ -2375,7 +2375,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item blue ">
-									<a target="_blank" href="https://www.imooc.com/u/6798202"> <img src="<%=path %>/imgs/yzy/5458692c00014e9b02200220-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6798202"> <img src="https://img2.sycdn.imooc.com/5458692c00014e9b02200220-100-100.jpg">
 										<div>
 											<p class="title">="智慧文章王者"=</p>
 											<p class="nickname">慕码人8056858</p>
@@ -2383,7 +2383,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item purple ">
-									<a target="_blank" href="https://www.imooc.com/u/6539056"> <img src="<%=path %>/imgs/yzy/545867630001795d02200220-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6539056"> <img src="https://img2.sycdn.imooc.com/545867630001795d02200220-100-100.jpg">
 										<div>
 											<p class="title">="风骚课程学霸"=</p>
 											<p class="nickname">易达333</p>
@@ -2391,7 +2391,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item purple ">
-									<a target="_blank" href="https://www.imooc.com/u/6616789"> <img src="<%=path %>/imgs/yzy/5b60202f000159e305330300-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6616789"> <img src="https://img2.sycdn.imooc.com/5b60202f000159e305330300-100-100.jpg">
 										<div>
 											<p class="title">="风骚课程学霸"=</p>
 											<p class="nickname">灰灰520</p>
@@ -2399,7 +2399,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item blue ">
-									<a target="_blank" href="https://www.imooc.com/u/6798217"> <img src="<%=path %>/imgs/yzy/545845d30001ee8a02200220-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6798217"> <img src="https://img2.sycdn.imooc.com/545845d30001ee8a02200220-100-100.jpg">
 										<div>
 											<p class="title">="智慧文章王者"=</p>
 											<p class="nickname">慕少0579507</p>
@@ -2407,7 +2407,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item green marr0">
-									<a target="_blank" href="https://www.imooc.com/u/7333524"> <img src="<%=path %>/imgs/yzy/5bf81f8500019f2e05000500-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/7333524"> <img src="https://img2.sycdn.imooc.com/5bf81f8500019f2e05000500-100-100.jpg">
 										<div>
 											<p class="title">="神秘解疑大神"=</p>
 											<p class="nickname">依木兰</p>
@@ -2415,7 +2415,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item purple marl0">
-									<a target="_blank" href="https://www.imooc.com/u/6993971"> <img src="<%=path %>/imgs/yzy/533e4d2600013fe202000200-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6993971"> <img src="https://img2.sycdn.imooc.com/533e4d2600013fe202000200-100-100.jpg">
 										<div>
 											<p class="title">="风骚课程学霸"=</p>
 											<p class="nickname">xyr0601</p>
@@ -2423,7 +2423,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item blue ">
-									<a target="_blank" href="https://www.imooc.com/u/6798209"> <img src="<%=path %>/imgs/yzy/533e4c2300012ab002200220-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6798209"> <img src="https://img2.sycdn.imooc.com/533e4c2300012ab002200220-100-100.jpg">
 										<div>
 											<p class="title">="智慧文章王者"=</p>
 											<p class="nickname">慕哥9229398</p>
@@ -2431,7 +2431,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item purple ">
-									<a target="_blank" href="https://www.imooc.com/u/4936703"> <img src="<%=path %>/imgs/yzy/58dbb3630001b10b03840384-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/4936703"> <img src="https://img2.sycdn.imooc.com/58dbb3630001b10b03840384-100-100.jpg">
 										<div>
 											<p class="title">="风骚课程学霸"=</p>
 											<p class="nickname">不爱吃胡萝卜的小兔子</p>
@@ -2439,7 +2439,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item green ">
-									<a target="_blank" href="https://www.imooc.com/u/3672221"> <img src="<%=path %>/imgs/yzy/58a44d2f0001ff4802790279-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/3672221"> <img src="https://img2.sycdn.imooc.com/58a44d2f0001ff4802790279-100-100.jpg">
 										<div>
 											<p class="title">="神秘解疑大神"=</p>
 											<p class="nickname">君听</p>
@@ -2447,7 +2447,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item blue ">
-									<a target="_blank" href="https://www.imooc.com/u/6798219"> <img src="<%=path %>/imgs/yzy/533e4c5600017c5b02010200-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6798219"> <img src="https://img2.sycdn.imooc.com/533e4c5600017c5b02010200-100-100.jpg">
 										<div>
 											<p class="title">="智慧文章王者"=</p>
 											<p class="nickname">慕少1208348</p>
@@ -2455,7 +2455,7 @@ Github：https://github.com/enbandari</span> </a>
 									</a>
 								</dd>
 								<dd class="other-item blue ">
-									<a target="_blank" href="https://www.imooc.com/u/6798195"> <img src="<%=path %>/imgs/yzy/5333a1bc00014e8302000200-100-100.jpg">
+									<a target="_blank" href="https://www.imooc.com/u/6798195"> <img src="https://img2.sycdn.imooc.com/5333a1bc00014e8302000200-100-100.jpg">
 										<div>
 											<p class="title">="智慧文章王者"=</p>
 											<p class="nickname">幕布斯6054654</p>
