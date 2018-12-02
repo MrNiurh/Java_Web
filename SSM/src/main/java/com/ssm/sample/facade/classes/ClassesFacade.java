@@ -55,4 +55,10 @@ public class ClassesFacade extends BaseFacade {
 		List<PageData> list = this.classesService.selectCLassByClassType(pd);
 		return list;
 	}
+
+	public List<PageData> selectTags(PageData pd) {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.classesService.selectTags(pd);
+		return list;
+	}
 }

@@ -40,4 +40,10 @@ public class ClassesService extends BaseService {
 		return list;
 	}
 
+	public List<PageData> selectTags(PageData pd) {
+		// TODO Auto-generated method stub
+		List<PageData> list= this.sqlSessionTemplate.selectList("classes.classesMapper.selectTags", pd);
+		return list;
+	}
+
 }

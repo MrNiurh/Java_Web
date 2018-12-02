@@ -17,28 +17,30 @@
 	<!-- 所有free课程信息 -->
 	<select id="getAllClasses" parameterType="pd" resultType="pd">
 		select
-		* from classes where
-		class_level ="初级" or class_level ="入门"
+		* from classes
+	</select>
+	<!-- 所有free课程信息 -->
+	<select id="selectTags" resultType="pd">
+		select
+		* from lesson_thirdtype
+		<where>
+			<if test="way !=0">
+				lesson_secondtype = #{way}
+			</if>
+		</where>
 	</select>
 	<!-- 所有free课程信息 -->
 	<select id="getClassesByType" parameterType="pd" resultType="pd">
 		select
-		* from classes where
-		class_level ="初级" or class_level ="入门"
-		
+		* from classes
 	</select>
-	
-	<!-- 所有课程信息 -->
-	<select id="getAllHClasses" parameterType="pd" resultType="pd">
+	<!-- 所有free课程信息 -->
+	<select id="getHClassesByType" parameterType="pd"
+		resultType="pd">
 		select
 		* from classes where
-		class_level ="中级" or class_level ="高级"
-	</select>
-		<!-- 所有free课程信息 -->
-	<select id="getHClassesByType" parameterType="pd" resultType="pd">
-		select
-		* from classes where
-		class_level ="初级" or class_level ="入门"
+		class_level ="1" or class_level
+		="0"
 	</select>
 
 	<!-- 单个课程信息 -->
@@ -46,7 +48,7 @@
 		select * from classes
 		<where>
 			<if test="class_level!=null and class_level != ''">
-				class_level ="初级" or class_level ="入门"
+				class_level ="1" or class_level ="0"
 			</if>
 			<if test="id != null and id != ''">
 				and id=#{id}
@@ -72,7 +74,7 @@
 		select * from classes
 		<where>
 			<if test="class_level!=null and class_level != ''">
-				class_level ="初级" or class_level ="入门"
+				class_level ="1" or class_level ="0"
 			</if>
 			<if test="lesson_type!=null and lesson_type !=''">
 				and class_type=(select id from
@@ -95,7 +97,7 @@
 		select * from classes
 		<where>
 			<if test="class_level!=null and class_level != ''">
-				class_level ="初级" or class_level ="入门"
+				class_level ="0" or class_level ="1"
 			</if>
 			<if test="lesson_type!=null and lesson_type !=''">
 				and class_type=(select id from
