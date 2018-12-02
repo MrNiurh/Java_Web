@@ -35,7 +35,7 @@ public class FreeLessonController extends BaseController {
 			PageData pd = this.getPageData();
 			PageHelper.startPage(pn, 30);
 			List<PageData> list = this.classesFacade.getAllClasses(pd);
-			PageInfo page = new PageInfo(list);
+			PageInfo page = new PageInfo(list,7);
 			session.setAttribute("classes", page);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -50,7 +50,7 @@ public class FreeLessonController extends BaseController {
 
 		PageHelper.startPage(1, 30);
 		List<PageData> list = this.classesFacade.selectCLassByClassType(pd);
-		PageInfo page = new PageInfo(list);
+		PageInfo page = new PageInfo(list,7);
 		session.setAttribute("classes", page);
 
 		return null;

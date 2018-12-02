@@ -1,9 +1,12 @@
 <decorators defaultdir="/jsp/00decorators">
 	<decorator name="main" page="mainParent.jsp">
-		<pattern>/main/*</pattern>
+		<pattern>/hmooc/*</pattern>
+		<pattern>/user/*</pattern>
 	</decorator>
 	<decorator name="popup" page="mainPopup.jsp">
-		<pattern>/*Popup/*</pattern>
+		<pattern>/videos/*</pattern>
+		<pattern>/course/*</pattern>
+		<pattern>/learn/*</pattern>
 	</decorator>
 	<excludes>
 		<pattern>/jsp/exclude/*</pattern>

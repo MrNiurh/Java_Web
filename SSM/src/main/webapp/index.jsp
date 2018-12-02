@@ -1,7 +1,7 @@
 <html>
 <body>
 	<%
-	String redirectPath= request.getContextPath()+"/videos/video";	
+		String redirectPath = request.getContextPath() + "/hmooc/main";
 		response.sendRedirect(redirectPath);
 	%>
 </body>
