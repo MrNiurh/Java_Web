@@ -25,59 +25,54 @@ public class FreeLessonController extends BaseController {
 
 	/*
 	 * 免费课程
+	 * 
+	 * @param a 大类型
+	 * 
+	 * @param b 小类型
+	 * 
+	 * @param c 难度
 	 */
 	@RequestMapping(value = "/list")
 	public ModelAndView home(@RequestParam(value = "pn", defaultValue = "1") Integer pn,
-			@RequestParam(value = "c", defaultValue = "") String c,
-			@RequestParam(value = "class_level", defaultValue = "") Integer class_level) {
+			@RequestParam(value = "a", defaultValue = "0") Integer a,
+			@RequestParam(value = "b", defaultValue = "0") Integer b,
+			@RequestParam(value = "c", defaultValue = "0") Integer c) {
 		ModelAndView mv = this.getModelAndView();
 		mv.setViewName("wkx/freeclass");
 
-		/*
-		 * 方向判断
-		 */
-		int way = 0;
-		switch (c) {
-		case "nt":
-			way = 1;
-			break;
-		case "fe":
-			way = 2;
-			break;
-		case "be":
-			way = 3;
-			break;
-		case "mobile":
-			way = 4;
-			break;
-		case "algorithm":
-			way = 5;
-			break;
-		case "cb":
-			way = 6;
-			break;
-		case "op":
-			way = 7;
-			break;
-		case "data":
-			way = 8;
-			break;
-		case "photo":
-			way = 9;
-			break;
-		case "game":
-			way = 10;
-			break;
-		default:
-			break;
-		}
 		PageData pd = this.getPageData();
-		pd.put("way", way);
+		pd.put("way", a);
+		pd.put("b", b);
+
+		/*
+		 * 查询方向结果
+		 */
+		List<PageData> types = this.classesFacade.selectAllStype(pd);
+		mv.addObject("atest", a);
+		mv.addObject("types", types);
+		/*
+		 * 查询分类结果
+		 */
+		List<PageData> one = this.classesFacade.selectOneType(pd);
+		if (one.size() == 1) {
+			mv.addObject("atest", one.get(0).get("lesson_secondtype"));
+			pd.put("way", one.get(0).get("lesson_secondtype"));
+		}
 		List<PageData> tags = this.classesFacade.selectTags(pd);
+		mv.addObject("btest", b);
 		mv.addObject("tags", tags);
 
+		/*
+		 * 查询难度
+		 */
+		List<PageData> levels = this.classesFacade.selectAllLevel();
+		mv.addObject("ctest", c);
+		mv.addObject("levels", levels);
 		try {
-			//PageData pd = this.getPageData();
+			// PageData pd = this.getPageData();
+			pd.put("f_id", a);
+			pd.put("class_tags", b);
+			pd.put("class_level", c);
 			PageHelper.startPage(pn, 30);
 			List<PageData> list = this.classesFacade.getAllClasses(pd);
 			PageInfo page = new PageInfo(list, 7);

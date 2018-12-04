@@ -46,4 +46,22 @@ public class ClassesService extends BaseService {
 		return list;
 	}
 
+	public List<PageData> selectAllStype(PageData pd) {
+		// TODO Auto-generated method stub
+		List<PageData> list= this.sqlSessionTemplate.selectList("classes.classesMapper.selectAllStype", pd);
+		return list;
+	}
+
+	public List<PageData> selectAllLevel() {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.sqlSessionTemplate.selectList("classes.classesMapper.selectAllLevel");
+		return list;
+	}
+
+	public List<PageData> selectOneType(PageData pd) {
+		// TODO Auto-generated method stub
+		List<PageData> list= this.sqlSessionTemplate.selectList("classes.classesMapper.selectOneType", pd);
+		return list;
+	}
+
 }

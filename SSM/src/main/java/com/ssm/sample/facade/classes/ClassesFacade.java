@@ -61,4 +61,23 @@ public class ClassesFacade extends BaseFacade {
 		List<PageData> list = this.classesService.selectTags(pd);
 		return list;
 	}
+
+	public List<PageData> selectAllStype(PageData pd) {
+		// TODO Auto-generated method stub
+		List<PageData> list= this.classesService.selectAllStype(pd);
+		return list;
+	}
+
+	public List<PageData> selectAllLevel() {
+		// TODO Auto-generated method stub
+		
+		List<PageData> list = this.classesService.selectAllLevel();
+		return list;
+	}
+
+	public List<PageData> selectOneType(PageData pd) {
+		// TODO Auto-generated method stub
+		List<PageData> list= this.classesService.selectOneType(pd);
+		return list;
+	}
 }

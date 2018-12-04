@@ -18,13 +18,44 @@
 	<select id="getAllClasses" parameterType="pd" resultType="pd">
 		select
 		* from classes
+		<where>
+			<if test="f_id !=null and f_id != '' and f_id!=0">
+				f_id=#{f_id}
+			</if>
+			<if
+				test="class_tags !=null and class_tags != '' and class_tags !=0">
+				and class_tags=${class_tags}
+			</if>
+			<if
+				test="class_level !=null and class_level != '' and class_level!=0">
+				and class_level = ${class_level}
+			</if>
+		</where>
+	</select>
+	<!-- 所有分类信息 -->
+	<select id="selectAllStype" parameterType="pd" resultType="pd">
+		select
+		* from lesson_secondtype
+	</select>
+	<select id="selectAllLevel" parameterType="pd" resultType="pd">
+		select
+		* from class_level
+	</select>
+	<select id="selectOneType" parameterType="pd" resultType="pd">
+		select
+		* from lesson_thirdtype
+		<where>
+			<if test="b!=0 and b != null and b != ''">
+				id=${b}
+			</if>
+		</where>
 	</select>
 	<!-- 所有free课程信息 -->
 	<select id="selectTags" resultType="pd">
 		select
 		* from lesson_thirdtype
 		<where>
-			<if test="way !=0">
+			<if test="way !=0 and way !=null and way !=''">
 				lesson_secondtype = #{way}
 			</if>
 		</where>
@@ -47,46 +78,25 @@
 	<select id="getOneClass" parameterType="pd" resultType="pd">
 		select * from classes
 		<where>
-			<if test="class_level!=null and class_level != ''">
-				class_level ="1" or class_level ="0"
-			</if>
 			<if test="id != null and id != ''">
-				and id=#{id}
+				id=#{id}
 			</if>
 		</where>
 	</select>
-	<!-- 单个课程信息 -->
-	<select id="getOneHClass" parameterType="pd" resultType="pd">
-		select * from classes
-		<where>
-			<if test="class_level!=null and class_level != ''">
-				class_level ="中级" or class_level ="高级"
-			</if>
-			<if test="id != null and id != ''">
-				and id=#{id}
-			</if>
-		</where>
-	</select>
-
 	<!-- 根据大类型查询 -->
 	<select id="selectCLassByClassType" parameterType="pd"
 		resultType="pd">
 		select * from classes
 		<where>
-			<if test="class_level!=null and class_level != ''">
-				class_level ="1" or class_level ="0"
+			<if test="class_level!='' and class_level != 0">
+				class_level =#{class_level}
 			</if>
-			<if test="lesson_type!=null and lesson_type !=''">
-				and class_type=(select id from
-				lesson_type where
-				lesson_type=#{lesson_type})
+			<if test="f_id!=0 and f_id !=''">
+				and f_id = #{f_id}
 			</if>
 			<if test="classTags!=null and classTags !=''">
 				and class_tags LIKE
 				"%"#{class_tags}"%"
-			</if>
-			<if test="class_level！=null and class_level !=''">
-				and class_level = #{class_level}
 			</if>
 		</where>
 	</select>

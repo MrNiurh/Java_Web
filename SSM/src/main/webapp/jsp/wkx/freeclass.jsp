@@ -52,28 +52,27 @@
 							<span class="hd l">方向：</span>
 							<div class="bd">
 								<ul>
-									<li class="course-nav-item on"><a
-										href="<%=basePath%>course/list">全部</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=nt">前沿技术</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=fe">前端开发</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=be">后端开发</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=mobile">移动开发</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=algorithm">算法&数学</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=cb">云计算&大数据</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=op">运维测试</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=data">数据库</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=photo">UI设计&多媒体</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?c=game">游戏</a></li>
+
+									<c:if test="${atest ==  '0'}">
+										<li class="course-nav-item on"><a
+											href="<%=basePath%>course/list">全部</a></li>
+									</c:if>
+									<c:if test="${ atest  != 0}">
+										<li class="course-nav-item"><a
+											href="<%=basePath%>course/list">全部</a></li>
+									</c:if>
+									<c:forEach items="${types}" var="type">
+
+										<c:if test="${type.id == atest }">
+											<li class="course-nav-item on"><a
+												href="<%=basePath%>course/list?a=${type.id}">${type.lessontype}</a></li>
+										</c:if>
+										<c:if test="${type.id != atest }">
+											<li class="course-nav-item"><a
+												href="<%=basePath%>course/list?a=${type.id}">${type.lessontype}</a></li>
+										</c:if>
+
+									</c:forEach>
 								</ul>
 							</div>
 						</div>
@@ -82,9 +81,23 @@
 								<span class="hd l">分类：</span>
 								<div class="bd course-nav-skills" id="jstest">
 									<ul>
-										<li class="course-nav-item on"><a href="">全部</a></li>
+										<c:if test="${btest ==  '0'}">
+											<li class="course-nav-item on"><a
+												href="<%=basePath%>course/list">全部</a></li>
+										</c:if>
+										<c:if test="${ btest  != 0}">
+											<li class="course-nav-item"><a
+												href="<%=basePath%>course/list">全部</a></li>
+										</c:if>
 										<c:forEach items="${tags}" var="tag">
-											<li class="course-nav-item"><a href="<%=basePath%>course/list">${tag.lessontype}</a></li>
+											<c:if test="${tag.id == btest }">
+												<li class="course-nav-item on"><a
+													href="<%=basePath%>course/list?a=${atest}&&b=${tag.id}">${tag.lessontype}</a></li>
+											</c:if>
+											<c:if test="${tag.id != btest }">
+												<li class="course-nav-item"><a
+													href="<%=basePath%>course/list?a=${atest}&&b=${tag.id}">${tag.lessontype}</a></li>
+											</c:if>
 										</c:forEach>
 									</ul>
 								</div>
@@ -94,16 +107,24 @@
 							<a class="course-recommend" href=""></a> <span class="hd l">难度：</span>
 							<div class="bd">
 								<ul>
-									<li class="course-nav-item on"><a
-										href="<%=basePath%>course/list">全部</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?class_level=1">入门</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?class_level=2">初级</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?class_level=3">中级</a></li>
-									<li class="course-nav-item"><a
-										href="<%=basePath%>course/list?class_level=4">高级</a></li>
+									<c:if test="${ctest ==  '0'}">
+										<li class="course-nav-item on"><a
+											href="<%=basePath%>course/list">全部</a></li>
+									</c:if>
+									<c:if test="${ ctest  != 0}">
+										<li class="course-nav-item"><a
+											href="<%=basePath%>course/list">全部</a></li>
+									</c:if>
+									<c:forEach items="${levels }" var="level">
+										<c:if test="${level.id == ctest }">
+											<li class="course-nav-item on"><a
+												href="<%=basePath%>course/list?a=${atest}&&b=${btest}&&c=${level.id}">${level.class_level }</a></li>
+										</c:if>
+										<c:if test="${level.id != ctest }">
+											<li class="course-nav-item"><a
+												href="<%=basePath%>course/list?a=${atest}&&b=${btest}&&c=${level.id}">${level.class_level }</a></li>
+										</c:if>
+									</c:forEach>
 								</ul>
 							</div>
 						</div>
