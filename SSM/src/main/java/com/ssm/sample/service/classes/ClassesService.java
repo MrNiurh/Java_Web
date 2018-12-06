@@ -82,4 +82,10 @@ public class ClassesService extends BaseService {
 		return list;
 	}
 
+	public List<PageData> imoocAllClasses() {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.sqlSessionTemplate.selectList("classes.classesMapper.imoocAllClasses");
+		return list;
+	}
+
 }

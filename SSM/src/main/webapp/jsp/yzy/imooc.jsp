@@ -11,11 +11,14 @@
 <title>慕课网-程序员的梦工厂</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="renderer" content="webkit">
-<meta name="mobile-agent" content="format=wml" ;="" url="https://m.imooc.com/">
+<meta name="mobile-agent" content="format=wml"
+	;="" url="https://m.imooc.com/">
 <link rel="alternate" media="only screen and (max-width: 640px)"
 	href="https://m.imooc.com/">
-<meta name="mobile-agent" content="format=xhtml" ;="" url="https://m.imooc.com/">
-<meta name="mobile-agent" content="format=html5" ;="" url="https://m.imooc.com/">
+<meta name="mobile-agent" content="format=xhtml"
+	;="" url="https://m.imooc.com/">
+<meta name="mobile-agent" content="format=html5"
+	;="" url="https://m.imooc.com/">
 <meta property="qc:admins" content="77103107776157736375">
 <meta property="wb:webmaster" content="c4f857219bfae3cb">
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
@@ -1051,19 +1054,19 @@
 					<div class="clearfix types-content">
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/228.html?mc_marking=b587280c0c1c0e76c1092aa21406565a&amp;mc_channel=syb6"
+								href="<%=basePath%>learn/lesson?a=${classes.get(0).id}"
 								data-track="sztj-1-1">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/lessons/001.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(0).class_pic}">
 
 									<div class="course-label">
 										<label>Vue.js</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Vue.js 源码全方位深入解析</h3>
+									<h3 class="course-card-name">${classes.get(0).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>高级</span><span><i
@@ -1081,19 +1084,18 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/207.html?mc_marking=60e5294c605a87b2af7257d06f70505e&amp;mc_channel=syb7"
+								href="<%=basePath%>learn/lesson?a=${classes.get(1).id}"
 								data-track="sztj-1-2">
 
 								<div class="course-card-top hashadow">
-									<img class="course-banner"
-										src="<%=path%>/imgs/lessons/002.jpg">
+									<img class="course-banner" src="<%=path%>/imgs/lessons/${classes.get(1).class_pic}">
 
 									<div class="course-label">
 										<label>数据结构</label> <label>算法</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">玩转数据结构 从入门到进阶</h3>
+									<h3 class="course-card-name">${classes.get(1).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -1111,19 +1113,18 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/136.html?mc_marking=a7b3119105f0cbb234506fc15f6bfbc4&amp;mc_channel=syb8"
+								href="<%=basePath%>learn/lesson?a=${classes.get(2).id}"
 								data-track="sztj-1-3">
 
 								<div class="course-card-top hashadow">
-									<img class="course-banner"
-										src="<%=path%>/imgs/lessons/003.jpg">
+									<img class="course-banner" src="<%=path%>/imgs/lessons/${classes.get(2).class_pic}">
 
 									<div class="course-label">
 										<label>Python</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">全网最热Python3入门+进阶 更快上手实际开发</h3>
+									<h3 class="course-card-name">${classes.get(2).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>初级</span><span><i
@@ -1141,20 +1142,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/187.html?mc_marking=58fc4a3eef797bb53e2a572b4492e1cb&amp;mc_channel=syb9"
+								href="<%=basePath%>learn/lesson?a=${classes.get(3).id}"
 								data-track="sztj-1-4">
 
 								<div class="course-stat hot">HOT</div>
 								<div class="course-card-top hashadow">
-									<img class="course-banner"
-										src="<%=path%>/imgs/lessons/004.jpg">
+									<img class="course-banner" src="<%=path%>/imgs/lessons/${classes.get(3).class_pic}">
 
 									<div class="course-label">
 										<label>微服务</label> <label>Spring Cloud</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Spring Cloud微服务实战</h3>
+									<h3 class="course-card-name">${classes.get(3).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>高级</span><span><i
@@ -1172,19 +1172,18 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/289.html?mc_marking=1f1eb391b59b3e4139718a46d8673049&amp;mc_channel=syb10"
+								href="<%=basePath%>learn/lesson?a=${classes.get(4).id}"
 								data-track="sztj-1-5">
 
 								<div class="course-card-top hashadow">
-									<img class="course-banner"
-										src="<%=path%>/imgs/lessons/005.jpg">
+									<img class="course-banner" src="<%=path%>/imgs/lessons/${classes.get(4).class_pic}">
 
 									<div class="course-label">
 										<label>数学</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">高等数学-学习算法/人工智能/大数据的第一步</h3>
+									<h3 class="course-card-name">${classes.get(4).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>初级</span><span><i
@@ -1212,19 +1211,19 @@
 					<div class="clearfix types-content">
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/286.html?mc_marking=c5a3de541d57c8b0f8adb42c41479892&amp;mc_channel=syb11"
+								href="<%=basePath%>learn/lesson?a=${classes.get(5).id}"
 								data-track="xshk-1-1">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5bc3f1420001abf206000338.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(5).class_pic}">
 
 									<div class="course-label">
 										<label>Java</label> <label>Android</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Socket网络编程进阶与实战</h3>
+									<h3 class="course-card-name">${classes.get(5).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -1242,19 +1241,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/283.html?mc_marking=0e3785bb64ff082e0fe94900fd9b9ed6&amp;mc_channel=syb12"
+								href="<%=basePath%>learn/lesson?a=${classes.get(6).id}"
 								data-track="xshk-1-2">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5ba300690001052206000338.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(6).class_pic}">
 
 									<div class="course-label">
 										<label>Python</label> <label>爬虫</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Python 爬虫工程师必学 App数据抓取实战</h3>
+									<h3 class="course-card-name">${classes.get(6).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -1272,19 +1271,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1070?mc_marking=e0b7020c55162407944b7ca0fa1373f8&amp;mc_channel=syb13"
+								href="<%=basePath%>learn/lesson?a=${classes.get(7).id}"
 								data-track="xshk-1-3">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5be01b1f000121dd05400300-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(7).class_pic}">
 
 									<div class="course-label">
 										<label>测试</label> <label>自动化测试</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">基于LNMP的测试工具环境部署</h3>
+									<h3 class="course-card-name">${classes.get(7).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>初级</span><span><i class="icon-set_sns"></i>1503</span>
@@ -1297,20 +1296,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/294.html?mc_marking=c34246431eb3cf0f97cb2da17ecf3e1b&amp;mc_channel=syb14"
+								href="<%=basePath%>learn/lesson?a=${classes.get(8).id}"
 								data-track="xshk-1-4">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5bd2f92e0001930506000338.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(8).class_pic}">
 
 									<div class="course-label">
 										<label>React.JS</label> <label>区块链</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Nodejs + React 实战开发区块链慕课Dapp
-										专门为前端工程师设计</h3>
+									<h3 class="course-card-name">${classes.get(8).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -1328,19 +1326,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/284.html?mc_marking=a9aac085bc5bc146078d6095101af2a0&amp;mc_channel=syb15"
+								href="<%=basePath%>learn/lesson?a=${classes.get(9).id}"
 								data-track="xshk-1-5">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5bab70af00014fe105400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(9).class_pic}">
 
 									<div class="course-label">
 										<label>Docker</label> <label>Kubernetes</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Kubernetes实战 高可用集群搭建，配置，运维与应用</h3>
+									<h3 class="course-card-name">${classes.get(9).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -1358,20 +1356,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/74.html?mc_marking=b9f5e475d0cb8922d899d416f5b4433f&amp;mc_channel=syb16"
+								href="<%=basePath%>learn/lesson?a=${classes.get(10).id}"
 								data-track="xshk-1-6">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5becd5ad0001b89306000338.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(10).class_pic}">
 
 									<div class="course-label">
 										<label>WebApp</label> <label>Vue.js</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Vue.js 2.5 + cube-ui 重构饿了么
-										App</h3>
+									<h3 class="course-card-name">${classes.get(10).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -1389,19 +1386,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1067?mc_marking=9d0c45da6adcaa709d10e10d8ebcddc6&amp;mc_channel=syb17"
+								href="<%=basePath%>learn/lesson?a=${classes.get(11).id}"
 								data-track="xshk-1-7">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5bd2aff70001de4906000338-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(11).class_pic}">
 
 									<div class="course-label">
 										<label>Redis</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">redis计数器与数量控制</h3>
+									<h3 class="course-card-name">${classes.get(11).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>入门</span><span><i class="icon-set_sns"></i>2826</span>
@@ -1414,20 +1411,20 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/293.html?mc_marking=d1fd61f18d73135fd74382c68a85e10e&amp;mc_channel=syb18"
+								href="<%=basePath%>learn/lesson?a=${classes.get(12).id}"
 								data-track="xshk-1-8">
 
 								<div class="course-stat new">NEW</div>
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5bf2187300015bd405400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(12).class_pic}">
 
 									<div class="course-label">
 										<label>HTML/CSS</label> <label>小程序</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">全网首发 商业级支付宝小程序入门与实战</h3>
+									<h3 class="course-card-name">${classes.get(12).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>初级</span><span><i
@@ -1445,20 +1442,20 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1075?mc_marking=5487b137ad904bd13590a053ede6da2f&amp;mc_channel=syb19"
+								href="<%=basePath%>learn/lesson?a=${classes.get(13).id}"
 								data-track="xshk-1-9">
 
 								<div class="course-stat new">NEW</div>
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5becd2990001215b06000338-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(13).class_pic}">
 
 									<div class="course-label">
 										<label>React.JS</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">React高级教程之高阶组件</h3>
+									<h3 class="course-card-name">${classes.get(13).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>高级</span><span><i class="icon-set_sns"></i>1381</span>
@@ -1471,19 +1468,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/289.html?mc_marking=e1b10d50f61d93b98befa04edc7c22a5&amp;mc_channel=syb20"
+								href="<%=basePath%>learn/lesson?a=${classes.get(14).id}"
 								data-track="xshk-1-10">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5be176260001720e06000338.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(14).class_pic}">
 
 									<div class="course-label">
 										<label>数学</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">高等数学-学习算法/人工智能/大数据的第一步</h3>
+									<h3 class="course-card-name">${classes.get(14).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>初级</span><span><i
@@ -1510,47 +1507,47 @@
 					</h3>
 					<div class="clearfix types-content">
 						<div class="adsense-box l"
-							style="background: url(https://img.mukewang.com/5bf2243d0001d95905670108.jpg) no-repeat center center; background-size: 100%;">
+							style="background: url(<%=path%>/imgs/lessons/${classes.get(15).class_pic}) no-repeat center center; background-size: 100%;">
 							<a
-								href="https://www.imooc.com/topic/vuejs?mc_marking=e834093ae75e83b1a4938535dafe3ae4&amp;mc_channel=syzt1"
+								href="<%=basePath%>learn/lesson?a=${classes.get(15).id}"
 								data-track="xsrm-1-1" target="_blank">
-								<h3 class="ellipsis">Vue.js:入门到实例项目开发</h3>
+								<h3 class="ellipsis">${classes.get(15).class_name}</h3>
 								<p class="ellipsis">快速入门Vue.js框架，完成从入门到实战的完美过渡</p>
 							</a>
 						</div>
 
 						<div class="adsense-box l"
-							style="background: url(https://img.mukewang.com/5bf224930001991905670108.jpg) no-repeat center center; background-size: 100%;">
+							style="background: url(<%=path%>/imgs/lessons/${classes.get(16).class_pic}) no-repeat center center; background-size: 100%;">
 							<a
-								href="https://www.imooc.com/topic/springcloud?mc_marking=15b32af76799d89d558a107e4fb2bb50&amp;mc_channel=syzt2"
+								href="<%=basePath%>learn/lesson?a=${classes.get(16).id}"
 								data-track="xsrm-1-2" target="_blank">
-								<h3 class="ellipsis">从Spring Boot到Spring Cloud实战</h3>
+								<h3 class="ellipsis">${classes.get(16).class_name}</h3>
 								<p class="ellipsis">快速提升开发技巧和思维</p>
 							</a>
 						</div>
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://class.imooc.com/sc/20?mc_marking=82c3cedd638e1d3fb98cd63709db4448&amp;mc_channel=syb21"
+								href="<%=basePath%>learn/lesson?a=${classes.get(17).id}"
 								data-track="xsrm-1-3">
 								<div class="course-card-top ">
 									<div class="course-banner">
 										<div class="img-up"
-											style="background-image: url(https://climg.mukewang.com/59030cc50001144806000338.jpg);">
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(17).class_pic});">
 
 											<div class="course-label">
 												<label>Web前端攻城狮培养计划</label>
 											</div>
 										</div>
 										<div class="img-mid"
-											style="background-image: url(https://climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(17).class_pic});"></div>
 										<div class="img-down"
-											style="background-image: url(https://climg.mukewang.com/59030cc50001144806000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(17).class_pic});"></div>
 									</div>
 
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">前端零基础入门</h3>
+									<h3 class="course-card-name">${classes.get(17).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>就业班</span><span>5步／33课</span><span><i
@@ -1565,26 +1562,26 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://class.imooc.com/sc/18?mc_marking=897df86a0080aa93abc958e588b5f544&amp;mc_channel=syb22"
+								href="<%=basePath%>learn/lesson?a=${classes.get(18).id}"
 								data-track="xsrm-1-4">
 								<div class="course-card-top ">
 									<div class="course-banner">
 										<div class="img-up"
-											style="background-image: url(https://climg.mukewang.com/58c7b92d0001608406000338.jpg);">
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(18).class_pic});">
 
 											<div class="course-label">
 												<label>JAVA攻城狮培养计划</label>
 											</div>
 										</div>
 										<div class="img-mid"
-											style="background-image: url(https://climg.mukewang.com/58c7b92d0001608406000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(18).class_pic});"></div>
 										<div class="img-down"
-											style="background-image: url(https://climg.mukewang.com/58c7b92d0001608406000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(18).class_pic});"></div>
 									</div>
 
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Java零基础入门</h3>
+									<h3 class="course-card-name">${classes.get(18).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>就业班</span><span>3步／27课</span><span><i
@@ -1599,26 +1596,26 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://class.imooc.com/sc/6?mc_marking=7926d4e364260fadf99bc6683bf7488a&amp;mc_channel=syb23"
+								href="<%=basePath%>learn/lesson?a=${classes.get(19).id}"
 								data-track="xsrm-1-5">
 								<div class="course-card-top ">
 									<div class="course-banner">
 										<div class="img-up"
-											style="background-image: url(https://climg.mukewang.com/585243df00014f2406000338.jpg);">
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(19).class_pic});">
 
 											<div class="course-label">
 												<label>Android攻城狮培养计划</label>
 											</div>
 										</div>
 										<div class="img-mid"
-											style="background-image: url(https://climg.mukewang.com/585243df00014f2406000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(19).class_pic});"></div>
 										<div class="img-down"
-											style="background-image: url(https://climg.mukewang.com/585243df00014f2406000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(19).class_pic});"></div>
 									</div>
 
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Android零基础入门</h3>
+									<h3 class="course-card-name">${classes.get(19).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>就业班</span><span>5步／43课</span><span><i
@@ -1633,19 +1630,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1044?mc_marking=0d134d0e581de7b88daa4f49bc6412ad&amp;mc_channel=syb24"
+								href="<%=basePath%>learn/lesson?a=${classes.get(20).id}"
 								data-track="xsrm-1-6">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5b8cf6cf00011ca906000338-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(20).class_pic}">
 
 									<div class="course-label">
 										<label>大数据</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Sqoop入门实践</h3>
+									<h3 class="course-card-name">${classes.get(20).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>入门</span><span><i class="icon-set_sns"></i>1252</span>
@@ -1658,20 +1655,20 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/260.html?mc_marking=d16700a5362606f3291bafd445ec1bac&amp;mc_channel=syb25"
+								href="<%=basePath%>learn/lesson?a=${classes.get(21).id}"
 								data-track="xsrm-1-7">
 
 								<div class="course-stat hot">HOT</div>
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5b5835a60001907e05400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(21).class_pic}">
 
 									<div class="course-label">
 										<label>算法</label> <label>数学</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">专为程序员设计的线性代数课程</h3>
+									<h3 class="course-card-name">${classes.get(21).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>初级</span><span><i
@@ -1689,26 +1686,26 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://class.imooc.com/sc/43?mc_marking=7bc8ba653c7861f689001ad9138cab9d&amp;mc_channel=syb26"
+								href="<%=basePath%>learn/lesson?a=${classes.get(22).id}"
 								data-track="xsrm-1-8">
 								<div class="course-card-top ">
 									<div class="course-banner">
 										<div class="img-up"
-											style="background-image: url(https://climg.mukewang.com/5acd69bb000103d706000338.jpg);">
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(22).class_pic});">
 
 											<div class="course-label">
 												<label>JAVA攻城狮培养计划</label>
 											</div>
 										</div>
 										<div class="img-mid"
-											style="background-image: url(https://climg.mukewang.com/5acd69bb000103d706000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(22).class_pic});"></div>
 										<div class="img-down"
-											style="background-image: url(https://climg.mukewang.com/5acd69bb000103d706000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(22).class_pic});"></div>
 									</div>
 
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">SSM主流框架入门与综合项目实战</h3>
+									<h3 class="course-card-name">${classes.get(22).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>就业班</span><span>4步／19课</span><span><i
@@ -1723,19 +1720,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1068?mc_marking=d987569bae05fea3de79f34f535aeed4&amp;mc_channel=syb27"
+								href="<%=basePath%>learn/lesson?a=${classes.get(23).id}"
 								data-track="xsrm-1-9">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5bd7f8f70001dfd806000336-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(23).class_pic}">
 
 									<div class="course-label">
 										<label>设计工具</label> <label>产品交互</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">社交类app设计入门</h3>
+									<h3 class="course-card-name">${classes.get(23).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>初级</span><span><i class="icon-set_sns"></i>3437</span>
@@ -1748,26 +1745,26 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://class.imooc.com/sc/30?mc_marking=605daf8603c59b1522e51bf12ad7700d&amp;mc_channel=syb28"
+								href="<%=basePath%>learn/lesson?a=${classes.get(24).id}"
 								data-track="xsrm-1-10">
 								<div class="course-card-top ">
 									<div class="course-banner">
 										<div class="img-up"
-											style="background-image: url(https://climg.mukewang.com/5993e8880001521206000338.jpg);">
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(24).class_pic});">
 
 											<div class="course-label">
 												<label>PHP攻城狮培养计划</label>
 											</div>
 										</div>
 										<div class="img-mid"
-											style="background-image: url(https://climg.mukewang.com/5993e8880001521206000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(24).class_pic});"></div>
 										<div class="img-down"
-											style="background-image: url(https://climg.mukewang.com/5993e8880001521206000338.jpg);"></div>
+											style="background-image: url(<%=path%>/imgs/lessons/${classes.get(24).class_pic});"></div>
 									</div>
 
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">PHP小白零基础入门</h3>
+									<h3 class="course-card-name">${classes.get(24).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>就业班</span><span>5步／26课</span><span><i
@@ -1782,19 +1779,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1063?mc_marking=70b0b99116c98b47ddf5c6e59c072a94&amp;mc_channel=syb29"
+								href="<%=basePath%>learn/lesson?a=${classes.get(25).id}"
 								data-track="xsrm-1-11">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5bd8157a0001a7a506000336-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(25).class_pic}">
 
 									<div class="course-label">
 										<label>深度学习</label> <label>人工智能</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">深度学习之神经网络入门最佳路径</h3>
+									<h3 class="course-card-name">${classes.get(25).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>初级</span><span><i class="icon-set_sns"></i>2485</span>
@@ -1807,19 +1804,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/75.html?mc_marking=77da66cd7829b524acf6d1a3106fccf5&amp;mc_channel=syb30"
+								href="<%=basePath%>learn/lesson?a=${classes.get(26).id}"
 								data-track="xsrm-1-12">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/583e42fb0001e04f05400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(26).class_pic}">
 
 									<div class="course-label">
 										<label>Html5</label> <label>小程序</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">微信小程序入门与实战 常用组件API开发技巧项目实战</h3>
+									<h3 class="course-card-name">${classes.get(26).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>初级</span><span><i
@@ -1846,40 +1843,40 @@
 					</h3>
 					<div class="clearfix types-content">
 						<div class="adsense-box l"
-							style="background: url(https://img.mukewang.com/5bf225290001b0f105670108.jpg) no-repeat center center; background-size: 100%;">
+							style="background: url(<%=path%>/imgs/lessons/${classes.get(27).class_pic}) no-repeat center center; background-size: 100%;">
 							<a
-								href="https://www.imooc.com/topic/javabigdata?mc_marking=a84f3a9037aa7962949a8235636b1aa7&amp;mc_channel=syzt3"
+								href="<%=basePath%>learn/lesson?a=${classes.get(27).id}"
 								data-track="jnts-1-1" target="_blank">
-								<h3 class="ellipsis">Java工程师转大数据</h3>
+								<h3 class="ellipsis">${classes.get(27).class_name}</h3>
 								<p class="ellipsis">能够轻松入门大数据，为Java工程师转型打造完美捷径</p>
 							</a>
 						</div>
 
 						<div class="adsense-box l"
-							style="background: url(https://img.mukewang.com/5b86024c0001e0a805670108.jpg) no-repeat center center; background-size: 100%;">
+							style="background: url(<%=path%>/imgs/lessons/${classes.get(28).class_pic}) no-repeat center center; background-size: 100%;">
 							<a
-								href="https://www.imooc.com/topic/golang?mc_marking=d18864bd167bd07ea0447384e1bb593b&amp;mc_channel=syzt4"
+								href="<%=basePath%>learn/lesson?a=${classes.get(28).id}"
 								data-track="jnts-1-2" target="_blank">
-								<h3 class="ellipsis">Go语言从入门到精通</h3>
+								<h3 class="ellipsis">${classes.get(28).class_name}</h3>
 								<p class="ellipsis">从入门到实践学习路线，助您学习一臂之力</p>
 							</a>
 						</div>
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/197.html?mc_marking=e7f909396a4c3b2dcbfc0132bee8b4a4&amp;mc_channel=syb31"
+								href="<%=basePath%>learn/lesson?a=${classes.get(29).id}"
 								data-track="jnts-1-3">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5ab0fd1400010d7d10800600.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(29).class_pic}">
 
 									<div class="course-label">
 										<label>PHP</label> <label>Swoole</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">韩天峰力荐 Swoole入门到实战打造高性能赛事直播平台</h3>
+									<h3 class="course-card-name">${classes.get(29).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -1897,20 +1894,20 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/96.html?mc_marking=5257ca6c3191ca3f441c01508863a59e&amp;mc_channel=syb32"
+								href="<%=basePath%>learn/lesson?a=${classes.get(30).id}"
 								data-track="jnts-1-4">
 
 								<div class="course-stat hot">HOT</div>
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/58f57d200001461105400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(30).class_pic}">
 
 									<div class="course-label">
 										<label>Linux</label> <label>SSM</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">从0开始 独立完成企业级Java电商网站开发</h3>
+									<h3 class="course-card-name">${classes.get(30).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -1928,19 +1925,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1027?mc_marking=f80d2a3d0e592c33e9be0038c79f65ed&amp;mc_channel=syb33"
+								href="<%=basePath%>learn/lesson?a=${classes.get(31).id}"
 								data-track="jnts-1-5">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5b5b00d10001d05205400300-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(31).class_pic}">
 
 									<div class="course-label">
 										<label>iOS</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">iOS手机深度学习</h3>
+									<h3 class="course-card-name">${classes.get(31).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>高级</span><span><i class="icon-set_sns"></i>3312</span>
@@ -1953,19 +1950,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/202.html?mc_marking=8014a4fa337ac8603e5143ee97d57e47&amp;mc_channel=syb34"
+								href="<%=basePath%>learn/lesson?a=${classes.get(0).id}"
 								data-track="jnts-1-6">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5abe148300014c3305400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(0).class_pic}">
 
 									<div class="course-label">
 										<label>iOS</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">新浪微博资深大牛全方位剖析 iOS 高级面试</h3>
+									<h3 class="course-card-name">${classes.get(0).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>高级</span><span><i
@@ -1983,19 +1980,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/229.html?mc_marking=97507995d92a6b55088bc0eae971d3ff&amp;mc_channel=syb35"
+								href="<%=basePath%>learn/lesson?a=${classes.get(1).id}"
 								data-track="jnts-1-7">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5b3082da0001d7e905400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(1).class_pic}">
 
 									<div class="course-label">
 										<label>React.JS</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">React 16.4 开发简书项目 从零基础入门到实战</h3>
+									<h3 class="course-card-name">${classes.get(1).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -2013,19 +2010,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/845?mc_marking=08e93dce86b31fecf746c4af010bc34d&amp;mc_channel=syb36"
+								href="<%=basePath%>learn/lesson?a=${classes.get(2).id}"
 								data-track="jnts-1-8">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5934bac20001a5c906000338-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(2).class_pic}">
 
 									<div class="course-label">
 										<label>PHP</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">SVN从入门到放弃</h3>
+									<h3 class="course-card-name">${classes.get(2).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>高级</span><span><i class="icon-set_sns"></i>17891</span>
@@ -2038,19 +2035,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/270.html?mc_marking=8425a78408d46cb5fe0884b466cdc456&amp;mc_channel=syb37"
+								href="<%=basePath%>learn/lesson?a=${classes.get(3).id}"
 								data-track="jnts-1-9">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5b723de80001ec9b05400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(3).class_pic}">
 
 									<div class="course-label">
 										<label>Java</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">java设计模式精讲 Debug 方式+内存分析</h3>
+									<h3 class="course-card-name">${classes.get(3).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -2068,19 +2065,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/785?mc_marking=cfb7fb7f097d2fca6dabbe4c5e71cf77&amp;mc_channel=syb38"
+								href="<%=basePath%>learn/lesson?a=${classes.get(4).id}"
 								data-track="jnts-1-10">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/586395f4000145e006000338-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(4).class_pic}">
 
 									<div class="course-label">
 										<label>Java</label> <label>微服务</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">微服务架构在二手交易平台（转转）中的实践</h3>
+									<h3 class="course-card-name">${classes.get(4).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>高级</span><span><i class="icon-set_sns"></i>22753</span>
@@ -2093,20 +2090,20 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/252.html?mc_marking=acaed716a834b052cbdd4e06d609ba6d&amp;mc_channel=syb39"
+								href="<%=basePath%>learn/lesson?a=${classes.get(5).id}"
 								data-track="jnts-1-11">
 
 								<div class="course-stat hot">HOT</div>
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5b4c817f0001945605400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(5).class_pic}">
 
 									<div class="course-label">
 										<label>SpringBoot</label> <label>微服务</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Spring Boot 2.0深度实践之核心技术篇</h3>
+									<h3 class="course-card-name">${classes.get(5).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>高级</span><span><i
@@ -2124,19 +2121,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1043?mc_marking=10150bb22738d4dd4ce561b47e38dee8&amp;mc_channel=syb40"
+								href="<%=basePath%>learn/lesson?a=${classes.get(6).id}"
 								data-track="jnts-1-12">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5b8ce427000121b406000338-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(6).class_pic}">
 
 									<div class="course-label">
 										<label>Java</label> <label>大数据</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Kafka流处理平台</h3>
+									<h3 class="course-card-name">${classes.get(6).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>中级</span><span><i class="icon-set_sns"></i>9478</span>
@@ -2158,40 +2155,40 @@
 					</h3>
 					<div class="clearfix types-content">
 						<div class="adsense-box l"
-							style="background: url(https://img.mukewang.com/5b8602900001bd8905670108.jpg) no-repeat center center; background-size: 100%;">
+							style="background: url(<%=path%>/imgs/lessons/${classes.get(7).class_pic}) no-repeat center center; background-size: 100%;">
 							<a
-								href="https://www.imooc.com/topic/webframe?mc_marking=88f94da97eeecd8bd845c9107f61db04&amp;mc_channel=syzt5"
+								href="<%=basePath%>learn/lesson?a=${classes.get(7).id}"
 								data-track="qyjs-1-1" target="_blank">
-								<h3 class="ellipsis">盘点最主流的前端框架有哪些？</h3>
+								<h3 class="ellipsis">${classes.get(7).class_name}</h3>
 								<p class="ellipsis">上万人的选择打消你对主流框架的疑惑</p>
 							</a>
 						</div>
 
 						<div class="adsense-box l"
-							style="background: url(https://img.mukewang.com/5b70eebd0001bf7a05670108.jpg) no-repeat center center; background-size: 100%;">
+							style="background: url(<%=path%>/imgs/lessons/${classes.get(8).class_pic}) no-repeat center center; background-size: 100%;">
 							<a
-								href="https://www.imooc.com/topic/fullstack?mc_marking=9ac63d58ad5f5498a5e77d444745df0f&amp;mc_channel=syzt6"
+								href="<%=basePath%>learn/lesson?a=${classes.get(8).id}"
 								data-track="qyjs-1-2" target="_blank">
-								<h3 class="ellipsis">改变职场命运，修炼全栈工程师的必修课</h3>
+								<h3 class="ellipsis">${classes.get(8).class_name}</h3>
 								<p class="ellipsis">练就编程十八般武艺，快速转型全栈开发，做全能型工程师！</p>
 							</a>
 						</div>
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/267.html?mc_marking=24e45e218d33bc9c95c4d9633f98e4b7&amp;mc_channel=syb41"
+								href="<%=basePath%>learn/lesson?a=${classes.get(9).id}"
 								data-track="qyjs-1-3">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5b6910d30001adad05400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(9).class_pic}">
 
 									<div class="course-label">
 										<label>深度学习</label> <label>自然语言处理</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">NLP 实践 TensorFlow 打造聊天机器人</h3>
+									<h3 class="course-card-name">${classes.get(9).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -2209,19 +2206,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/191.html?mc_marking=67590d8978011a6976b6f19453ae9e71&amp;mc_channel=syb42"
+								href="<%=basePath%>learn/lesson?a=${classes.get(10).id}"
 								data-track="qyjs-1-4">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5a9f4c2e00010ce205400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(10).class_pic}">
 
 									<div class="course-label">
 										<label>深度学习</label> <label>计算机视觉</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">OpenCV+TensorFlow 入门人工智能图像处理</h3>
+									<h3 class="course-card-name">${classes.get(10).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -2241,21 +2238,20 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1071?mc_marking=40eb6678df9f85e7a854421cef4ba5e9&amp;mc_channel=syb43"
+								href="<%=basePath%>learn/lesson?a=${classes.get(11).id}"
 								data-track="qyjs-1-5">
 
 								<div class="course-stat new">NEW</div>
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5be8f5a40001482306000338-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(11).class_pic}">
 
 									<div class="course-label">
 										<label>云计算</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">2018 AWS技术峰会
-										自动化运维、微服务及容器技术分论坛</h3>
+									<h3 class="course-card-name">${classes.get(11).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>高级</span><span><i class="icon-set_sns"></i>730</span>
@@ -2268,21 +2264,20 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/176.html?mc_marking=c16bc1b1f26c6e1c1a345f89d1c7119f&amp;mc_channel=syb44"
+								href="<%=basePath%>learn/lesson?a=${classes.get(12).id}"
 								data-track="qyjs-1-6">
 
 								<div class="course-stat hot">HOT</div>
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5a5ddeda000145b405400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(12).class_pic}">
 
 									<div class="course-label">
 										<label>机器学习</label> <label>深度学习</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">基于Python玩转人工智能最火框架
-										TensorFlow应用实践</h3>
+									<h3 class="course-card-name">${classes.get(12).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -2302,19 +2297,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/259.html?mc_marking=928e710b7d002339805d8d1f4aeacc57&amp;mc_channel=syb45"
+								href="<%=basePath%>learn/lesson?a=${classes.get(13).id}"
 								data-track="qyjs-1-7">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5b56952600014eb005400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(13).class_pic}">
 
 									<div class="course-label">
 										<label>深度学习</label> <label>计算机视觉</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">深度学习之神经网络（CNN/RNN/GAN）算法原理+实战</h3>
+									<h3 class="course-card-name">${classes.get(13).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -2332,19 +2327,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1063?mc_marking=24d16e8a787b51a2c88857873e4b783f&amp;mc_channel=syb46"
+								href="<%=basePath%>learn/lesson?a=${classes.get(14).id}"
 								data-track="qyjs-1-8">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5bd8157a0001a7a506000336-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(14).class_pic}">
 
 									<div class="course-label">
 										<label>深度学习</label> <label>人工智能</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">深度学习之神经网络入门最佳路径</h3>
+									<h3 class="course-card-name">${classes.get(14).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>初级</span><span><i class="icon-set_sns"></i>2485</span>
@@ -2357,19 +2352,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/128.html?mc_marking=50ed441d6d05439eb95163707fb62234&amp;mc_channel=syb47"
+								href="<%=basePath%>learn/lesson?a=${classes.get(15).id}"
 								data-track="qyjs-1-9">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/59eebab000013cce05400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(15).class_pic}">
 
 									<div class="course-label">
 										<label>大数据</label> <label>Hadoop</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">10小时入门大数据</h3>
+									<h3 class="course-card-name">${classes.get(15).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>初级</span><span><i
@@ -2387,19 +2382,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/994?mc_marking=1b8ef88417de6e77b132983677c2af07&amp;mc_channel=syb48"
+								href="<%=basePath%>learn/lesson?a=${classes.get(16).id}"
 								data-track="qyjs-1-10">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5afe7ffa00018fff06000338-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(16).class_pic}">
 
 									<div class="course-label">
 										<label>深度学习</label> <label>计算机视觉</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">TensorFlow与Flask结合打造手写体数字识别</h3>
+									<h3 class="course-card-name">${classes.get(16).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>中级</span><span><i class="icon-set_sns"></i>9225</span>
@@ -2412,19 +2407,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://coding.imooc.com/class/169.html?mc_marking=14c03b02212b17336eec5d24bc985842&amp;mc_channel=syb49"
+								href="<%=basePath%>learn/lesson?a=${classes.get(17).id}"
 								data-track="qyjs-1-11">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5a39cd3f0001c09805400300.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(17).class_pic}">
 
 									<div class="course-label">
 										<label>算法</label> <label>机器学习</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">Python3入门机器学习 经典算法与应用</h3>
+									<h3 class="course-card-name">${classes.get(17).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>实战</span><span>中级</span><span><i
@@ -2442,19 +2437,19 @@
 
 						<div class="index-card-container course-card-container container">
 							<a target="_blank" class="course-card"
-								href="https://www.imooc.com/learn/1069?mc_marking=24a0d9721a396a204eff065591bc79e4&amp;mc_channel=syb50"
+								href="<%=basePath%>learn/lesson?a=${classes.get(18).id}"
 								data-track="qyjs-1-12">
 
 								<div class="course-card-top hashadow">
 									<img class="course-banner"
-										src="<%=path%>/imgs/yzy/5bd8219400016e5e06000336-240-135.jpg">
+										src="<%=path%>/imgs/lessons/${classes.get(18).class_pic}">
 
 									<div class="course-label">
 										<label>机器学习</label> <label>自然语言处理</label>
 									</div>
 								</div>
 								<div class="course-card-content">
-									<h3 class="course-card-name">自然语言处理（NLP）入门与实践</h3>
+									<h3 class="course-card-name">${classes.get(18).class_name}</h3>
 									<div class="clearfix course-card-bottom">
 										<div class="course-card-info">
 											<span>初级</span><span><i class="icon-set_sns"></i>2218</span>
@@ -3228,30 +3223,31 @@ Github：https://github.com/enbandari">北京邮电大学硕士毕业，就职�
 				<div class="next-time js-next-time">以后再说</div>
 			</div>
 		</div>
+	</div>
 
 
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
-		<script>
-			var mySwiper = new Swiper('.swiper-container', {
-				direction : 'horizontal',
-				autoplay : 2000,
-				// 如果需要分页器
-				pagination : '.swiper-pagination',
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			direction : 'horizontal',
+			autoplay : 2000,
+			// 如果需要分页器
+			pagination : '.swiper-pagination',
 
-				// 如果需要前进后退按钮
-				nextButton : '.swiper-button-next',
-				prevButton : '.swiper-button-prev',
+			// 如果需要前进后退按钮
+			nextButton : '.swiper-button-next',
+			prevButton : '.swiper-button-prev',
 
-			});
+		});
 
-			$('.menuContent .item').hover(function() {
-				$(this).addClass('js-menu-item-on');
-				$('.submenu').eq($(this).index()).css('display', 'block');
-			}, function() {
-				$(this).removeClass('js-menu-item-on');
-				$('.submenu').eq($(this).index()).css('display', 'none');
-			});
-		</script>
+		$('.menuContent .item').hover(function() {
+			$(this).addClass('js-menu-item-on');
+			$('.submenu').eq($(this).index()).css('display', 'block');
+		}, function() {
+			$(this).removeClass('js-menu-item-on');
+			$('.submenu').eq($(this).index()).css('display', 'none');
+		});
+	</script>
 </body>
 

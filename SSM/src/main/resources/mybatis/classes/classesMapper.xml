@@ -88,4 +88,10 @@
 		* from class_level where id =#{id};
 	</select>
 
+	<select id="imoocAllClasses" resultType="pd">
+		select
+		* from classes
+		limit 0,32
+	</select>
+
 </mapper>

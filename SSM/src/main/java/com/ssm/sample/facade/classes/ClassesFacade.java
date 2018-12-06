@@ -64,38 +64,44 @@ public class ClassesFacade extends BaseFacade {
 
 	public List<PageData> selectAllStype(PageData pd) {
 		// TODO Auto-generated method stub
-		List<PageData> list= this.classesService.selectAllStype(pd);
+		List<PageData> list = this.classesService.selectAllStype(pd);
 		return list;
 	}
 
 	public List<PageData> selectAllLevel() {
 		// TODO Auto-generated method stub
-		
+
 		List<PageData> list = this.classesService.selectAllLevel();
 		return list;
 	}
 
 	public List<PageData> selectOneType(PageData pd) {
 		// TODO Auto-generated method stub
-		List<PageData> list= this.classesService.selectOneType(pd);
+		List<PageData> list = this.classesService.selectOneType(pd);
 		return list;
 	}
 
 	public List<PageData> selectOneLevel(PageData level) {
 		// TODO Auto-generated method stub
-		List<PageData> list= this.classesService.selectOneLevel(level);
+		List<PageData> list = this.classesService.selectOneLevel(level);
 		return list;
 	}
 
 	public List<PageData> selectOneTag(PageData level) {
 		// TODO Auto-generated method stub
-		List<PageData> list= this.classesService.selectOneTag(level);
+		List<PageData> list = this.classesService.selectOneTag(level);
 		return list;
 	}
 
 	public List<PageData> selectOneSType(PageData level) {
 		// TODO Auto-generated method stub
-		List<PageData> list= this.classesService.selectOneSType(level);
+		List<PageData> list = this.classesService.selectOneSType(level);
+		return list;
+	}
+
+	public List<PageData> imoocAllClasses() {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.classesService.imoocAllClasses();
 		return list;
 	}
 }
