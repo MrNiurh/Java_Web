@@ -24,8 +24,7 @@
 <script type="text/javascript">
 var root = "<%=path%>/";
 if (root == "/") {root="";}
-var abroot = "<%=basePath%>
-	";
+var abroot = "<%=basePath%>";
 </script>
 </head>
 
@@ -116,11 +115,10 @@ var abroot = "<%=basePath%>
 					<div class="clearfix">
 						<form id="signup-form02" autocomplete="off">
 							<div class="rlf-group pr">
-								<div class="rlf-areacode js-code-btn">
-									+<span>86</span><i class="imv2-arrow1_d"></i>
-								</div>
 								<input type="text" value maxlength="37" name="email"
-									autocomplete="off" class="ipt ipt-phone" placeholder="请输入注册手机号">
+									autocomplete="off"
+									class="xa-emailOrPhone ipt ipt-email js-own-name"
+									placeholder="请输入注册邮箱">
 								<p class="rlf-tip-wrap errorHint color-red"
 									data-error-hint="请输入正确的手机号"></p>
 							</div>
@@ -129,11 +127,7 @@ var abroot = "<%=basePath%>
 								<input type="password" name="password"
 									data-validate="require-password"
 									class="ipt ipt-pwd js-loginPassword js-pass-pwd"
-									placeholder="请输入验证码" maxlength="16" autocomplete="off">
-								<a href="javascript:void(0)" hidefocus="true"
-									class="verify-img-wrap js-verify-refresh"><img
-									class="verify-img" src=""></a> <a href="javascript:void(0)"
-									hidefocus="true" class="icon-refresh js-verify-refresh"></a>
+									placeholder="请输入密码" maxlength="16" autocomplete="off">
 								<p class="rlf-tip-wrap errorHint color-red "
 									data-error-hint="验证码错误"></p>
 							</div>
@@ -194,35 +188,7 @@ var abroot = "<%=basePath%>
 			}
 		})
 	</script>
-	<script>
-		$('#btnin').click(function() {
-
-			var data = $("#signup-form01").serialize();
-			URL = abroot + "login/";
-			$.ajax({
-				url : URL,
-				type : "post",
-				data : data,
-				dataType : 'json',
-				success : function(data) {
-					if (data.check == "true") {
-						var index = parent.layer.getFrameIndex(window.name);
-						parent.layer.close(index);
-					} else {
-						alert("用户名或密码输入错误");
-					}
-				},
-				error : function(data) {
-					alert("用户名或密码输入错误");
-				}
-			})
-			
-		});
-		$('#btnup').click(function() {
-			var index = parent.layer.getFrameIndex(window.name);
-			parent.layer.close(index);
-		})
-	</script>
+<script type="text/javascript" src="<%=path%>/js/loginController/doLogin.js"></script>
 </body>
 
 </html>

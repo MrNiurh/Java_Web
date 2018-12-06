@@ -153,7 +153,7 @@
 				<div class="moco-course-list">
 					<c:forEach items="${classes.list}" var="course">
 						<div class="course-card-container">
-							<a target="_blank" href="" class="course-card">
+							<a target="_blank" href="<%=basePath%>learn/lesson?a=${course.id}" class="course-card">
 								<div class="course-card-top">
 									<img src="<%=path%>/imgs/lessons/${course.class_pic}"
 										class="course-banner">

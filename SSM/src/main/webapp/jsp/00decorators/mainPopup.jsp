@@ -24,19 +24,8 @@
 <!-- 项目CSS -->
 <link href="<%=path%>/css/bootstrap.min.css" rel="stylesheet"
 	type="text/css">
-<!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css " rel="stylesheet "> -->
-<!-- Mainly scripts -->
 <script src="<%=path%>/js/jquery/jquery-2.1.1.min.js"></script>
 <script src="<%=path%>/js/bootstrap.min.js"></script>
-<script src="<%=path%>/js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="<%=path%>/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-<!-- <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
-<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
-<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script> -->
-<!-- 
-<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script> -->
-<!-- <script
-	src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <link rel="stylesheet" href="<%=path%>/css/wkx/index-foot.css">
 <link rel="stylesheet" href="<%=path%>/css/wkx/intial.css">
 <link rel="stylesheet" href="<%=path%>/css/wkx/head.css">
@@ -53,8 +42,8 @@ var abroot = "<%=basePath%>";
 		<div id="header">
 			<div class="page-container new-header" id="nav">
 				<ul class="nav-item">
-					<li><a href="javascript:void(0)" target="_self">慕课网首页</a></li>
-					<li><a href="javascript:void(0)" target="_self">免费课程</a></li>
+					<li><a href="<%=basePath%>" target="_self">慕课网首页</a></li>
+					<li><a href="<%=basePath%>course/list" target="_self">免费课程</a></li>
 					<li><a href="javascript:void(0)" target="_self">实战课程</a></li>
 					<li><a href="javascript:void(0)" target="_self">就业班</a></li>
 					<li><a href="javascript:void(0)" target="_self">猿问</a></li>
@@ -159,24 +148,5 @@ var abroot = "<%=basePath%>";
 		})
 	})
 </script>
-<script>
-	$("#js-signin-btn").click(function() {
-		layer.open({
-			title : false,
-			type : 2,
-			shadeClose : true,
-			content : abroot + 'jsp/wkx/signup.jsp',
-			area : [ '395px', '430px' ]
-		})
-	})
-	$("#js-signup-btn").click(function() {
-		layer.open({
-			title : false,
-			type : 2,
-			shadeClose : true,
-			content : abroot + 'jsp/wkx/sign2.jsp',
-			area : [ '395px', '430px' ]
-		})
-	})
-</script>
+<script type="text/javascript" src="<%=path%>/js/loginController/loginOpen.js"></script>
 </html>

@@ -11,14 +11,12 @@
 
 	<!-- 注册新用户 -->
 	<insert id="insertUser">
-		insert into user (email,password,username,headpic)
+		insert into user (email,password)
 		values (
 		#{email},
-		#{password},
-		#{username},
-		#{headpic}
+		#{password}
 		)
 	</insert>
-	
-	
+
+
 </mapper>

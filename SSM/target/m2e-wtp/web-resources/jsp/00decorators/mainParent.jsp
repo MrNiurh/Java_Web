@@ -46,7 +46,8 @@
 <script type="text/javascript">
 var root = "<%=path%>/";
 if (root == "/") {root="";}
-var abroot = "<%=basePath%>";
+var abroot = "<%=basePath%>
+	";
 </script>
 <body>
 	<div style="min-width: 1100px;">
@@ -54,12 +55,12 @@ var abroot = "<%=basePath%>";
 			<div class="page-container clearfix" id="nav"
 				style="background-color: #fff !important;">
 				<div class="logo" id="logo">
-					<a href="/" target="_self" title="首页"> <img
+					<a href="<%=basePath%>" target="_self" title="首页"> <img
 						src="<%=path%>/imgs/wkx/logo.png" title="慕课网">
 					</a>
 				</div>
 				<ul class="nav-item">
-					<li><a href="javascript:void(0)" target="_self">免费课程</a></li>
+					<li><a href="<%=basePath%>course/list" target="_self">免费课程</a></li>
 					<li><a href="javascript:void(0)" target="_self">实战课程</a></li>
 					<li><a href="javascript:void(0)" target="_self">就业班</a></li>
 					<li><a href="javascript:void(0)" target="_self">猿问</a></li>
@@ -98,9 +99,11 @@ var abroot = "<%=basePath%>";
 								<span class="shopping_icon js-cart-num" data-ordernum="0"
 								data-cartnum="0" style='display: none'>0</span>
 						</a></li>
-						<li class="header-signin"><a href="javascript:void(0)"
-							id="js-signin-btn">登录</a> / <a href="javascript:void(0)"
-							id="js-signup-btn">注册</a></li>
+						<c:if test="${user == null }">
+							<li class="header-signin"><a href="javascript:void(0)"
+								id="js-signin-btn">登录</a> / <a href="javascript:void(0)"
+								id="js-signup-btn">注册</a></li>
+						</c:if>
 					</ul>
 				</div>
 				<div class='search-warp clearfix'
@@ -124,8 +127,7 @@ var abroot = "<%=basePath%>";
 			</div>
 		</div>
 	</div>
-	<div
-		style="clear: both;  min-width: 1320px; overflow-x: auto;">
+	<div style="clear: both; min-width: 1320px; overflow-x: auto;">
 		<sitemesh:body />
 	</div>
 
@@ -190,24 +192,6 @@ var abroot = "<%=basePath%>";
 		})
 	})
 </script>
-<script>
-	$("#js-signin-btn").click(function() {
-		layer.open({
-			title : false,
-			type : 2,
-			shadeClose : true,
-			content : abroot + 'jsp/wkx/signup.jsp',
-			area : [ '395px', '430px' ]
-		})
-	})
-	$("#js-signup-btn").click(function() {
-		layer.open({
-			title : false,
-			type : 2,
-			shadeClose : true,
-			content : abroot + 'jsp/wkx/sign2.jsp',
-			area : [ '395px', '430px' ]
-		})
-	})
-</script>
+<script type="text/javascript"
+	src="<%=path%>/js/loginController/loginOpen.js"></script>
 </html>

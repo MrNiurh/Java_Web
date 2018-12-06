@@ -46,26 +46,34 @@
 <script type="text/javascript">
 var root = "<%=path%>/";
 if (root == "/") {root="";}
-var abroot = "<%=basePath%>
-	";
+var abroot = "<%=basePath%>	";
 </script>
+<style>
+.nav-item li #name {
+	padding: 0 10px;
+	display: block;
+	color: rgba(255, 255, 255, .6);
+	text-align: center;
+	font-size: 20px;
+	height: 72px;
+	line-height: 72px;
+	font-weight:bold;
+	-webkit-transition: background-color .3s;
+	-moz-transition: background-color .3s;
+	transition: background-color .3s;
+	position: relative;
+}
+</style>
 <body>
 	<div style="min-width: 1100px;">
-		<div id="header">
+		<div id="header" style="height: 80px">
 			<div class="page-container clearfix" id="nav"
-				style="background-color: #fff !important;">
-				<div class="logo" id="logo">
-					<a href="<%=basePath%>" target="_self" title="首页"> <img
-						src="<%=path%>/imgs/wkx/logo.png" title="慕课网">
-					</a>
-				</div>
-				<ul class="nav-item">
-					<li><a href="<%=basePath%>course/list" target="_self">免费课程</a></li>
-					<li><a href="javascript:void(0)" target="_self">实战课程</a></li>
-					<li><a href="javascript:void(0)" target="_self">就业班</a></li>
-					<li><a href="javascript:void(0)" target="_self">猿问</a></li>
-					<li><a href="javascript:void(0)" target="_self">手记</a></li>
-					<li><a href="javascript:void(0)" target="_self">猿聘</a></li>
+				style="background-color: #fff !important; width: 100%;">
+				<ul class="nav-item" id="name">
+					<li><a href="javascript:history.back(-1)" style="padding:29px">
+							<span class="glyphicon glyphicon-arrow-left" style="font-size:16px;"></span></a></li>
+					<li><a style="font-size: 16px" id="name">
+							${oneCLass.class_name }</a></li>
 				</ul>
 				<div id="login-area">
 					<ul class="header-unlogin clearfix">
@@ -99,11 +107,9 @@ var abroot = "<%=basePath%>
 								<span class="shopping_icon js-cart-num" data-ordernum="0"
 								data-cartnum="0" style='display: none'>0</span>
 						</a></li>
-						<c:if test="${user == null }">
-							<li class="header-signin"><a href="javascript:void(0)"
-								id="js-signin-btn">登录</a> / <a href="javascript:void(0)"
-								id="js-signup-btn">注册</a></li>
-						</c:if>
+						<li class="header-signin"><a href="javascript:void(0)"
+							id="js-signin-btn">登录</a> / <a href="javascript:void(0)"
+							id="js-signup-btn">注册</a></li>
 					</ul>
 				</div>
 				<div class='search-warp clearfix'
@@ -192,6 +198,5 @@ var abroot = "<%=basePath%>
 		})
 	})
 </script>
-<script type="text/javascript"
-	src="<%=path%>/js/loginController/loginOpen.js"></script>
+<script type="text/javascript" src="<%=path%>/js/loginController/loginOpen.js"></script>
 </html>

@@ -8,12 +8,17 @@ import com.ssm.sample.service.base.BaseService;
 import com.ssm.sample.util.PageData;
 
 @Service("LoginService")
-public class UserService extends BaseService{
+public class UserService extends BaseService {
 
 	public List<PageData> getUser(PageData pd) {
 		// TODO Auto-generated method stub
-		List<PageData> list = this.sqlSessionTemplate.selectList("user.userMapper.getUser",pd);
+		List<PageData> list = this.sqlSessionTemplate.selectList("user.userMapper.getUser", pd);
 		return list;
+	}
+
+	public boolean insertUser(PageData pd) {
+		// TODO Auto-generated method stub
+		return this.sqlSessionTemplate.insert("user.userMapper.insertUser", pd) > 0;
 	}
 
 }

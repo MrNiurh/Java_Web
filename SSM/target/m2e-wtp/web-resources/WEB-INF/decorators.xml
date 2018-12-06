@@ -8,6 +8,9 @@
 		<pattern>/course/*</pattern>
 		<pattern>/learn/*</pattern>
 	</decorator>
+	<decorator name="video" page="videoHead.jsp">
+		<pattern>/videos/*</pattern>
+	</decorator>
 	<excludes>
 		<pattern>/jsp/exclude/*</pattern>
 	</excludes>

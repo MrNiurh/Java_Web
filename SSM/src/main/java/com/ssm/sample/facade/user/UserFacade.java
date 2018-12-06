@@ -12,13 +12,18 @@ import com.ssm.sample.util.PageData;
 @Service("LoginFacade")
 public class UserFacade extends BaseFacade{
 	@Autowired
-	UserService loginService;
+	UserService userService;
 
 	/*
 	 * 登录
 	 */
 	public List<PageData> getUser(PageData pd) {
-		List<PageData> list = this.loginService.getUser(pd);
+		List<PageData> list = this.userService.getUser(pd);
 		return list;
+	}
+
+	public boolean insertUser(PageData pd) {
+		// TODO Auto-generated method stub
+		return this.userService.insertUser(pd);
 	}
 }

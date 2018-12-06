@@ -37,6 +37,7 @@
 		select
 		* from lesson_secondtype
 	</select>
+	<!-- 课程难度 -->
 	<select id="selectAllLevel" parameterType="pd" resultType="pd">
 		select
 		* from class_level
@@ -60,20 +61,6 @@
 			</if>
 		</where>
 	</select>
-	<!-- 所有free课程信息 -->
-	<select id="getClassesByType" parameterType="pd" resultType="pd">
-		select
-		* from classes
-	</select>
-	<!-- 所有free课程信息 -->
-	<select id="getHClassesByType" parameterType="pd"
-		resultType="pd">
-		select
-		* from classes where
-		class_level ="1" or class_level
-		="0"
-	</select>
-
 	<!-- 单个课程信息 -->
 	<select id="getOneClass" parameterType="pd" resultType="pd">
 		select * from classes
@@ -83,45 +70,22 @@
 			</if>
 		</where>
 	</select>
-	<!-- 根据大类型查询 -->
-	<select id="selectCLassByClassType" parameterType="pd"
-		resultType="pd">
-		select * from classes
-		<where>
-			<if test="class_level!='' and class_level != 0">
-				class_level =#{class_level}
-			</if>
-			<if test="f_id!=0 and f_id !=''">
-				and f_id = #{f_id}
-			</if>
-			<if test="classTags!=null and classTags !=''">
-				and class_tags LIKE
-				"%"#{class_tags}"%"
-			</if>
-		</where>
+
+	<select id="selectOneSType" parameterType="pd" resultType="pd">
+		select
+		* from lesson_secondtype where id = #{type_id}
 	</select>
 
-	<!-- 根据大类型查询 -->
-	<select id="selectHCLassByClassType" parameterType="pd"
-		resultType="pd">
-		select * from classes
-		<where>
-			<if test="class_level!=null and class_level != ''">
-				class_level ="0" or class_level ="1"
-			</if>
-			<if test="lesson_type!=null and lesson_type !=''">
-				and class_type=(select id from
-				lesson_type where
-				lesson_type=#{lesson_type})
-			</if>
-			<if test="classTags!=null and classTags !=''">
-				and class_tags LIKE
-				"%"#{class_tags}"%"
-			</if>
-			<if test="class_level！=null and class_level !=''">
-				and class_level = #{class_level}
-			</if>
-		</where>
+	<!-- 查询课程难度 -->
+	<select id="selectOneTag" parameterType="pd" resultType="pd">
+		select
+		*
+		from lesson_thirdtype where id =#{tag_id};
+	</select>
+	<!-- 查询课程难度 -->
+	<select id="selectOneLevel" parameterType="pd" resultType="pd">
+		select
+		* from class_level where id =#{id};
 	</select>
 
 </mapper>

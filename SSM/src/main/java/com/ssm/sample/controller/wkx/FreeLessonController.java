@@ -41,6 +41,7 @@ public class FreeLessonController extends BaseController {
 		mv.setViewName("wkx/freeclass");
 
 		PageData pd = this.getPageData();
+		PageData level = new PageData();
 		pd.put("way", a);
 		pd.put("b", b);
 
@@ -75,6 +76,14 @@ public class FreeLessonController extends BaseController {
 			pd.put("class_level", c);
 			PageHelper.startPage(pn, 30);
 			List<PageData> list = this.classesFacade.getAllClasses(pd);
+			/*
+			 * 把课程难度从 id 换为汉字
+			 */
+			for (int i = 0; i < list.size(); i++) {
+				level.put("id", list.get(i).get("class_level"));
+				List<PageData> oneLevel = this.classesFacade.selectOneLevel(level);
+				list.get(i).put("class_level", oneLevel.get(0).get("class_level"));
+			}
 			PageInfo page = new PageInfo(list, 7);
 			session.setAttribute("classes", page);
 		} catch (Exception e) {
@@ -83,16 +92,4 @@ public class FreeLessonController extends BaseController {
 		return mv;
 	}
 
-	@ResponseBody
-	@RequestMapping("/selectCLassByClassType")
-	public Object selectCLassByClassType() {
-		PageData pd = this.getPageData();
-
-		PageHelper.startPage(1, 30);
-		List<PageData> list = this.classesFacade.selectCLassByClassType(pd);
-		PageInfo page = new PageInfo(list, 7);
-		session.setAttribute("classes", page);
-
-		return null;
-	}
 }
