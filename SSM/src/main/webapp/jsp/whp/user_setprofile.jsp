@@ -15,14 +15,15 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="<%=path%>/css/whp/user_settings.css">
 <link rel="stylesheet" href="<%=path%>/css/whp/user_setprofile.css">
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/user_settings.js"></script>
+<script src="<%=path%>/js/jquery/jquery-2.1.1.min.js"></script>
+
 <title>user_setprofile</title>
 </head>
 
 <body>
 	<div class="container-fluid">
-
+		<div class="modalbackground hide">
+                            </div>
 		<div class="mainer">
 			<div class="container">
 				<div class="user_functions">
@@ -69,10 +70,7 @@
 				<div class="function_dis">
 
 					<div class="common-title">
-						个人信息<span class="title-tips"></span> <a href="/help/cate/17"
-							style="text-decoration: none;" class="pull-right main_edit"
-							target="_blank"><i class=" glyphicon glyphicon-pencil"
-							style="color: #008CC8"></i>&nbsp;&nbsp;编辑</a>
+						个人信息<span class="title-tips"></span> <a href="javascript:void(0)" style="text-decoration: none;" class="pull-right main_edit pointer" target="_blank"><i class=" glyphicon glyphicon-pencil" style="color:#008CC8"></i>&nbsp;&nbsp;编辑</a>
 					</div>
 
 					<div class="itemBoxs">
@@ -100,11 +98,92 @@
 								</div>
 							</div>
 						</div>
+						
+                            <div class="edit_content hide">
+                                <div class="modal_header">
+                                    <span style="float: left;">编辑个人信息</label></span>
+                                    <span style="float: right;" class="cancel"><a class="pointer" style="color: black" href="javascript:void(0);">×</a></span>
+                                </div>
+                                <div class="modal_body">
+                                    <div class="edit_item">
+                                        <div class="edit_label">
+                                            <p>昵称:</p>
+                                        </div>
+                                        <div class="edit_write"><input class="typetext" type="text"></div>
+                                    </div>
+                                    <div class="edit_item">
+                                        <div class="edit_label">
+                                            <p>职位:</p>
+                                        </div>
+                                        <div class="edit_write"><input class="typetext" type="text"></div>
+                                    </div>
+                                    <div class="edit_item">
+                                        <div class="edit_label">
+                                            <p>昵称:</p>
+                                        </div>
+                                        <div class="edit_write">
+                                            <select name="" id="">
+                                                <option value="0">省</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="0">市</option>
+                                            </select>
+                                            <select name="" id="">
+                                                <option value="0">区</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="edit_item">
+                                        <div class="edit_label">
+                                            <p>性别:</p>
+                                        </div>
+                                        <div class="edit_write">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                保密
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked>
+                                                男
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" checked>
+                                                女
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="edit_item">
+                                        <div class="edit_label">
+                                            <p>个性签名:</p>
+                                        </div>
+                                        <div class="edit_write"><textarea name="" id="" cols="40" rows="3" style="margin-top: -5px;"></textarea></div>
+                                        <div class="info">
+                                            还可以输入128个字符
+                                        </div>
+                                    </div>
+                                    <div class="operbtn">
+                                        <button class="blue sure">确定</button>
+                                        <button style="background: white" class="cancel pointer">取消</button>
+                                    </div>
+                                </div>
 					</div>
 				</div>
 			</div>
 
 		</div>
+		            <script>
+            $(function() {
+                $(".main_edit").click(function() {
+                    $(".modalbackground,.edit_content").removeClass("hide")
+                })
+                $(".cancel").click(function() {
+                    $(".modalbackground,.edit_content").addClass("hide")
+                })
+                $(".sure").click(function() {
+                    $(".modalbackground,.edit_content").addClass("hide")
+                })
+            })
+            </script>
 </body>
 
 </html>

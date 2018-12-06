@@ -31,3 +31,118 @@
     padding: 20px 0 20px 22px;
     border-bottom: 1px solid #d9dde1;
 }
+.modalbackground{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right:0;
+	z-index: 100;
+	background: black;
+	opacity: 0.5;
+}
+.edit_content{
+	position: fixed;
+	
+	background: white;
+	width: 500px;
+	height:500px;
+	top:50%;
+	left:50%;
+	margin-left: -250px;
+	margin-top: -250px;
+	z-index: 101;
+
+}
+.modal_header{
+	padding:10px;
+	font-weight: 600;
+}
+.modal_body{
+	width: 424px;
+	height: auto;
+	margin: 0 auto;
+}
+.edit_item{
+
+	clear: both;
+	width: 100%;
+	min-height: 40px;
+	height: auto;
+	padding:20px 0;
+}
+.edit_label{
+	width: 80px;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	font-size: 15px;
+}
+.edit_label p{
+	clear: both;
+	float: right;
+	font-weight: 600;
+}
+.edit_write{
+	width: 324px;
+	min-height: 40px;
+	height: auto;
+	margin-left: 15px;
+	display: inline-block;
+	float:left;
+	
+}
+.typetext{
+	line-height: 46px;
+	height: 40px;
+	border-radius: 2px;
+	width: 288px;
+	border: 1px solid black;
+	padding: 2px 5px;
+}
+.edit_write select{
+	line-height: 46px;
+	height: 40px;
+	border-radius: 2px;
+	width: 80px;
+	margin-right: 12px;
+	border: 1px solid black;
+	padding: 2px 5px;
+}
+.edit_write label{
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	margin-right: 40px;
+	font-weight:500; 
+}
+.info{
+	margin-top: 10px;
+	margin-left: 100px;
+	color:#9199A1;
+}
+.operbtn{
+margin-left: 100px;
+
+}
+
+.operbtn button{
+	height: 36px;
+	width: 62px;
+	border-radius:20px;
+	margin-right: 10px;
+	
+}
+.hide{
+	display:none;
+}
+.blue{
+	background:#1481b8;
+	color: white;
+}
+.blue:hover{
+	background:#0F618A;
+}
+.pointer:hover{
+	cursor: pointer;
+}
