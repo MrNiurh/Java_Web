@@ -109,75 +109,81 @@
 									class="lesson_item_learn">开始学习</a></span>
 							</div>
 							<div class="lesson_name ">
-								<img src="img/video.png" class="video-png" alt=""><a
-									href="">1-2</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}">1-2小程序有哪些宣传方式
+									<span>(01:51)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
 							<div class="lesson_name">
-								<img src="img/video.png" class="video-png" alt=""><a
-									href="">1-3</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}">1-3 小程序官方文档介绍
+									<span> (05:07)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
 							<div class="lesson_name">
-								<img src="img/video.png" class="video-png" alt=""><a
-									href="">1-4</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}">1-5 小程序开发流程
+									<span> (05:07)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
 							<div class="lesson_name">
-								<img src="img/video.png" class="video-png" alt=""><a
-									href="">1-5</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}">1-6 如何注册小程序
+									<span> (05:07)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
 							<div class="lesson_name">
-								<img src="img/video.png" class="video-png" alt=""><a
-									href="">1-6</a>
-							</div>
-							<div class="lesson_name">
-								<img src="img/video.png" class="video-png" alt=""><a
-									href="">1-7</a>
-							</div>
-							<div class="lesson_name">
-								<img src="img/video.png" class="video-png" alt=""><a
-									href="">1-8</a>
-							</div>
-							<div class="lesson_name">
-								<img src="img/video.png" class="video-png" alt=""><a
-									href="">1-9</a>
-							</div>
-							<div class="lesson_name">
-								<img src="img/video.png" class="video-png" alt=""><a
-									href="">1-10</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}"> 1-7 新建小程序项目 
+									<span> (05:07)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
 						</div>
 						<div class="lesson_section_main">
 							<b>第二章 代码编写-小案例实操</b>
 							<p>本章节讲解了小程序首页开发，第二个TAB页的实现及小程序开发常见问题。</p>
 							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-1</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}"> 2-1 首页开发（上）
+									<span> (05:07)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
 							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-2</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}"> 2-2 首页开发（下）
+									<span> (05:07)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
 							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-3</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}">2-3 加入页面开发
+									<span> (05:07)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
 							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-4</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}">2-4 小程序常见问题（一）
+									<span> (05:07)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
 							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-5</a>
+								<img src="<%=path%>/imgs/whp/video.png" class="video-png" alt=""> <a href="<%=basePath%>videos/video?a=${lesson.id}">2-5 小程序常见问题（二）
+									<span> (05:07)</span>
+								</a> <span class="lesson_btn hide"><a
+									href="<%=basePath%>videos/video?a=${lesson.id}"
+									class="lesson_item_learn">开始学习</a></span>
 							</div>
-							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-6</a>
-							</div>
-							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-7</a>
-							</div>
-							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-8</a>
-							</div>
-							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-9</a>
-							</div>
-							<div class="lesson_name">
-								<img src="" alt=""><a href="">1-10</a>
-							</div>
+					
+							
 						</div>
 					</div>
 				</div>

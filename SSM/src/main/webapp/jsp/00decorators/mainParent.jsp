@@ -38,6 +38,7 @@
 <!-- <script
 	src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 <link rel="stylesheet" href="<%=path%>/css/wkx/intial.css">
+<link rel="stylesheet" href="<%=path%>/css/wkx/common-less.css">
 <link rel="stylesheet" href="<%=path%>/css/wkx/index-foot.css">
 <link rel="stylesheet" href="<%=path%>/css/wkx/index-head.css">
 <sitemesh:head></sitemesh:head>
@@ -46,8 +47,7 @@
 <script type="text/javascript">
 var root = "<%=path%>/";
 if (root == "/") {root="";}
-var abroot = "<%=basePath%>
-	";
+var abroot = "<%=basePath%>";
 </script>
 <body>
 	<div style="min-width: 1100px;">
@@ -99,10 +99,64 @@ var abroot = "<%=basePath%>
 								<span class="shopping_icon js-cart-num" data-ordernum="0"
 								data-cartnum="0" style='display: none'>0</span>
 						</a></li>
-						<c:if test="${user == null }">
+						<c:if test="${user != null }">
 							<li class="header-signin"><a href="javascript:void(0)"
 								id="js-signin-btn">登录</a> / <a href="javascript:void(0)"
 								id="js-signup-btn">注册</a></li>
+						</c:if>
+						<c:if test="${user == null }">
+							<li class="remind_warp"><i class="msg_remind"
+								style="display: inline;"></i> <a target="_blank" href=""> <i
+									class="icon-notifi"></i> <!-- <span class="msg_icon" style="display: none;"></span> -->
+							</a></li>
+							<li class="set_btn user-card-box" id="header-user-card"><a
+								id="header-avator" class="user-card-item js-header-avator lasta"
+								href="" target="_self"> <img width="40" height="40"
+									src="<%=path%>/imgs/whp/video.png"> <i class="myspace_remind"
+									style="display: none;"></i>
+							</a>
+								<div class="g-user-card" style="display: none">
+									<div class="card-inner">
+										<div class="card-top clearfix">
+											<a href="javascript:void(0)" class="l"><img
+												src="<%=path%>/imgs/whp/video.png" alt="慕粉18561887"></a>
+											<div class="card-top-right-box l">
+												<a href="javascript:void(0)"><span
+													class="name text-ellipsis">慕粉112124</span></a>
+												<div class="meta">
+													<a href="javascript:void(0)">经验<b id="js-user-mp">3,067</b></a>
+													<a href="javascript:void(0)">积分<b id="js-user-credit">1</b></a>
+												</div>
+											</div>
+										</div>
+										<div class="user-center-box">
+											<ul class="clearfix">
+												<li class="l"><a href="javascript:void(0)"
+													target="_blank"><span
+														class="user-center-icon icon-tick"></span>我的课程</a></li>
+												<li class="l"><a href="javascript:void(0)"
+													target="_blank"><span
+														class="user-center-icon icon-receipt"></span>订单中心</a></li>
+												<li class="l"><a href="javascript:void(0)"
+													target="_blank"><span
+														class="user-center-icon icon-score_shop"></span>积分商城</a></li>
+												<li class="l"><a href="javascript:void(0)"
+													target="_blank"><span class="user-center-icon icon-set"></span>个人设置</a></li>
+											</ul>
+										</div>
+										<div class="card-history">
+											<span class="history-item"> <span
+												class="tit text-ellipsis">Ajax全接触</span> <span
+												class="media-name text-ellipsis">5-1 jQuery中的AJAX</span> <i
+												class="icon-clock"></i> <a href="javascript:void(0)"
+												class="continue" title="Ajax全接触5-1  jQuery中的AJAX">继续</a>
+											</span>
+										</div>
+										<div class="card-sets clearfix">
+											<a href="javascript:void(0)" class="l">安全退出</a>
+										</div>
+									</div>
+								</div></li>
 						</c:if>
 					</ul>
 				</div>
@@ -191,6 +245,9 @@ var abroot = "<%=basePath%>
 			$(".showhide-search").css("background", "")
 		})
 	})
+</script>
+<script src="<%=path%>/js/loginController/denglu.js">
+	
 </script>
 <script type="text/javascript"
 	src="<%=path%>/js/loginController/loginOpen.js"></script>
