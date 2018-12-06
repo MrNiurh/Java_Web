@@ -8,7 +8,7 @@ import com.ssm.sample.controller.base.BaseController;
 @Controller
 @RequestMapping({ "/user" })
 public class  UserAuthenticateController extends BaseController{	
-	@RequestMapping(value = "/authrnticate")
+	@RequestMapping(value = "/authenticate")
 	public ModelAndView home() {
 		ModelAndView mv = this.getModelAndView();					
 		mv.setViewName("whp/user_authenticate");

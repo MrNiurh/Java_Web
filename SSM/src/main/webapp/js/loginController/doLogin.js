@@ -9,6 +9,7 @@ $('#btnin').click(function() {
 		async : false,
 		success : function(data) {
 			if (data.check == "true") {
+				parent.location.reload();
 				var index = parent.layer.getFrameIndex(window.name);
 				parent.layer.close(index);
 			} else {
@@ -32,8 +33,8 @@ $('#btnup').click(function() {
 		async : false,
 		success : function(data) {
 			if (data.check == "true") {
+				parent.location.reload();
 				var index = parent.layer.getFrameIndex(window.name);
-				parent.layer.close(index);
 			} else {
 				alert("用户名重复");
 			}

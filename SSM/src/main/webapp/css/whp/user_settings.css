@@ -134,7 +134,7 @@
 
 .on {
     background: red;
-    color: white;
+    color: white !important;
 }
 
 .on:hover {
@@ -182,11 +182,13 @@
     width: 100%;
     height: auto;
     margin-top:10px;
+    
 }
 .itemBox {
     height: auto;
     overflow: hidden;
     margin: auto;
+    min-height:100px;
     border-top: 1px solid #d9dde1;
 }
 .itemBox label{
@@ -210,7 +212,7 @@
 .mailbox{
     width: 30px;
     height: 30px;
-    margin: -20px 20px 0 0;
+    margin: 30px 20px 0 0;
 }
 .center{
     width:510px;

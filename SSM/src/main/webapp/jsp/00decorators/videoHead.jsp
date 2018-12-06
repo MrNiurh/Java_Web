@@ -47,7 +47,7 @@
 <script type="text/javascript">
 var root = "<%=path%>/";
 if (root == "/") {root="";}
-var abroot = "<%=basePath%>	";
+var abroot = "<%=basePath%>";
 </script>
 <style>
 .nav-item li #name {
@@ -58,7 +58,7 @@ var abroot = "<%=basePath%>	";
 	font-size: 20px;
 	height: 72px;
 	line-height: 72px;
-	font-weight:bold;
+	font-weight: bold;
 	-webkit-transition: background-color .3s;
 	-moz-transition: background-color .3s;
 	transition: background-color .3s;
@@ -71,8 +71,9 @@ var abroot = "<%=basePath%>	";
 			<div class="page-container clearfix" id="nav"
 				style="background-color: #fff !important; width: 100%;">
 				<ul class="nav-item" id="name">
-					<li><a href="javascript:history.back(-1)" style="padding:29px">
-							<span class="glyphicon glyphicon-arrow-left" style="font-size:16px;"></span></a></li>
+					<li><a href="javascript:history.back(-1)"
+						style="padding: 29px"> <span
+							class="glyphicon glyphicon-arrow-left" style="font-size: 16px;"></span></a></li>
 					<li><a style="font-size: 16px" id="name">
 							${oneCLass.class_name }</a></li>
 				</ul>
@@ -108,12 +109,12 @@ var abroot = "<%=basePath%>	";
 								<span class="shopping_icon js-cart-num" data-ordernum="0"
 								data-cartnum="0" style='display: none'>0</span>
 						</a></li>
-						<c:if test="${user != null }">
+						<c:if test="${user == null }">
 							<li class="header-signin"><a href="javascript:void(0)"
 								id="js-signin-btn">登录</a> / <a href="javascript:void(0)"
 								id="js-signup-btn">注册</a></li>
 						</c:if>
-						<c:if test="${user == null }">
+						<c:if test="${user != null }">
 							<li class="remind_warp"><i class="msg_remind"
 								style="display: inline;"></i> <a target="_blank" href=""> <i
 									class="icon-notifi"></i> <!-- <span class="msg_icon" style="display: none;"></span> -->
@@ -121,21 +122,26 @@ var abroot = "<%=basePath%>	";
 							<li class="set_btn user-card-box" id="header-user-card"><a
 								id="header-avator" class="user-card-item js-header-avator lasta"
 								href="" target="_self"> <img width="40" height="40"
-									src="<%=path%>/imgs/whp/video.png"> <i class="myspace_remind"
-									style="display: none;"></i>
+									src="<%=path%>/imgs/yzy/5ad7144100017a5e07410741-100-100.jpg">
+									<i class="myspace_remind" style="display: none;"></i>
 							</a>
 								<div class="g-user-card" style="display: none">
 									<div class="card-inner">
 										<div class="card-top clearfix">
 											<a href="javascript:void(0)" class="l"><img
-												src="<%=path%>/imgs/whp/video.png" alt="慕粉18561887"></a>
+												src="<%=path%>/imgs/yzy/5ad7144100017a5e07410741-100-100.jpg"
+												alt="慕粉18561887"></a>
 											<div class="card-top-right-box l">
-												<a href="javascript:void(0)"><span
-													class="name text-ellipsis">慕粉112124</span></a>
-												<div class="meta">
-													<a href="javascript:void(0)">经验<b id="js-user-mp">3,067</b></a>
-													<a href="javascript:void(0)">积分<b id="js-user-credit">1</b></a>
-												</div>
+												<a href="javascript:void(0)"><c:if
+														test="${user.username==null }">
+														<span class="name text-ellipsis">慕粉${user.id }</span>
+													</c:if> <c:if test="${user.username==null }">
+														<span>${user.username}</span>
+													</c:if>
+													<div class="meta">
+														<a href="javascript:void(0)">经验<b id="js-user-mp">3,067</b></a>
+														<a href="javascript:void(0)">积分<b id="js-user-credit">1</b></a>
+													</div>
 											</div>
 										</div>
 										<div class="user-center-box">
@@ -149,7 +155,7 @@ var abroot = "<%=basePath%>	";
 												<li class="l"><a href="javascript:void(0)"
 													target="_blank"><span
 														class="user-center-icon icon-score_shop"></span>积分商城</a></li>
-												<li class="l"><a href="javascript:void(0)"
+												<li class="l"><a href="<%=basePath%>user/setbindsns"
 													target="_blank"><span class="user-center-icon icon-set"></span>个人设置</a></li>
 											</ul>
 										</div>
@@ -255,7 +261,9 @@ var abroot = "<%=basePath%>	";
 		})
 	})
 </script>
-<script type="text/javascript" src="<%=path%>/js/loginController/loginOpen.js"></script>
+<script type="text/javascript"
+	src="<%=path%>/js/loginController/loginOpen.js"></script>
 <script src="<%=path%>/js/loginController/denglu.js">
+	
 </script>
 </html>

@@ -36,7 +36,7 @@
 <script type="text/javascript">
 var root = "<%=path%>/";
 if (root == "/") {root="";}
-var abroot = "<%=basePath%>";
+var abroot = "<%=basePath%>	";
 </script>
 <body>
 	<div style="min-width: 1100px;">
@@ -86,54 +86,75 @@ var abroot = "<%=basePath%>";
 						</a>
 					</div>
 					<div id="login-area">
-							<c:if test="${user != null }">
-						<ul class="header-unlogin clearfix">
-							<li class="header-signin"><a href="javascript:void(0)"
-								id="js-signin-btn">登录</a> / <a href="javascript:void(0)"
-								id="js-signup-btn">注册</a></li>
-						</ul>
-						</c:if><c:if test="${user == null }">
+						<c:if test="${user == null }">
+							<ul class="header-unlogin clearfix">
+								<li class="header-signin"><a href="javascript:void(0)"
+									id="js-signin-btn">登录</a> / <a href="javascript:void(0)"
+									id="js-signup-btn">注册</a></li>
+							</ul>
+						</c:if>
+						<c:if test="${user != null }">
 							<ul class="clearfix logined">
-                        <li class="remind_warp">
-                            <i class="msg_remind" style="display: inline;"></i>
-                            <a target="_blank" href="javascript:void(0)">
-                                <i class="imv2-notifications"></i>
-                            </a>
-                        </li>
-                        <li class="user-card-box" id="header-user-card">
-                            <a id="header-avator" class="user-card-item js-header-avator" action-type="my_menu" href="javascript:void(0)"
-                                target="_self">
-                                <img width="40" height="40" src="<%=path%>/imgs/whp/video.png">
-                                <i class="myspace_remind" style="display: none;"></i>
-                            </a>
-                            <div class="g-user-card" style="display:none">
-                                <div class="card-inner">
-                                    <div class="card-top clearfix"> <a href="javascript:void(0)" class="l"><img src="<%=path%>/imgs/whp/video.png"
-                                                alt="慕粉1856188754"></a>
-                                        <div class="card-top-right-box l"> <a href="javascript:void(0)"><span class="name text-ellipsis">慕粉112124</span></a>
-                                            <div class="meta"> <a href="javascript:void(0)">经验<b id="js-user-mp">3,067</b></a>
-                                                <a href="javascript:void(0)">积分<b id="js-user-credit">1</b></a> </div>
-                                        </div>
-                                    </div>
-                                    <div class="user-center-box">
-                                        <ul class="clearfix">
-                                            <li class="l"><a href="javascript:void(0)" target="_blank"><span class="user-center-icon icon-tick"></span>我的课程</a></li>
-                                            <li class="l"> <a href="javascript:void(0)" target="_blank"><span class="user-center-icon icon-receipt"></span>订单中心</a>
-                                            </li>
-                                            <li class="l"><a href="javascript:void(0)" target="_blank"><span class="user-center-icon icon-score_shop"></span>积分商城</a></li>
-                                            <li class="l"><a href="javascript:void(0)" target="_blank"><span class="user-center-icon icon-set"></span>个人设置</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="card-history"> <span class="history-item"> <span class="tit text-ellipsis">Ajax全接触</span>
-                                            <span class="media-name text-ellipsis">5-1 jQuery中的AJAX</span> <i class="icon-clock"></i>
-                                            <a href="javascript:void(0)" class="continue" title="Ajax全接触5-1  jQuery中的AJAX">继续</a>
-                                        </span> </div>
-                                    <div class="card-sets clearfix"><a href="javascript:void(0)"
-                                            class="l">安全退出</a></div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+								<li class="remind_warp"><i class="msg_remind"
+									style="display: inline;"></i> <a target="_blank"
+									href="javascript:void(0)"> <i class="imv2-notifications"></i>
+								</a></li>
+								<li class="user-card-box" id="header-user-card"><a
+									id="header-avator" class="user-card-item js-header-avator"
+									action-type="my_menu" href="javascript:void(0)" target="_self">
+										<img width="40" height="40"
+										src="<%=path%>/imgs/yzy/5ad7144100017a5e07410741-100-100.jpg">
+										<i class="myspace_remind" style="display: none;"></i>
+								</a>
+									<div class="g-user-card" style="display: none">
+										<div class="card-inner">
+											<div class="card-top clearfix">
+												<a href="javascript:void(0)" class="l"><img
+													src="<%=path%>/imgs/yzy/5ad7144100017a5e07410741-100-100.jpg"
+													alt="慕粉1856188754"></a>
+												<div class="card-top-right-box l">
+													<a href="javascript:void(0)"><c:if
+															test="${user.username==null }">
+															<span class="name text-ellipsis">慕粉${user.id }</span>
+														</c:if> <c:if test="${user.username==null }">
+															<span>${user.username}</span>
+														</c:if></a></a>
+													<div class="meta">
+														<a href="javascript:void(0)">经验<b id="js-user-mp">3,067</b></a>
+														<a href="javascript:void(0)">积分<b id="js-user-credit">1</b></a>
+													</div>
+												</div>
+											</div>
+											<div class="user-center-box">
+												<ul class="clearfix">
+													<li class="l"><a href="javascript:void(0)"
+														target="_blank"><span
+															class="user-center-icon icon-tick"></span>我的课程</a></li>
+													<li class="l"><a href="javascript:void(0)"
+														target="_blank"><span
+															class="user-center-icon icon-receipt"></span>订单中心</a></li>
+													<li class="l"><a href="javascript:void(0)"
+														target="_blank"><span
+															class="user-center-icon icon-score_shop"></span>积分商城</a></li>
+													<li class="l"><a href="<%=basePath%>user/setbindsns"
+														target="_blank"><span
+															class="user-center-icon icon-set"></span>个人设置</a></li>
+												</ul>
+											</div>
+											<div class="card-history">
+												<span class="history-item"> <span
+													class="tit text-ellipsis">Ajax全接触</span> <span
+													class="media-name text-ellipsis">5-1 jQuery中的AJAX</span> <i
+													class="icon-clock"></i> <a href="javascript:void(0)"
+													class="continue" title="Ajax全接触5-1  jQuery中的AJAX">继续</a>
+												</span>
+											</div>
+											<div class="card-sets clearfix">
+												<a href="javascript:void(0)" class="l">安全退出</a>
+											</div>
+										</div>
+									</div></li>
+							</ul>
 						</c:if>
 					</div>
 				</div>
@@ -194,5 +215,6 @@ var abroot = "<%=basePath%>";
 	})
 </script>
 <script src="<%=path%>/js/loginController/denglu.js"></script>
-<script type="text/javascript" src="<%=path%>/js/loginController/loginOpen.js"></script>
+<script type="text/javascript"
+	src="<%=path%>/js/loginController/loginOpen.js"></script>
 </html>
