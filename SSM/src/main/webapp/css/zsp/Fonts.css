@@ -11,7 +11,7 @@ html,body{
 }
 
 .left{
-	margin-left:80px;
+	margin-left:10%;
 }
 .right{
 	margin-right:40px;
@@ -36,9 +36,9 @@ html,body{
 .Right{
 	
 	position:absolute;
-	margin-left:70%;
+	margin-left:90%;
 	height:90%;
-	width:18%;
+	width:20%;
 	margin-top:4px;
 }
 
