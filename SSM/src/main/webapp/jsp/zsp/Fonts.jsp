@@ -8,134 +8,193 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="<%=path %>/css/zsp/Fonts.css"/>
 <meta charset="UTF-8">
-<title>提问</title>
-<style type="text/css">
-body{margin:0;padding:0}
-.top{ background:#333; height:75px}
-.top_left{ width:20%; height:100%; float:left;}
-.top_middle{ height:100%; width:60%; margin:0; float:left;margin:0 auto}
-.top_right{right:0;top:0; width:20%; height:100%; position:absult; float:left}
-.lianjie{width:16.6%; float:left; margin:25px 0px;}
-.tubiao{float:left; margin:20px 90px 20px 60px;}
-.logo{display:inline-block; width:30%;}
-
-.middle{ height:800px; margin:20px 30px 20px 30px}
-.middle_left{ width:70%; height:100%; float:left; margin-right:20px}
-
-.middle_right{ height:100%; float:left; width:20%; }
-.middle_button{display: block;
-    text-align:center;
-    width: 50%;
-    height: 50px;
-    text-decoration: none;
-    line-height: 50px;
-    color: red;
-    font-family: Arial;
-    border: 2px solid;
-    margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
-    }
-.question{width:100px; height:100px; margin-left:20%; margin-top:50px}
-
-.foot{background:blue;height:100px; }
-</style>
-<link rel="stylesheet" href="<%=path %>/css/zsp/Fonts.css">
+<title>Insert title here</title>
 </head>
-<body style="background:#dada9f">
-  <div class="top">
-    <div class="top_left">
-      <div class="tubiao">
-        <image src="<%=path %>/imgs/zsp/shen.jpg" class="logo"></image>
-        <a herf="#">慕课网</a>  </div>
+<body style>
+
+  <div class="main" style="width:1290px;height:1356px;">
+    <div class="left right top">
+      <a class="ziti lianjie hover">课程</a>
+      <span class="ziti">\</span>
+      <a class="ziti lianjie hover">前端开发</a>
+      <span class="ziti">\</span>
+      <a class="ziti lianjie hover">JavaScript</a>
+      <span class="ziti">\</span>
+      <a class="ziti lianjie hover">JavaScript入门篇</a>
     </div>
-    <div class="top_middle">
-      <div class="lianjie">
-        <a herf="#">免费课程</a></div>
-      <div class="lianjie">
-        <a herf="#">实战课程</a></div>
-      <div class="lianjie">
-        <a herf="#">猿问</a></div>
-      <div class="lianjie">
-        <a herf="#">手记</a></div>
-      <div class="lianjie">
-        <a herf="#">就业班</a></div>
-      <div class="lianjie">
-        <a herf="#">猿聘</a></div>
-    </div>
-    <div class="top_right">
-      <div class="tubiao">
-        <image src="<%=path %>/imgs/zsp/tu.jpg" class="logo"></image>
-         </div>
-    </div>
-  </div>
-  
-  <div class="middle">
-    <div class="middle_left">
-      <div style=" height:600px; margin:0px 30px 100px 30px">
-        <img alt="" src="<%=path %>/imgs/zsp/tu.jpg" style="width:50px; height:50px; margin-top:30px; margin-left:30px">
-        <a herf="#" style=" margin-top:10px; margin-left:0px">夜半黄昏</a>
-        <div style=" height:400px; margin-top:20px; margin-left:30px">
-          <p style="width:100%; height:25px; margin-top:5px; margin-left:30px">
-            怎么下载
-          </p>
+    <div class="left right Left">
+      <div class="other"> 
+      <div>
+        <a class="Master hover">
+          <img class="img master" src="<%=path %>/imgs/zsp/er.jpg"/>
+        </a>
+        <div style="display:block;margin-left:40px;"><a >无聊先知</a></div>
+        </div>
+        <div class="gn">
+          <a class="ziti hover">举报</a>
+          <span class="ziti hover" style="margin-left:10px;">
+          分享
+          </span>
+          <a class="ziti hover" style="margin-left:10px;">关注</a>
+        </div>
+        <div class="question">
           <div>
-            <span style="margin-left:30px; font-size:10px">18-11 10:00</span>
-          </div> 
-          
-          <ul style="margin-top:40px; margin-left:10px">
-            <li>
-              <img style="width:40px; height:40px; float:left" src="img/tu.jpg"></img>
-              <div style="width:500px; height:50px; float:left">
-                <p style=" font-size:10px"><span>某人：</span>我认为...</p>
-                <p style=" font-size:10px">
-                  2018-11-11 11:11
-                  <a herf="#">0 赞</a>
-                  <a herf="#">回 复</a>
-                </p>
+            <h1 class="title1">
+            怎么怎么改
+            </h1>
+          </div>
+          <p class="daima">&lt;!DOCTYPE HTML&gt;</p>
+          <p class="daima">&lt;html&gt;</p>
+          <p class="daima">&lt;head&gt;</p>
+          <p class="daima">&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</p>
+          <p class="daima">&lt;title&gt;函数调用&lt;/title&gt;</p>
+          <p class="daima">   &lt;script type="text/javascript"&gt;</p>
+          <p class="daima">       function contxt() //定义函数 </p>
+          <p class="daima">      {</p>
+          <p class="daima">         alert("哈哈，调用函数了!");</p>
+          <p class="daima">      }</p>
+          <p class="daima">   &lt;/script&gt;</p>
+          <p class="daima">&lt;/head&gt;</p>
+          <p class="daima">&lt;body&gt;</p>
+          <p class="daima">   &lt;form&gt;</p>
+          <p class="daima">      &lt;input type="button"  value="点击我" onclick="contxt" /&gt; </p>
+          <p class="daima">      &lt;!-- 单击按钮后，调用函数，onclick为点击事件。       --&gt;</p>
+          <p class="daima">   &lt;/form&gt;</p>
+          <p class="daima">&lt;/body&gt;</p>
+          <p class="daima">&lt;/html&gt;</p>
+          <p class="daima"><br /></p>
+          <p class="daima">一头雾水  T.T 瞌睡死我了</p>
+        </div>
+        <div style="margin-top:20px; margin-left:20px;position:relative">
+          <span class="zt">
+            快来回答问题，最高答案可 +
+          </span>
+          <strong class="zt" style="margin-left:170px;">
+           2积分
+          </strong>
+          <a class="zt hover" style="margin-left:210px;">
+            什么是积分?
+          </a>
+        </div>
+        <div style="margin-top:50px;">
+          <span class="ziti" style="margin-right:40px;">
+            2015-08-03
+          </span>
+          <a class="ziti hover" >
+            源自***
+          </a>
+          <span class="ziti" style="margin-left:550px;">
+            1回答
+          </span>
+          <span class="ziti" style="margin-right:10px;">
+            1浏览
+          </span>
+        </div>
+        <hr align="left" noshade="true" color="#edf1f2"></hr>
+        <div class="answer">
+          <div style="margin-top:15px;">
+            <div>
+             <img class="img" src="<%=path %>/imgs/zsp/tu.jpg" style="margin:10px;"> 
+            </div>
+            
+            <div>
+            </div>
+          </div>
+          <div style="margin-left:90px;margin-top:30px;">
+              <p class="daima">   &lt;form&gt;</p>
+              <p class="daima">      &lt;input type="button"  value="点击我" onclick="contxt" /&gt; </p>
+              <p class="daima">      &lt;!-- 单击按钮后，调用函数，onclick为点击事件。       --&gt;</p>
+              <p class="daima">   &lt;/form&gt;</p>
+              <p class="daima">onclic()="context"</p>
+              <div style="margin-top:10px;">
+                <span class="ziti" style="margin-right:40px;">
+     2015-08-03
+                </span>
+                <a class="ziti hover" style="margin-right:20px;margin-left:400px;">
+                  举报
+                </a>
+                <span class="ziti hover" style="margin-right:20px;">
+                回复
+                </span>
+                <i class="ziti hover">赞</i>
+             </div>
+            </div>
+        </div>
+        <hr align="left" noshade="true" color="#edf1f2"></hr>
+        <div class="answer1">
+          <div>
+             <img class="img" src="<%=path %>/imgs/zsp/shen.jpg" style="margin:10px;"> 
+           </div>
+           <div style="width:90%;margin-left:70px;height:141px;">
+            <div style="width:100%;height:41px;margin-top:10px;position:relative;">
+              <div style="position:absolute;background-color:#fff;height:95%;width:100px;">
+                <select style="width:100%;height:100%;display:block;">
+                  <option value="0">
+                    选择语言
+                  </option>
+                  <option value="1">
+                    C
+                  </option>
+                  <option value="2">
+                    C++
+                  </option>
+                </select>
               </div>
-            </li>
-          </ul>
-          
-          <div style="width:750px; height:261px; margin-top:100px; margin-left:40px">
-            <img style="width:40px; height:40px; float:left" alt="" src="<%=path %>/imgs/zsp/shen.jpg"></img>
-            <textarea style="marign-top:20px" rows="13" cols="80" autocomplete="off">评论...</textarea>
-            <button>回 复</button>
-          </div>
-         
-         </div>
-       </div>
-     </div>
-         
-    <div class="middle_right">
-      <div height="50px">
-          <a class="middle_button" herf="#">发新问题</a>
+              <div style="position:absolute; margin-left:118px;width:28px;height:28px;margin-top:9px;">
+              <button style="display:block;margin-bottom:  20px;margin-top: 0px;width:20px;">B</button>
+              </div>
+              <div style="position:absolute;margin-left:146px;width:28px;height:28px;margin-top:9px;">
+              <button style="display:block;margin-bottom:  20px;margin-top: 0px;width:20px;">I</btton>
+              </div>
+              
+            </div>
+            
+              <textarea rows="6" cols="80"></textarea>
+            
+           </div>
+           <div>
+             <button class="as" style="margin-left:80%;margin-top:7px;">
+               回答
+             </button>
+           </div>
+        </div>
       </div>
-      <div style="height:58px">
-          <div style="margin-top:10px">
-            <img style="height:50px; width:50px" src="<%=path %>/imgs/zsp/tu.jpg" >
-          </div>
+    </div>
+    <div class="right Right">
+      <a class="qu hover">
+        发新问题
+      </a>
+      <div class="me">
+        <img class="img" style="position:absolute;" src="<%=path %>/imgs/zsp/shen.jpg"\>
+        <P class="name hover">阿鬼ART</P>
+        <a class="ziti jifen hover">我的积分：1</a>
       </div>
-      <div style="height:500px;  margin-top:10px; background:beige" >
-      相关问题<br>
----------------------------------<br>
-      <div class="question">
-        <a herf="#">问题</a>
-      </div>
-      <div class="question">
-        <a herf="#">问题</a>
-      </div>
-      <div class="question">
-        <a herf="#">问题</a>
-      </div>
-      
+      <div class="maybe">
+        <div class="qa">
+          <h2 class="title">
+           相关问题
+          </h2>
+        </div>
+        <div class="qa">
+          <a class="ziti1 hover">写是写出来了，但是代码中var score哪行（我加粗了字体那行）有个问题，求解答。</a>
+        </div>
+        <div class="qa">
+          <a class="ziti1 hover">写是写出来了，但是代码中var score哪行（我加粗了字体那行）</a>
+        </div>
+        <div class="qa">
+          <a class="ziti1 hover">写是写出来了，但是代码中var score哪行</a>
+        </div>
+        <div class="qa">
+          <a class="ziti1 hover">写是写出来了，但是代码中</a>
+        </div>
+        <div class="qa">
+          <a class="ziti1 hover">写是写出来了，</a>
+        </div>
       </div>
     </div>
   </div>
-  
-  <div class="foot">
-    
-  </div>
+
 </body>
 </html>
