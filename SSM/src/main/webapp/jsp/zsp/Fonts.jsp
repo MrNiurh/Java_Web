@@ -5,127 +5,221 @@
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+<title>怎么怎么改_慕课问答</title>
+  
 <link rel="stylesheet" type="text/css" href="<%=path %>/css/zsp/Fonts.css"/>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body style>
+ </head>
 
-  <div class="main" style="width:1290px;height:1356px;">
-    <div class="left right top">
-      <a class="ziti lianjie hover">课程</a>
-      <span class="ziti">\</span>
-      <a class="ziti lianjie hover">前端开发</a>
-      <span class="ziti">\</span>
-      <a class="ziti lianjie hover">JavaScript</a>
-      <span class="ziti">\</span>
-      <a class="ziti lianjie hover">JavaScript入门篇</a>
+<body >  
+
+
+<div id="main">
+
+
+<div class="container qa-container clearfix">
+    <div class="crumbs clearfix">
+        <p class="l">
+            <a href="/course/list">课程</a>
+        </p>
+                    <p class="l">
+               <span>\</span><a href="/course/list?c=fe">前端开发</a>
+            </p>
+                            <p class="l">
+                <span>\</span><a href="/course/list?c=javascript">JavaScript</a>
+            </p>
+                <p class="l">
+            <span>\</span><a href="/learn/36">JavaScript入门篇</a>
+        </p>
+
+        
     </div>
-    <div class="left right Left">
-      <div class="other"> 
-      <div>
-        <a class="Master hover">
-          <img class="img master" src="<%=path %>/imgs/zsp/er.jpg"/>
-        </a>
-        <div style="display:block;margin-left:40px;"><a >无聊先知</a></div>
+    <div class="qa-left l">
+        <div class="qa-left-wrap">
+                                    <div class="qa-header">
+                <div class="qa-header-right r">
+                    <!-- credit -->
+                    
+                                                            <a href="javascript:;" data-id="90262" data-type="5" data-uid="2217839" class="js-tip-off l tipoff" >举报</a>
+                                                            <!-- share -->
+                    <div class="small-share l">
+                        <ul class="share-wrap">
+                        <li>
+                            <span class="share-txt">分享</span>
+                        </li>
+                        <li class="weichat-posi">
+                          <div class="bdsharebuttonbox weichat-style bdshare-button-style0-16" data-tag="share_1">
+                             </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <em class="split l"></em>
+                    <!-- follow -->
+                                        <a href="javascript:void(0)" data-id="90262" class="l wenda-add-collection js-collection-btn">
+                         
+                    </a>
+                    <span class="care l">关注</span>
+                                                        </div>
+                <a href="/u/2217839/bbs" target="_blank" class="qa-author"><img src='<%=path %>/imgs/zsp/tu.jpg' width='40' height='40' /> 无聊先知</a>
+            </div>
+            <div class="qa-content" data-qid="90262">
+                <div class="qa-content-inner aimgPreview">
+                    <div id="js-content-main">
+                                                <h1 class="js-qa-wenda-title qa-wenda-title">怎么怎么改</h1>
+                                                <div id="js-qa-content" class="qa-disscus rich-text"><p>&lt;!DOCTYPE HTML&gt;</p><p>&lt;html&gt;</p><p>&lt;head&gt;</p><p>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</p><p>&lt;title&gt;函数调用&lt;/title&gt;</p><p>   &lt;script type="text/javascript"&gt;</p><p>       function contxt() //定义函数 </p><p>      {</p><p>         alert("哈哈，调用函数了!");</p><p>      }</p><p>   &lt;/script&gt;</p><p>&lt;/head&gt;</p><p>&lt;body&gt;</p><p>   &lt;form&gt;</p><p>      &lt;input type="button"  value="点击我" onclick="contxt" /&gt; </p><p>      &lt;!-- 单击按钮后，调用函数，onclick为点击事件。       --&gt;</p><p>   &lt;/form&gt;</p><p>&lt;/body&gt;</p><p>&lt;/html&gt;</p><p><br /></p><p>一头雾水  T.T 瞌睡死我了</p></div>
+                    </div>
+                                                                            </div>
+                
+                                    <div class="share-rl-tips cont-credit">
+                        <span>快来回答问题，最佳答案可 +</span><strong>2积分</strong>
+                        <a target="_blank" href="/help" class="credit-rl">什么是积分？</a>
+                    </div>
+                                
+                <div class="qa-content-addon clearfix">
+                    <span class="qa-createtime l">2015-08-03</span>
+                                                            <a href="/video/490" class="qa-course-from"> 源自：JavaScript入门篇 1-9</a>
+                                                            <span class="qa-view-num r">273 浏览</span>
+                    <span class="qa-total-comment r">2 回答</span>
+                </div>
+                        </div>
+
+                        <div class="qa-comments" data-title="怎么怎么改">
+                <div class="qa-comment js-qa-comment" data-cid="71308" id="id_71308">
+
+        
+        <div class="qa-comment-wrap clearfix ">
+        <div class="qa-comment-author">
+            <a href="/u/252876/bbs" title="温暖的骨头">
+                <img src='<%=path %>/imgs/zsp/tu.jpg' width='40' height='40' />
+                <span class="qa-comment-nick">温暖的骨头</span>
+                            </a>
         </div>
-        <div class="gn">
-          <a class="ziti hover">举报</a>
-          <span class="ziti hover" style="margin-left:10px;">
-          分享
-          </span>
-          <a class="ziti hover" style="margin-left:10px;">关注</a>
+        <div class="qa-comment-d ">
+            <!-- <div class="qa-triangle-left"><i></i></div> -->
+            <div class="qa-comment-inner">
+                <div class="qa-comment-c aimgPreview">
+                    <div class="rich-text">
+                        <pre class="brush:js;toolbar:false">&lt;form&gt;
+      &lt;input type="button"  value="点击我" onclick="contxt" /&gt; 
+      &lt;!-- 单击按钮后，调用函数，onclick为点击事件。       --&gt;
+   &lt;/form&gt;</pre><p>onclick="contxt()"<br /></p>
+                    </div>
+                    
+
+                </div>
+                <div class="qa-comment-addon">
+                    <span class="qa-comment-time">2015-08-03</span>
+                    <div class="qa-comment-addon-r">
+                                                                        <a href="javascript:;" data-id="71308" data-type="6" data-uid="252876" class="js-tip-off l tipoff" >举报</a>
+                                                                        <span class="qa-total-reply js-reply-item-reply" >
+                            <i  class="icon-msg"></i>
+                            <span class="js-qa-tr-num">回复</span>
+                        </span>
+                        <span class="js-qa-comment-support qa-comment-support  js-qacom-supported-user" data-ids="90262-71308">
+                            <i class="icon-thumb-revert "></i>
+                            <span>1</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+        <div class="qa-reply">
+        <div class="qa-reply-header"></div>
+        <div class="qa-replies">
+            <div class="qa-reply-c">
+               <!--  <p class="qa-reply-loading">
+                   加载中...
+               </p>  -->
+                <!-- 默认显示三条回复的回复 -->
+
+                                            </div>
+
+            <!-- 回复框 -->
+            <div class="js-qa-reply-ibox qa-reply-ibox  clearfix" style="display:none">
+                <div class="qa-reply-iavator l js-header-avator">
+                                        <a href="/u/7299799/id">
+                        <img src="<%=path %>/imgs/zsp/Master.jpg" alt="">
+                    </a>
+                                    </div>
+                <div class="qa-reply-iwrap">
+                    <div class="qa-reply-iarea">
+                        <textarea name="" id="" class="js-reply-ipt-default ipt"  placeholder="写下你的评论...">写下你的评论...</textarea>
+                    </div>
+                </div>
+                <div class="qa-reply-ifoot clearfix">
+                    <div class="qa-reply-footright r">
+                        <div class="captcha-verify-box js-reply-verify-box hide"></div>
+                        <span class="qa-tips"></span>
+                        <button class="btn-normal btn-mini js-ipt-cancel">取消</button>
+                        <button class="btn-mini btn-green  js-ipt-submit">提交</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="question">
+    </div>
+</div>
+
+<div class="qa-comment js-qa-comment" data-cid="71802" id="id_71802">
+
+        
+        <div class="qa-comment-wrap clearfix ">
+        <div class="qa-comment-author">
+            <a href="/u/2093150/bbs" title="lt_mk">
+                <img src='<%=path %>/imgs/zsp/er.jpg' width='40' height='40' />
+                <span class="qa-comment-nick">lt_mk</span>
+                            </a>
+        </div>
+        <div class="qa-comment-d ">
+            <!-- <div class="qa-triangle-left"><i></i></div> -->
+            <div class="qa-comment-inner">
+                <div class="qa-comment-c aimgPreview">
+                    <div class="rich-text">
+                        <p>contxt后面的括号掉了  感觉函数后面应该都是要加()的<br /></p>
+                    </div>
+                    
+
+                </div>
+                <div class="qa-comment-addon">
+                    <span class="qa-comment-time">2015-08-05</span>
+                    <div class="qa-comment-addon-r">
+                                                                        <a href="javascript:;" data-id="71802" data-type="6" data-uid="2093150" class="js-tip-off l tipoff" >举报</a>
+                                                                        <span class="qa-total-reply js-reply-item-reply" >
+                            <i  class="icon-msg"></i>
+                            <span class="js-qa-tr-num">回复</span>
+                        </span>
+                        <span class="js-qa-comment-support qa-comment-support  js-qacom-supported-user" data-ids="90262-71802">
+                            <i class="icon-thumb-revert "></i>
+                            <span>1</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+                    </div>
+    </div>
+        <div class="qa-reply">
+        <div class="qa-reply-header"></div>
+        <div class="qa-replies">
+            <div class="qa-reply-c">
+               <!--  <p class="qa-reply-loading">
+                   加载中...
+               </p>  -->
+                <!-- 默认显示三条回复的回复 -->
+
+                                                             
+                                                                </div>
+
+            <!-- 回复框 -->
+            <div class="answer1">
           <div>
-            <h1 class="title1">
-            怎么怎么改
-            </h1>
-          </div>
-          <p class="daima">&lt;!DOCTYPE HTML&gt;</p>
-          <p class="daima">&lt;html&gt;</p>
-          <p class="daima">&lt;head&gt;</p>
-          <p class="daima">&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;</p>
-          <p class="daima">&lt;title&gt;函数调用&lt;/title&gt;</p>
-          <p class="daima">   &lt;script type="text/javascript"&gt;</p>
-          <p class="daima">       function contxt() //定义函数 </p>
-          <p class="daima">      {</p>
-          <p class="daima">         alert("哈哈，调用函数了!");</p>
-          <p class="daima">      }</p>
-          <p class="daima">   &lt;/script&gt;</p>
-          <p class="daima">&lt;/head&gt;</p>
-          <p class="daima">&lt;body&gt;</p>
-          <p class="daima">   &lt;form&gt;</p>
-          <p class="daima">      &lt;input type="button"  value="点击我" onclick="contxt" /&gt; </p>
-          <p class="daima">      &lt;!-- 单击按钮后，调用函数，onclick为点击事件。       --&gt;</p>
-          <p class="daima">   &lt;/form&gt;</p>
-          <p class="daima">&lt;/body&gt;</p>
-          <p class="daima">&lt;/html&gt;</p>
-          <p class="daima"><br /></p>
-          <p class="daima">一头雾水  T.T 瞌睡死我了</p>
-        </div>
-        <div style="margin-top:20px; margin-left:20px;position:relative">
-          <span class="zt">
-            快来回答问题，最高答案可 +
-          </span>
-          <strong class="zt" style="margin-left:170px;">
-           2积分
-          </strong>
-          <a class="zt hover" style="margin-left:210px;">
-            什么是积分?
-          </a>
-        </div>
-        <div style="margin-top:50px;">
-          <span class="ziti" style="margin-right:40px;">
-            2015-08-03
-          </span>
-          <a class="ziti hover" >
-            源自***
-          </a>
-          <span class="ziti" style="margin-left:550px;">
-            1回答
-          </span>
-          <span class="ziti" style="margin-right:10px;">
-            1浏览
-          </span>
-        </div>
-        <hr align="left" noshade="true" color="#edf1f2"></hr>
-        <div class="answer">
-          <div style="margin-top:15px;">
-            <div>
-             <img class="img" src="<%=path %>/imgs/zsp/tu.jpg" style="margin:10px;"> 
-            </div>
-            
-            <div>
-            </div>
-          </div>
-          <div style="margin-left:90px;margin-top:30px;">
-              <p class="daima">   &lt;form&gt;</p>
-              <p class="daima">      &lt;input type="button"  value="点击我" onclick="contxt" /&gt; </p>
-              <p class="daima">      &lt;!-- 单击按钮后，调用函数，onclick为点击事件。       --&gt;</p>
-              <p class="daima">   &lt;/form&gt;</p>
-              <p class="daima">onclic()="context"</p>
-              <div style="margin-top:10px;">
-                <span class="ziti" style="margin-right:40px;">
-     2015-08-03
-                </span>
-                <a class="ziti hover" style="margin-right:20px;margin-left:400px;">
-                  举报
-                </a>
-                <span class="ziti hover" style="margin-right:20px;">
-                回复
-                </span>
-                <i class="ziti hover">赞</i>
-             </div>
-            </div>
-        </div>
-        <hr align="left" noshade="true" color="#edf1f2"></hr>
-        <div class="answer1">
-          <div>
-             <img class="img" src="<%=path %>/imgs/zsp/shen.jpg" style="margin:10px;"> 
+             <img class="img" src="<%=path %>/imgs/zsp/shen.jpg" style="margin:10px;width:40px;height:40px;"> 
            </div>
            <div style="width:90%;margin-left:70px;height:141px;">
             <div style="width:100%;height:41px;margin-top:10px;position:relative;">
@@ -153,48 +247,105 @@
             
               <textarea rows="6" cols="80"></textarea>
             
-           </div>
-           <div>
-             <button class="as" style="margin-left:80%;margin-top:7px;">
-               回答
-             </button>
-           </div>
+           </div> 
         </div>
-      </div>
-    </div>
-    <div class="right Right">
-      <a class="qu hover">
-        发新问题
-      </a>
-      <div class="me">
-        <img class="img" style="position:absolute;" src="<%=path %>/imgs/zsp/shen.jpg"\>
-        <P class="name hover">阿鬼ART</P>
-        <a class="ziti jifen hover">我的积分：1</a>
-      </div>
-      <div class="maybe">
-        <div class="qa">
-          <h2 class="title">
-           相关问题
-          </h2>
-        </div>
-        <div class="qa">
-          <a class="ziti1 hover">写是写出来了，但是代码中var score哪行（我加粗了字体那行）有个问题，求解答。</a>
-        </div>
-        <div class="qa">
-          <a class="ziti1 hover">写是写出来了，但是代码中var score哪行（我加粗了字体那行）</a>
-        </div>
-        <div class="qa">
-          <a class="ziti1 hover">写是写出来了，但是代码中var score哪行</a>
-        </div>
-        <div class="qa">
-          <a class="ziti1 hover">写是写出来了，但是代码中</a>
-        </div>
-        <div class="qa">
-          <a class="ziti1 hover">写是写出来了，</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
+        </div>
+    </div>
+</div>
+
+            </div>
+            <div id="js-qa-comment-input" class="qa-comment-input js-msg-context  clearfix">
+                <div class="qa-ci-avator l js-header-avator">
+
+                                            <a href="/u/7299799/bbs">
+                            <img width="40" height="40">
+                        </a>
+                                    </div>
+                <div class="qa-ci-wrap">
+                    <div id="js-reply-editor-box" class="qa-comment-box js-ci-inner ">
+
+                    </div>
+                    <div id="js-qa-ci-footer" class="qa-ci-footer clearfix">
+                        <div class="qa-ci-footright r">
+                            <div class="captcha-verify-box js-verify-box hide"></div>
+                            <span class="qa-tips"></span>
+                            <button id="js-qa-ci-submit" class="btn btn-green " data-qid="90262">回答</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+        <div class="tipoff-block js-tipoff-block"></div>
+    </div>
+    <div class="qa-right r">
+        <div class="wenda-slider">
+            <!-- pub new ques -->
+<div class="newques-container">
+  <a href="/wenda/save" class="newques-btn" id="js-newques" target="_blank"><!--<i class="icon-addques"></i>-->发新问题</a>
+</div>
+<!--user info-->
+<div class="wenda-my">
+<div class="user-info">
+  <a class="user-img js-header-avator" href="/u/7299799/bbs">
+    <img src="<%=path %>/imgs/zsp/shen.jpg" alt="">
+  </a>
+  <p class="username js-header-nickname"></p>
+  <a href="/u/7299799/credit" target="_blank" class="credit-count">我的积分：<span class="js-header-credit">0</span></a>
+</div>
+
+</div>
+
+<!-- only my tags -->
+<!-- all of tags -->
+<!-- recommen -->
+<!-- hot questiones -->
+
+<!--ques relations -->
+<!-- relevant tag -->
+    
+            <div class="panel about-ques">
+        <div class="panel-heading">
+          <h2 class="panel-title">相关问题</h2>
+        </div>
+        <div class="panel-body clearfix">
+                    <div class="mkhotlist padtop"><a href="/qadetail/296361" target="_blank">别照老师教的作，肯定实现不了，不知道为什么</a></div>
+                    <div class="mkhotlist "><a href="/qadetail/296350" target="_blank">为什么我的秒数变得好快，都没到1S，大神们帮看下</a></div>
+                    <div class="mkhotlist "><a href="/qadetail/296321" target="_blank">求大神，为啥不管用，哪里错了？</a></div>
+                    <div class="mkhotlist "><a href="/qadetail/296302" target="_blank">麻烦大神们帮我看看哪里写错了，点击按钮没反映</a></div>
+                    <div class="mkhotlist bordbottom"><a href="/qadetail/296293" target="_blank">为什么没输出</a></div>
+                  </div>
+      </div>
+      
+<!-- reply rank -->
+<!-- course relations -->
+        </div>
+    </div>
+</div>
+
+<div id="reply-box" style="display:none;">
+    <div class="js-qa-reply-ibox qa-reply-ibox clearfix aaa" >
+        <div class="qa-reply-iavator l js-header-avator">
+                        <a href="/u/7299799/bbs">
+                <img width="40" height="40">
+            </a>
+                    </div>
+        <div class="qa-reply-iwrap">
+            <div class="qa-reply-iarea">
+                <textarea maxlength="300" name="" id="" class="js-reply-ipt" readonly placeholder="写下你的评论..."></textarea>
+            </div>
+            <div class="qa-reply-ifoot clearfix">
+                <div class="qa-reply-footright r">
+                    <div class="captcha-verify-box js-reply-verify-box hide"></div>
+                    <span class="qa-tips"></span>
+                    <button class="btn-mc-light js-ipt-cancel">取消</button>
+                    <button class="btn-mc btn-mini btn-mc-green disabled">提交</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div> 
 </body>
 </html>
