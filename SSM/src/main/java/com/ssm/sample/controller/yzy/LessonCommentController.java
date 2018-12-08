@@ -15,7 +15,7 @@ import com.ssm.sample.util.PageData;
 @Controller
 @RequestMapping({ "/videos" })
 public class LessonCommentController extends BaseController {
-
+//
 	@Autowired
 	ClassesFacade classFacade;
 

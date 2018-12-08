@@ -19,6 +19,7 @@ public class ImoocController extends BaseController {
 	@Autowired
 	ClassesFacade classFacade;
 
+//
 	@RequestMapping(value = "/main")
 	public ModelAndView home() {
 		ModelAndView mv = this.getModelAndView();
