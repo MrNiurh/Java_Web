@@ -27,7 +27,6 @@ public class ImoocController extends BaseController {
 		PageData pd = new PageData();
 		List<PageData> classes = this.classFacade.imoocAllClasses();
 		mv.addObject("classes", classes);
-		System.out.println(classes);
 		return mv;
 	}
 }
