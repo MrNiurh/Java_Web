@@ -95,7 +95,7 @@
 		    
              
          <li>
-            <a href="<%=path %>/jsp/zsp/User.jsp" >
+            <a href="<%=basePath %>user/User" >
             <span>动态圈</span><b class="icon-drop_right"></b>
             </a>
         </li>
@@ -104,38 +104,38 @@
 				 
 			     
             <li>
-            <a href="<%=path %>/jsp/zsp/Free.jsp" >
+            <a href="<%=basePath %>user/Free" >
              <span>免费课程</span><b class="icon-drop_right"></b>
             </a>
         </li>     
     			     
              <li>
-            <a href="<%=path %>/jsp/zsp/Update.jsp" >
+            <a href="<%=basePath %>user/Update" >
              <span>就业班</span><b class="icon-drop_right"></b>
             </a>
          </li>
     			     
                          <li>
-                <a href="<%=path %>/jsp/zsp/War.jsp" >
+                <a href="<%=basePath %>user/War" >
                  <span>实战</span><b class="icon-drop_right"></b>
                 </a>
             </li>
            
     			 				    
              <li>
-            <a href="<%=path %>/jsp/zsp/Note.jsp" >
+            <a href="<%=basePath %>user/Note" >
              <span>笔记</span><b class="icon-drop_right"></b>
             </a>
          </li>
     			 			     
             <li>
-            <a href="<%=path %>/jsp/zsp/Question.jsp" class="active">
+            <a href="<%=basePath %>user/Question" class="active">
                  <span>猿问</span><b class="icon-drop_right"></b>
             </a>
         </li>
     			     
             <li>
-            <a href="<%=path %>/jsp/zsp/Hand.jsp" >
+            <a href="<%=basePath %>user/Hand" >
              <span>手记</span><b class="icon-drop_right"></b>
             </a>
         </li>
@@ -146,13 +146,13 @@
 </div><!-- .slider end -->    <div class="u-container">
      
 <div class="nav" style="margin-top:30px;height:40px;">
-    <a href="Question.jsp" class="active" style="margin-right:30px;font-size:14px; color:#7f8082">我的提问</a>
-    <a href="Answer.jsp" style="margin-right:30px;font-size:14px; color:#7f8082">我的回答</a> 
+    <a href="<%=basePath %>user/Question " class="active" style="margin-right:30px;font-size:14px; color:#7f8082">我的提问</a>
+    <a href="<%=basePath %>user/Answer " style="margin-right:30px;font-size:14px; color:#7f8082">我的回答</a> 
 </div> 
 <hr></hr>
     <div class="ques-list">
                 <div class="nodata" style="margin-top:20%;margin-left:40%;font-size:19px; color:#b9b9bc">
-                        你还没有提出任何问题，可以先<a href="/wenda" target="_blank" style=" color:red;">去看看猿问</a>
+                        你还没有提出任何问题，可以先<a href=" " target="_blank" style=" color:red;">去看看猿问</a>
                     </div>
                 
     </div> 

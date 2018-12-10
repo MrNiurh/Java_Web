@@ -5,15 +5,11 @@
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
-<!DOCTYPE html>
-<html>
 <head>
 <meta charset="utf-8">
 <title>阿鬼ART的动态</title>
 <link rel="stylesheet" type="text/css" href="<%=path %>/css/zsp/User.css"/>
-<body > 
-<div id="main">
-
+</head>
 <div class="bg-other user-head-info">
     <div class="user-info clearfix">
 		<div class="user-pic" data-is-fans="0" data-is-follows="">
@@ -83,8 +79,8 @@
 		    
              
          <li>
-            <a href="<%=path %>/jsp/zsp/User.jsp" class="active">
-             <span>动态圈</span><b class="icon-drop_right"></b>
+            <a href="<%=basePath %>user/User"  class="active">
+            <span>动态圈</span><b class="icon-drop_right"></b>
             </a>
         </li>
         
@@ -92,38 +88,38 @@
 				 
 			     
             <li>
-            <a href="<%=path %>/jsp/zsp/Free.jsp" >
+            <a href="<%=basePath %>user/Free" >
              <span>免费课程</span><b class="icon-drop_right"></b>
             </a>
         </li>     
     			     
              <li>
-            <a href="<%=path %>/jsp/zsp/Update.jsp" >
+            <a href="<%=basePath %>user/Update" >
              <span>就业班</span><b class="icon-drop_right"></b>
             </a>
          </li>
     			     
                          <li>
-                <a href="<%=path %>/jsp/zsp/War.jsp" >
+                <a href="<%=basePath %>user/War" >
                  <span>实战</span><b class="icon-drop_right"></b>
                 </a>
             </li>
            
     			 				    
              <li>
-            <a href="<%=path %>/jsp/zsp/Note.jsp" >
+            <a href="<%=basePath %>user/Note" >
              <span>笔记</span><b class="icon-drop_right"></b>
             </a>
          </li>
     			 			     
             <li>
-            <a href="<%=path %>/jsp/zsp/Question.jsp" >
+            <a href="<%=basePath %>user/Question">
                  <span>猿问</span><b class="icon-drop_right"></b>
             </a>
         </li>
     			     
             <li>
-            <a href="<%=path %>/jsp/zsp/Hand.jsp" >
+            <a href="<%=basePath %>user/Hand" >
              <span>手记</span><b class="icon-drop_right"></b>
             </a>
         </li>
@@ -174,10 +170,4 @@
 
 
 
-
-
-<div style="display: none">
-</div>
-</body>
-</html>
 

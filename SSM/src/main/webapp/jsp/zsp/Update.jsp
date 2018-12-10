@@ -89,8 +89,8 @@
 		    
              
          <li>
-            <a href="<%=path %>/jsp/zsp/User.jsp" >
-             <span>动态圈</span><b class="icon-drop_right"></b>
+            <a href="<%=basePath %>user/User" >
+            <span>动态圈</span><b class="icon-drop_right"></b>
             </a>
         </li>
         
@@ -98,39 +98,39 @@
 				 
 			     
             <li>
-            <a href="<%=path %>/jsp/zsp/Free.jsp" >
+            <a href="<%=basePath %>user/Free" >
              <span>免费课程</span><b class="icon-drop_right"></b>
             </a>
         </li>     
     			     
              <li>
-            <a href="<%=path %>/jsp/zsp/Update.jsp" class="active">
+            <a href="<%=basePath %>user/Update" class="active">
              <span>就业班</span><b class="icon-drop_right"></b>
             </a>
          </li>
     			     
                          <li>
-                <a href="<%=path %>/jsp/zsp/War.jsp" >
+                <a href="<%=basePath %>user/War" >
                  <span>实战</span><b class="icon-drop_right"></b>
                 </a>
             </li>
            
     			 				    
              <li>
-            <a href="<%=path %>/jsp/zsp/Note.jsp" >
+            <a href="<%=basePath %>user/Note" >
              <span>笔记</span><b class="icon-drop_right"></b>
             </a>
          </li>
     			 			     
             <li>
-            <a href="<%=path %>/jsp/zsp/Question.jsp" >
-                <span>猿问</span><b class="icon-drop_right"></b>
+            <a href="<%=basePath %>user/Question" >
+                 <span>猿问</span><b class="icon-drop_right"></b>
             </a>
         </li>
     			     
             <li>
-            <a href="<%=path %>/jsp/zsp/Hand.jsp" >
-            <span>手记</span><b class="icon-drop_right"></b>
+            <a href="<%=basePath %>user/Hand" >
+             <span>手记</span><b class="icon-drop_right"></b>
             </a>
         </li>
     			     
@@ -141,7 +141,7 @@
 
 <div class='plans-main'>
 <h2 >我的就业班</h2>
-        <p class='notattend'>您没有参加任何就业班,可以先<a target="_blank" href='/course/program' class='red'>去找找就业班课程</a></p>
+        <p class='notattend'>您没有参加任何就业班,可以先<a target="_blank" href=' ' class='red'>去找找就业班课程</a></p>
     </div>
 <!-- share-->
 </div> 

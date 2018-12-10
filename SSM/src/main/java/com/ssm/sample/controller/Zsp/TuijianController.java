@@ -7,12 +7,12 @@ import org.springframework.web.servlet.ModelAndView;
 import com.ssm.sample.controller.base.BaseController;
 
 @Controller
-@RequestMapping("/qadetail")
-public class FontsController extends BaseController {
-	@RequestMapping(value = "/detail")
+@RequestMapping("/user")
+public class TuijianController extends BaseController {
+	@RequestMapping(value = "/Tuijian")
 	public ModelAndView home() {
 		ModelAndView mv = this.getModelAndView();
-		mv.setViewName("zsp/Fonts");
+		mv.setViewName("zsp/Tuijian");
 		return mv;
 	}
 
