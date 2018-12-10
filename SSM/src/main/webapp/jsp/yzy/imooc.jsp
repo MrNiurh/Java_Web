@@ -1022,16 +1022,16 @@
 					<div class="swiper-container" style="height: 100%;">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<img src="https://img.mukewang.com/5c0013e7000174e318720632.jpg">
+								<img src="<%=path%>/imgs/lessons/021.jpg">
 							</div>
 							<div class="swiper-slide">
-								<img src="https://img.mukewang.com/5c0013000001038518720632.jpg">
+								<img src="<%=path%>/imgs/lessons/022.jpg">
 							</div>
 							<div class="swiper-slide">
-								<img src="https://img.mukewang.com/5c0013890001974e09360316.jpg">
+								<img src="<%=path%>/imgs/lessons/023.jpg">
 							</div>
 							<div class="swiper-slide">
-								<img src="https://img.mukewang.com/5c00145100019df318720632.jpg">
+								<img src="<%=path%>/imgs/lessons/024.jpg">
 							</div>
 						</div>
 						<!-- 如果需要分页器 -->
@@ -1088,7 +1088,8 @@
 								data-track="sztj-1-2">
 
 								<div class="course-card-top hashadow">
-									<img class="course-banner" src="<%=path%>/imgs/lessons/${classes.get(1).class_pic}">
+									<img class="course-banner"
+										src="<%=path%>/imgs/lessons/${classes.get(1).class_pic}">
 
 									<div class="course-label">
 										<label>数据结构</label> <label>算法</label>
@@ -1117,7 +1118,8 @@
 								data-track="sztj-1-3">
 
 								<div class="course-card-top hashadow">
-									<img class="course-banner" src="<%=path%>/imgs/lessons/${classes.get(2).class_pic}">
+									<img class="course-banner"
+										src="<%=path%>/imgs/lessons/${classes.get(2).class_pic}">
 
 									<div class="course-label">
 										<label>Python</label>
@@ -1147,7 +1149,8 @@
 
 								<div class="course-stat hot">HOT</div>
 								<div class="course-card-top hashadow">
-									<img class="course-banner" src="<%=path%>/imgs/lessons/${classes.get(3).class_pic}">
+									<img class="course-banner"
+										src="<%=path%>/imgs/lessons/${classes.get(3).class_pic}">
 
 									<div class="course-label">
 										<label>微服务</label> <label>Spring Cloud</label>
@@ -1176,7 +1179,8 @@
 								data-track="sztj-1-5">
 
 								<div class="course-card-top hashadow">
-									<img class="course-banner" src="<%=path%>/imgs/lessons/${classes.get(4).class_pic}">
+									<img class="course-banner"
+										src="<%=path%>/imgs/lessons/${classes.get(4).class_pic}">
 
 									<div class="course-label">
 										<label>数学</label>
@@ -1508,8 +1512,7 @@
 					<div class="clearfix types-content">
 						<div class="adsense-box l"
 							style="background: url(<%=path%>/imgs/lessons/${classes.get(15).class_pic}) no-repeat center center; background-size: 100%;">
-							<a
-								href="<%=basePath%>learn/lesson?a=${classes.get(15).id}"
+							<a href="<%=basePath%>learn/lesson?a=${classes.get(15).id}"
 								data-track="xsrm-1-1" target="_blank">
 								<h3 class="ellipsis">${classes.get(15).class_name}</h3>
 								<p class="ellipsis">快速入门Vue.js框架，完成从入门到实战的完美过渡</p>
@@ -1518,8 +1521,7 @@
 
 						<div class="adsense-box l"
 							style="background: url(<%=path%>/imgs/lessons/${classes.get(16).class_pic}) no-repeat center center; background-size: 100%;">
-							<a
-								href="<%=basePath%>learn/lesson?a=${classes.get(16).id}"
+							<a href="<%=basePath%>learn/lesson?a=${classes.get(16).id}"
 								data-track="xsrm-1-2" target="_blank">
 								<h3 class="ellipsis">${classes.get(16).class_name}</h3>
 								<p class="ellipsis">快速提升开发技巧和思维</p>
@@ -1844,8 +1846,7 @@
 					<div class="clearfix types-content">
 						<div class="adsense-box l"
 							style="background: url(<%=path%>/imgs/lessons/${classes.get(27).class_pic}) no-repeat center center; background-size: 100%;">
-							<a
-								href="<%=basePath%>learn/lesson?a=${classes.get(27).id}"
+							<a href="<%=basePath%>learn/lesson?a=${classes.get(27).id}"
 								data-track="jnts-1-1" target="_blank">
 								<h3 class="ellipsis">${classes.get(27).class_name}</h3>
 								<p class="ellipsis">能够轻松入门大数据，为Java工程师转型打造完美捷径</p>
@@ -1854,8 +1855,7 @@
 
 						<div class="adsense-box l"
 							style="background: url(<%=path%>/imgs/lessons/${classes.get(28).class_pic}) no-repeat center center; background-size: 100%;">
-							<a
-								href="<%=basePath%>learn/lesson?a=${classes.get(28).id}"
+							<a href="<%=basePath%>learn/lesson?a=${classes.get(28).id}"
 								data-track="jnts-1-2" target="_blank">
 								<h3 class="ellipsis">${classes.get(28).class_name}</h3>
 								<p class="ellipsis">从入门到实践学习路线，助您学习一臂之力</p>
@@ -2156,8 +2156,7 @@
 					<div class="clearfix types-content">
 						<div class="adsense-box l"
 							style="background: url(<%=path%>/imgs/lessons/${classes.get(7).class_pic}) no-repeat center center; background-size: 100%;">
-							<a
-								href="<%=basePath%>learn/lesson?a=${classes.get(7).id}"
+							<a href="<%=basePath%>learn/lesson?a=${classes.get(7).id}"
 								data-track="qyjs-1-1" target="_blank">
 								<h3 class="ellipsis">${classes.get(7).class_name}</h3>
 								<p class="ellipsis">上万人的选择打消你对主流框架的疑惑</p>
@@ -2166,8 +2165,7 @@
 
 						<div class="adsense-box l"
 							style="background: url(<%=path%>/imgs/lessons/${classes.get(8).class_pic}) no-repeat center center; background-size: 100%;">
-							<a
-								href="<%=basePath%>learn/lesson?a=${classes.get(8).id}"
+							<a href="<%=basePath%>learn/lesson?a=${classes.get(8).id}"
 								data-track="qyjs-1-2" target="_blank">
 								<h3 class="ellipsis">${classes.get(8).class_name}</h3>
 								<p class="ellipsis">练就编程十八般武艺，快速转型全栈开发，做全能型工程师！</p>

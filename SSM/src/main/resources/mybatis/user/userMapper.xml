@@ -8,6 +8,13 @@
 		user
 		where email=#{email} and password = #{password}
 	</select>
+	<!-- 单个用户信息 -->
+	<select id="selectUser" parameterType="pd" resultType="pd">
+		select *
+		from
+		user
+		where id=#{id}
+	</select>
 
 	<!-- 注册新用户 -->
 	<insert id="insertUser">
@@ -17,6 +24,12 @@
 		#{password}
 		)
 	</insert>
+	<!-- 注册新用户 -->
+	<update id="editUser">
+		update user set username = #{username} where id
+		=#{id}
+
+	</update>
 
 
 </mapper>

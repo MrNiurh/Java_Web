@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="<%=path%>/css/wkx/common-less.css">
 <link rel="stylesheet" href="<%=path%>/css/wkx/intial.css">
 <link rel="stylesheet" href="<%=path%>/css/wkx/head.css">
+<link rel="shortcut icon" href="<%=path%>/imgs/user/henu.ico" type="image/x-icon" />
 <sitemesh:head></sitemesh:head>
 <title><sitemesh:title></sitemesh:title></title>
 </head>
@@ -101,16 +102,16 @@ var abroot = "<%=basePath%>	";
 								</a></li>
 								<li class="user-card-box" id="header-user-card"><a
 									id="header-avator" class="user-card-item js-header-avator"
-									action-type="my_menu" href="javascript:void(0)" target="_self">
+									action-type="my_menu" href="<%=basePath %>user/User" target="_self">
 										<img width="40" height="40"
-										src="<%=path%>/imgs/yzy/5ad7144100017a5e07410741-100-100.jpg">
+										src="<%=path %>/imgs/user/${user.headpic}">
 										<i class="myspace_remind" style="display: none;"></i>
 								</a>
 									<div class="g-user-card" style="display: none">
 										<div class="card-inner">
 											<div class="card-top clearfix">
-												<a href="javascript:void(0)" class="l"><img
-													src="<%=path%>/imgs/yzy/5ad7144100017a5e07410741-100-100.jpg"
+												<a href="<%=basePath %>user/User" class="l"><img
+													src="<%=path %>/imgs/user/${user.headpic}"
 													alt="慕粉1856188754"></a>
 												<div class="card-top-right-box l">
 													<a href="javascript:void(0)"><c:if
@@ -127,7 +128,7 @@ var abroot = "<%=basePath%>	";
 											</div>
 											<div class="user-center-box">
 												<ul class="clearfix">
-													<li class="l"><a href="javascript:void(0)"
+													<li class="l"><a href="<%=basePath%>user/Free"
 														target="_blank"><span
 															class="user-center-icon icon-tick"></span>我的课程</a></li>
 													<li class="l"><a href="javascript:void(0)"
@@ -150,7 +151,7 @@ var abroot = "<%=basePath%>	";
 												</span>
 											</div>
 											<div class="card-sets clearfix">
-												<a href="javascript:void(0)" class="l">安全退出</a>
+												<a href="javascript:void(0);" onclick="exitAccount()" class="l">安全退出</a>
 											</div>
 										</div>
 									</div></li>
@@ -212,6 +213,21 @@ var abroot = "<%=basePath%>	";
 		$("#js-app-load").mouseout(function() {
 			$(".app-load-box").css("display", "none");
 		})
+	})
+	
+	function exitAccount() {
+	var URL = root + "login/out";
+	$.ajax({
+		url : URL,
+		type : "post",
+		async : false,
+		dataType : 'json',
+		success : function(data) {
+			location.reload();
+		},
+		error : function(data) {
+			location.reload();
+		}
 	})
 </script>
 <script src="<%=path%>/js/loginController/denglu.js"></script>

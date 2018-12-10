@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="<%=path%>/css/whp/user_certificate.css">
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/user_settings.js"></script>
-<title>user_certificate</title>
+<title>慕课网</title>
 </head>
 
 <body>
@@ -30,13 +30,13 @@
 					<div class="user_info">
 						<div class="user_logo">
 							<img
-								src="<%=path%>/imgs/yzy/5ad7144100017a5e07410741-100-100.jpg"
+								src="<%=path%>/imgs/user/er.jpg"
 								alt="">
 						</div>
 						<c:if test="${user.username==null }">
 							<div class="user_id">慕粉${user.id }</div>
 						</c:if>
-						<c:if test="${user.username==null }">
+						<c:if test="${user.username!=null }">
 							<div class="user_id">${user.username}</div>
 						</c:if>
 
@@ -53,7 +53,7 @@
 					</div>
 					<div class="user_ops">
 						<div class="user_op_info">
-							<h4>账户管理</h4>
+							<h2>账户管理</h2>
 						</div>
 						<a href="<%=basePath%>user/setbindsns" class="user_op_a">账号绑定<span
 							class="user_op_logo">></span></a> <a

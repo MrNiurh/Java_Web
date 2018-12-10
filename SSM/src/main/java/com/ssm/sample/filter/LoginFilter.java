@@ -14,14 +14,16 @@ import javax.servlet.http.HttpSession;
 /**
  * Servlet Filter implementation class VideoFilter
  */
-public class VideoFilter implements Filter {
+public class LoginFilter implements Filter {
 
-    /**
-     * Default constructor. 
-     */
-    public VideoFilter() {
-        // TODO Auto-generated constructor stub
-    }
+	private FilterConfig config;
+
+	/**
+	 * Default constructor.
+	 */
+	public LoginFilter() {
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
 	 * @see Filter#destroy()
@@ -33,7 +35,8 @@ public class VideoFilter implements Filter {
 	/**
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+			throws IOException, ServletException {
 		// TODO Auto-generated method stub
 		// place your code here
 		HttpServletRequest requ = (HttpServletRequest) request;
@@ -41,10 +44,10 @@ public class VideoFilter implements Filter {
 		String path = requ.getServletContext().getContextPath();
 		HttpSession session = requ.getSession(true);
 		String requestPath = requ.getServletPath();
-		if (session.getAttribute("identity") == null) {
-			resp.sendRedirect("");
-		} else {
-			resp.sendRedirect(requestPath);
+		String loginPage = config.getInitParameter("loginPage");
+		String realLoginPage = requ.getServletContext().getContextPath() + config.getInitParameter("loginPage");
+		if (session.getAttribute("user") == null) {
+			resp.sendRedirect(realLoginPage);
 		}
 
 		// pass the request along the filter chain
@@ -56,6 +59,7 @@ public class VideoFilter implements Filter {
 	 */
 	public void init(FilterConfig fConfig) throws ServletException {
 		// TODO Auto-generated method stub
+		this.config = fConfig;
 	}
 
 }

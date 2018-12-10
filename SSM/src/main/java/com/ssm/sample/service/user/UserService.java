@@ -21,4 +21,15 @@ public class UserService extends BaseService {
 		return this.sqlSessionTemplate.insert("user.userMapper.insertUser", pd) > 0;
 	}
 
+	public boolean editUser(PageData pd) {
+		// TODO Auto-generated method stub
+		return this.sqlSessionTemplate.update("user.userMapper.editUser", pd) > 0;
+	}
+
+	public List<PageData> selectUser(PageData pd) {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.sqlSessionTemplate.selectList("user.userMapper.selectUser", pd);
+		return list;
+	}
+
 }

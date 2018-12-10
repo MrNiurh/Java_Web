@@ -26,4 +26,15 @@ public class UserFacade extends BaseFacade{
 		// TODO Auto-generated method stub
 		return this.userService.insertUser(pd);
 	}
+
+	public boolean editUser(PageData pd) {
+		// TODO Auto-generated method stub
+		return this.userService.editUser(pd);
+	}
+
+	public List<PageData> selectUser(PageData pd) {
+		// TODO Auto-generated method stub\
+		List<PageData> list = this.userService.selectUser(pd);
+		return list;
+	}
 }

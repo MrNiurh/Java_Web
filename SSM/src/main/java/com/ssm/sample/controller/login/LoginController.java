@@ -1,5 +1,7 @@
 package com.ssm.sample.controller.login;
 
+import java.io.IOException;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -56,5 +58,35 @@ public class LoginController extends BaseController {
 		session.setAttribute("user", user.get(0));
 
 		return map;
+	}
+
+	@ResponseBody
+	@RequestMapping("/out")
+	public Object out() throws IOException {
+
+		String path = request.getContextPath();
+		String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path
+				+ "/";
+		Enumeration em = request.getSession().getAttributeNames();
+		while (em.hasMoreElements()) {
+			request.getSession().removeAttribute(em.nextElement().toString());
+		}
+
+		response.sendRedirect(basePath);
+		return true;
+	}
+
+	@ResponseBody
+	@RequestMapping("/edit")
+	public Object edit() {
+
+		PageData pd = this.getPageData();
+		boolean b = false;
+		b = this.userFacade.editUser(pd);
+
+		List<PageData> user = this.userFacade.selectUser(pd);
+		session.setAttribute("user", user.get(0));
+
+		return b;
 	}
 }

@@ -12,16 +12,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>阿鬼ART的笔记</title>
+<title>${user.username }的笔记</title>
 <link rel="stylesheet" type="text/css" href="<%=path%>/css/zsp/User.css" />
 </head>
 
 <body>
-
-
-
-
-
 
 
 
@@ -31,13 +26,13 @@
 			<div class="user-info clearfix">
 				<div class="user-pic" data-is-fans="0" data-is-follows="">
 					<div class="user-pic-bg">
-						<img class='img' src="<%=path%>/imgs/zsp/er.jpg" alt="" />
+						<img class='img' src="<%=path %>/imgs/user/${user.headpic}" alt="" />
 					</div>
 					<!--user-pic-big end-->
 				</div>
 				<div class="user-info-right">
 					<h3 class="user-name clearfix">
-						<span>阿鬼ART</span>
+						<span>${user.username }</span>
 					</h3>
 					<!--25-->
 					<p class="about-info">
@@ -46,7 +41,7 @@
 					</p>
 				</div>
 				<div class="user-sign hide">
-					<p class="user-desc" title="你好我是阿鬼ART">你好我是阿鬼ART</p>
+					<p class="user-desc" title="你好我是${user.username }">你好我是${user.username }</p>
 				</div>
 				<div class="study-info clearfix">
 					<div class="item follows">
@@ -68,7 +63,7 @@
 						<a href='/u/7299799/fans'><em>0</em></a> <span>粉丝</span>
 					</div>
 					<div class="item follows">
-						<a href="/user/setbindsns" class="set-btn"> 个人设置</a>
+						<a href="<%=basePath%>user/setbindsns" class="set-btn"> 个人设置</a>
 					</div>
 
 
@@ -166,5 +161,3 @@
 </script>
 
 	<div style="display: none"></div>
-</body>
-</html>
