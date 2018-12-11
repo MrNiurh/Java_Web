@@ -28,6 +28,9 @@ public class LessonCommentController extends BaseController {
 		List<PageData> list = this.classFacade.getOneClass(pd);
 		mv.addObject("oneCLass", list.get(0));
 
+		List<PageData> questions = this.classFacade.selectQuestions();
+		mv.addObject("questions", questions);
+
 		return mv;
 	}
 }

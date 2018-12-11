@@ -94,4 +94,13 @@
 		limit 0,32
 	</select>
 
+	<select id="selectQuestions" resultType="pd">
+		select * from questions
+	</select>
+
+	<select id="selectOneQuestion" resultType="pd">
+		select * from
+		questions where id=#{id}
+	</select>
+
 </mapper>

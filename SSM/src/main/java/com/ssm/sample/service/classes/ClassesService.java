@@ -88,4 +88,16 @@ public class ClassesService extends BaseService {
 		return list;
 	}
 
+	public List<PageData> selectOneQuestion(Integer id) {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.sqlSessionTemplate.selectList("classes.classesMapper.selectOneQuestion", id);
+		return list;
+	}
+
+	public List<PageData> selectQuestions() {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.sqlSessionTemplate.selectList("classes.classesMapper.selectQuestions");
+		return list;
+	}
+
 }

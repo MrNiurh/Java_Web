@@ -104,4 +104,16 @@ public class ClassesFacade extends BaseFacade {
 		List<PageData> list = this.classesService.imoocAllClasses();
 		return list;
 	}
+
+	public List<PageData> selectOneQuestion(Integer id) {
+		// TODO Auto-generated method stub
+		List<PageData> list= this.classesService.selectOneQuestion(id);
+		return list;
+	}
+
+	public List<PageData> selectQuestions() {
+		// TODO Auto-generated method stub
+		List<PageData> list = this.classesService.selectQuestions();
+		return list;
+	}
 }

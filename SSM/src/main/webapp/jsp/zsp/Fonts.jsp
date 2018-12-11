@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
@@ -10,7 +11,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>怎么怎么改_慕课问答</title>
+<title>${question.question }</title>
 
 <link rel="stylesheet" type="text/css"
 	href="<%=path%>/css/zsp/Fonts.css" />
@@ -62,38 +63,15 @@
 							class="care l">关注</span>
 					</div>
 					<a href="/u/2217839/bbs" target="_blank" class="qa-author"><img
-						src='<%=path%>/imgs/zsp/tu.jpg' width='40' height='40' /> 无聊先知</a>
+						src='http://img1.mukewang.com/570cf67a0001797601000100-40-40.jpg'
+						width='40' height='40' /> 无聊先知</a>
 				</div>
 				<div class="qa-content" data-qid="90262">
 					<div class="qa-content-inner aimgPreview">
 						<div id="js-content-main">
-							<h1 class="js-qa-wenda-title qa-wenda-title">怎么怎么改</h1>
+							<h1 class="js-qa-wenda-title qa-wenda-title">${question.question }</h1>
 							<div id="js-qa-content" class="qa-disscus rich-text">
-								<p>&lt;!DOCTYPE HTML&gt;</p>
-								<p>&lt;html&gt;</p>
-								<p>&lt;head&gt;</p>
-								<p>&lt;meta http-equiv="Content-Type" content="text/html;
-									charset=utf-8" /&gt;</p>
-								<p>&lt;title&gt;函数调用&lt;/title&gt;</p>
-								<p>&lt;script type="text/javascript"&gt;</p>
-								<p>function contxt() //定义函数</p>
-								<p>{</p>
-								<p>alert("哈哈，调用函数了!");</p>
-								<p>}</p>
-								<p>&lt;/script&gt;</p>
-								<p>&lt;/head&gt;</p>
-								<p>&lt;body&gt;</p>
-								<p>&lt;form&gt;</p>
-								<p>&lt;input type="button" value="点击我" onclick="contxt"
-									/&gt;</p>
-								<p>&lt;!-- 单击按钮后，调用函数，onclick为点击事件。 --&gt;</p>
-								<p>&lt;/form&gt;</p>
-								<p>&lt;/body&gt;</p>
-								<p>&lt;/html&gt;</p>
-								<p>
-									<br />
-								</p>
-								<p>一头雾水 T.T 瞌睡死我了</p>
+								<p>${question.question_content }</p>
 							</div>
 						</div>
 					</div>
@@ -116,46 +94,6 @@
 						id="id_71308">
 
 
-						<div class="qa-comment-wrap clearfix ">
-							<div class="qa-comment-author">
-								<a href="/u/252876/bbs" title="温暖的骨头"> <img
-									src='<%=path%>/imgs/zsp/tu.jpg' width='40' height='40' /> <span
-									class="qa-comment-nick">温暖的骨头</span>
-								</a>
-							</div>
-							<div class="qa-comment-d ">
-								<!-- <div class="qa-triangle-left"><i></i></div> -->
-								<div class="qa-comment-inner">
-									<div class="qa-comment-c aimgPreview">
-										<div class="rich-text">
-											<pre class="brush:js;toolbar:false">&lt;form&gt;
-      &lt;input type="button"  value="点击我" onclick="contxt" /&gt; 
-      &lt;!-- 单击按钮后，调用函数，onclick为点击事件。       --&gt;
-   &lt;/form&gt;</pre>
-											<p>
-												onclick="contxt()"<br />
-											</p>
-										</div>
-
-
-									</div>
-									<div class="qa-comment-addon">
-										<span class="qa-comment-time">2015-08-03</span>
-										<div class="qa-comment-addon-r">
-											<a href="javascript:;" data-id="71308" data-type="6"
-												data-uid="252876" class="js-tip-off l tipoff">举报</a> <span
-												class="qa-total-reply js-reply-item-reply"> <i
-												class="icon-msg"></i> <span class="js-qa-tr-num">回复</span>
-											</span> <span
-												class="js-qa-comment-support qa-comment-support  js-qacom-supported-user"
-												data-ids="90262-71308"> <i class="icon-thumb-revert "></i>
-												<span>1</span>
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 						<div class="qa-reply">
 							<div class="qa-reply-header"></div>
 							<div class="qa-replies">
@@ -250,7 +188,7 @@
 								<!-- 回复框 -->
 								<div class="answer1">
 									<div>
-										<img class="img" src="<%=path%>/imgs/zsp/shen.jpg"
+										<img class="img" src="<%=path%>/imgs/user/${user.headpic}"
 											style="margin: 10px; width: 40px; height: 40px;">
 									</div>
 									<div style="width: 90%; margin-left: 70px; height: 141px;">
@@ -317,15 +255,15 @@
 			<div class="wenda-slider">
 				<!-- pub new ques -->
 				<div class="newques-container">
-					<a href="/wenda/save" class="newques-btn" id="js-newques"
-						target="_blank"> <!--<i class="icon-addques"></i>-->发新问题
+					<a href="<%=basePath%>course/question" class="newques-btn"
+						id="js-newques" target="_blank"> <!--<i class="icon-addques"></i>-->发新问题
 					</a>
 				</div>
 				<!--user info-->
 				<div class="wenda-my">
 					<div class="user-info">
 						<a class="user-img js-header-avator" href="/u/7299799/bbs"> <img
-							src="<%=path%>/imgs/zsp/shen.jpg" alt="">
+							src="<%=path%>/imgs/user/${user.headpic}" alt="">
 						</a>
 						<p class="username js-header-nickname"></p>
 						<a href="/u/7299799/credit" target="_blank" class="credit-count">我的积分：<span
