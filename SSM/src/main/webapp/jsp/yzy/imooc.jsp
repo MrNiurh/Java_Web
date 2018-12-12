@@ -78,7 +78,7 @@
 		<div class="bgfff banner-box">
 			<div class="g-banner pr">
 				<div class="menuwrap"></div>
-				<div class="submenu a hide" data-id="a" style="display: none;">
+				<div class="submenu a" data-id="a" style="display: none;">
 					<div class="innerBox clearfix">
 						<div class="subinnerBox">
 							<div class="cates-box">
@@ -87,23 +87,15 @@
 										<span class="bold mr10 l small-title">前沿技术</span>
 									</div>
 									<div class="tag-box l">
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=wff">微服务</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=blockchain">区块链</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=ethereum">以太坊</a> <a
-											target="_blank" href="https://www.imooc.com/course/list?c=ai">人工智能</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=machine">机器学习</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=deep">深度学习</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=pcvision">计算机视觉</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=nlp">自然语言处理</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=datafxwj">数据分析&amp;挖掘</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">微服务</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=2">区块链</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=3">以太坊</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=4">人工智能</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=5">机器学习</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=6">深度学习</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=7">计算机视觉</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=8">自然语言处理</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=9">数据分析&amp;挖掘</a>
 									</div>
 								</div>
 							</div>
@@ -114,7 +106,7 @@
 							<a
 								href="https://coding.imooc.com/class/214.html?mc_marking=26dd86266f55cfc7a3b8b624af302664&amp;mc_channel=qianduankaifa1"
 								target="_blank" title="区块链入门与去中心化应用实战" class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5af2a67500016b9905400300.jpg" class="l">
+								src="<%=path%>/imgs/lessons/001.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">区块链入门与去中心化应用实战</h3>
 
@@ -138,8 +130,7 @@
 							<a
 								href="https://www.imooc.com/learn/988?mc_marking=dce36388dbfc942a1d01880e63a59e4c&amp;mc_channel=qianduankaifa2"
 								target="_blank" title="区块链技术核心概念与原理讲解" class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5ae3e5b80001818c06000338-240-135.jpg"
-								class="l">
+								src="<%=path%>/imgs/lessons/002.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">区块链技术核心概念与原理讲解</h3>
 
@@ -158,8 +149,8 @@
 							<a
 								href="https://coding.imooc.com/class/176.html?mc_marking=989e3412c6cb7f02a3a0959e9c06d840&amp;mc_channel=qianduankaifa3"
 								target="_blank" title="基于Python玩转人工智能最火框架 TensorFlow应用实践"
-								class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5a5ddeda000145b405400300.jpg" class="l">
+								class="clearfix"> <img src="<%=path%>/imgs/lessons/003.jpg"
+								class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">基于Python玩转人工智能最火框架
 										TensorFlow应用实践</h3>
@@ -184,9 +175,7 @@
 							<a
 								href="https://www.imooc.com/learn/943?mc_marking=1c676ba0e3770b8ce7fa73c472e906b0&amp;mc_channel=qianduankaifa4"
 								target="_blank" title="Python人工智能常用库Numpy使用入门" class="clearfix">
-								<img
-								src="<%=path%>/imgs/yzy/5a7048580001670506000338-240-135.jpg"
-								class="l">
+								<img src="<%=path%>/imgs/lessons/001.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">Python人工智能常用库Numpy使用入门</h3>
 
@@ -203,7 +192,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="submenu b hide" data-id="b" style="display: none;">
+				<div class="submenu b" data-id="b" style="display: none;">
 					<div class="innerBox clearfix">
 						<div class="subinnerBox">
 							<div class="cates-box">
@@ -212,32 +201,19 @@
 										<span class="bold mr10 l small-title">前端开发</span>
 									</div>
 									<div class="tag-box l">
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=html">HTML/CSS</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=javascript">JavaScript</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=vuejs">Vue.js</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=reactjs">React.JS</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=angular">Angular</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=nodejs">Node.js</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=jquery">jQuery</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=bootstrap">Bootstrap</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=sassless">Sass/Less</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=webapp">WebApp</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=fetool">前端工具</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=html5">Html5</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=css3">CSS3</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=10">HTML/CSS</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=11">JavaScript</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=12">Vue.js</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=13">React.JS</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=14">Angular</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=15">Node.js</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=16">jQuery</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=17">Bootstrap</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=18">Sass/Less</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=19">WebApp</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=20">前端工具</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=21">Html5</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=22">CSS3</a>
 									</div>
 								</div>
 							</div>
@@ -248,7 +224,7 @@
 							<a
 								href="https://class.imooc.com/sc/2?mc_marking=8bf670b1de9545f94eb55310a57fb4c6&amp;mc_channel=houduankaifa1"
 								target="_blank" title="HTML5与CSS3实现动态网页" class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5836c00a0001916906000338.jpg" class="l">
+								src="<%=path%>/imgs/lessons/004.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">HTML5与CSS3实现动态网页</h3>
 
@@ -272,8 +248,8 @@
 							<a
 								href="https://coding.imooc.com/class/75.html?mc_marking=2f32a1c1b52ab38e2564a56eb5542c6d&amp;mc_channel=houduankaifa2"
 								target="_blank" title="微信小程序入门与实战 常用组件API开发技巧项目实战"
-								class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/583e42fb0001e04f05400300.jpg" class="l">
+								class="clearfix"> <img src="<%=path%>/imgs/lessons/005.jpg"
+								class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">微信小程序入门与实战 常用组件API开发技巧项目实战</h3>
 
@@ -297,8 +273,8 @@
 							<a
 								href="https://coding.imooc.com/class/190.html?mc_marking=ca3a74673cb58e36a0179faab372273d&amp;mc_channel=houduankaifa3"
 								target="_blank" title="前端跳槽必备 揭秘一线互联网公司高级前端JavaScript面试"
-								class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5a9dfab40001bf1005400300.jpg" class="l">
+								class="clearfix"> <img src="<%=path%>/imgs/lessons/006.jpg"
+								class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">前端跳槽必备
 										揭秘一线互联网公司高级前端JavaScript面试</h3>
@@ -323,7 +299,7 @@
 							<a
 								href="https://coding.imooc.com/class/115.html?mc_marking=11fb3394b153de9e85db1efab1696d0a&amp;mc_channel=houduankaifa4"
 								target="_blank" title="前端JavaScript面试技巧" class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/595067d5000132a105400300.jpg" class="l">
+								src="<%=path%>/imgs/lessons/007.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">前端JavaScript面试技巧</h3>
 
@@ -345,7 +321,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="submenu c hide" data-id="c" style="display: none;">
+				<div class="submenu c" data-id="c" style="display: none;">
 					<div class="innerBox clearfix">
 						<div class="subinnerBox">
 							<div class="cates-box">
@@ -354,27 +330,17 @@
 										<span class="bold mr10 l small-title">后端开发</span>
 									</div>
 									<div class="tag-box l">
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=java">Java</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=springboot">SpringBoot</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=python">Python</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=crawler">爬虫</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=django">Django</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=go">Go</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=php">PHP</a> <a
-											target="_blank" href="https://www.imooc.com/course/list?c=c">C</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=cplusplus">C++</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=csharp">C#</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=ruby">Ruby</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=23">Java</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=24">SpringBoot</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=25">Python</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=26">爬虫</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=27">Django</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=28">Go</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=29">PHP</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=30">C</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=31">C++</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=32">C#</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=33">Ruby</a>
 									</div>
 								</div>
 							</div>
@@ -385,8 +351,8 @@
 							<a
 								href="https://class.imooc.com/sc/41?mc_marking=26f2b814793653c4ed7605605086eea4&amp;mc_channel=yidongkaifa1"
 								target="_blank" title="C++零基础入门  热门编程语言  二级考试必备"
-								class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5a405a7700010f1c06000338.jpg" class="l">
+								class="clearfix"> <img src="<%=path%>/imgs/lessons/008.jpg"
+								class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">C++零基础入门 热门编程语言 二级考试必备</h3>
 
@@ -410,7 +376,7 @@
 							<a
 								href="https://coding.imooc.com/class/195.html?mc_marking=feb2449af6f0b66c4addc66d8d1b440f&amp;mc_channel=yidongkaifa2"
 								target="_blank" title="Java并发编程入门与高并发面试" class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5aaa55850001a3ef10800600.jpg" class="l">
+								src="<%=path%>/imgs/lessons/009.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">Java并发编程入门与高并发面试</h3>
 
@@ -434,8 +400,8 @@
 							<a
 								href="https://coding.imooc.com/class/136.html?mc_marking=bd2f4df89faa72b8ac79588a8414e240&amp;mc_channel=yidongkaifa3"
 								target="_blank" title="全网最热Python3入门+进阶 更快上手实际开发"
-								class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/59b8a486000107fb05400300.jpg" class="l">
+								class="clearfix"> <img src="<%=path%>/imgs/lessons/010.jpg"
+								class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">全网最热Python3入门+进阶 更快上手实际开发</h3>
 
@@ -459,8 +425,7 @@
 							<a
 								href="https://coding.imooc.com/class/240.html?mc_marking=d953d18cee57469129ed392a22a13914&amp;mc_channel=yidongkaifa4"
 								target="_blank" title="最火Python3 玩转实用小工具" class="clearfix">
-								<img src="<%=path%>/imgs/yzy/5b3307f50001859e05400300.jpg"
-								class="l">
+								<img src="<%=path%>/imgs/lessons/011.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">最火Python3 玩转实用小工具</h3>
 
@@ -482,7 +447,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="submenu d hide" data-id="d" style="display: none;">
+				<div class="submenu d" data-id="d" style="display: none;">
 					<div class="innerBox clearfix">
 						<div class="subinnerBox">
 							<div class="cates-box">
@@ -491,14 +456,10 @@
 										<span class="bold mr10 l small-title">移动开发</span>
 									</div>
 									<div class="tag-box l">
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=android">Android</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=ios">iOS</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=reactnative">React
-											native</a> <a target="_blank"
-											href="https://www.imooc.com/course/list?c=weex">WEEX</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=35">Android</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=36">iOS</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=37">React
+											native</a> <a target="_blank" href="<%=basePath%>course/list?b=1">WEEX</a>
 									</div>
 								</div>
 							</div>
@@ -509,7 +470,7 @@
 							<a
 								href="https://class.imooc.com/sc/6?mc_marking=645c80799e6ad8d543c05e3c0c462d27&amp;mc_channel=shujuku1"
 								target="_blank" title="Android零基础入门" class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/585243df00014f2406000338.jpg" class="l">
+								src="<%=path%>/imgs/lessons/012.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">Android零基础入门</h3>
 
@@ -533,8 +494,7 @@
 							<a
 								href="https://coding.imooc.com/class/202.html?mc_marking=45128caf23b4b2a0b822082be50a646d&amp;mc_channel=shujuku2"
 								target="_blank" title="新浪微博资深大牛全方位剖析 iOS 高级面试" class="clearfix">
-								<img src="<%=path%>/imgs/yzy/5abe148300014c3305400300.jpg"
-								class="l">
+								<img src="<%=path%>/imgs/lessons/013.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">新浪微博资深大牛全方位剖析 iOS 高级面试</h3>
 
@@ -558,8 +518,8 @@
 							<a
 								href="https://coding.imooc.com/class/101.html?mc_marking=48ac65b3b1dcd8a47b6937c45bbf1865&amp;mc_channel=shujuku3"
 								target="_blank" title="BAT大牛亲授技能+技巧  Android面试快速充电升级"
-								class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5909a1250001197e05400300.jpg" class="l">
+								class="clearfix"> <img src="<%=path%>/imgs/lessons/014.jpg"
+								class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">BAT大牛亲授技能+技巧 Android面试快速充电升级</h3>
 
@@ -583,8 +543,7 @@
 							<a
 								href="https://coding.imooc.com/class/116.html?mc_marking=1f4fcc63073278dd413ae9b1018396f2&amp;mc_channel=shujuku4"
 								target="_blank" title="Android通用框架设计与完整电商APP开发" class="clearfix">
-								<img src="<%=path%>/imgs/yzy/5959a60f0001cfd305400300.jpg"
-								class="l">
+								<img src="<%=path%>/imgs/lessons/015.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">Android通用框架设计与完整电商APP开发</h3>
 
@@ -606,7 +565,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="submenu e hide" data-id="e" style="display: none;">
+				<div class="submenu e" data-id="e" style="display: none;">
 					<div class="innerBox clearfix">
 						<div class="subinnerBox">
 							<div class="cates-box">
@@ -626,24 +585,15 @@
 										<span class="bold mr10 l small-title">云计算&amp;大数据</span>
 									</div>
 									<div class="tag-box l">
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=bigdata">大数据</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=hadoop">Hadoop</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=spark">Spark</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=hbase">Hbase</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=storm">Storm</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=cloudcomputing">云计算</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=aws">AWS</a> <a
-											target="_blank"
-											href="https://www.imooc.com/course/list?c=docker">Docker</a>
-										<a target="_blank"
-											href="https://www.imooc.com/course/list?c=kubernetes">Kubernetes</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">大数据</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">Hadoop</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">Spark</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">Hbase</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">Storm</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">云计算</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">AWS</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">Docker</a>
+										<a target="_blank" href="<%=basePath%>course/list?b=1">Kubernetes</a>
 									</div>
 								</div>
 							</div>
@@ -654,8 +604,8 @@
 							<a
 								href="https://coding.imooc.com/class/112.html?mc_marking=212053ae3748925377dde867fc1307ba&amp;mc_channel=yunjisuandashuju1"
 								target="_blank" title="以慕课网日志分析为例  进入大数据 Spark SQL 的世界"
-								class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5940e2a20001045a05400300.jpg" class="l">
+								class="clearfix"> <img src="<%=path%>/imgs/lessons/016.jpg"
+								class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">以慕课网日志分析为例 进入大数据 Spark SQL
 										的世界</h3>
@@ -680,9 +630,7 @@
 							<a
 								href="https://www.imooc.com/learn/821?mc_marking=861f6ee7b9b271a52388e6ac4745b939&amp;mc_channel=yunjisuandashuju2"
 								target="_blank" title="轻松愉快之玩转SpringData" class="clearfix">
-								<img
-								src="<%=path%>/imgs/yzy/58e6081c00012ec206000338-240-135.jpg"
-								class="l">
+								<img src="<%=path%>/imgs/lessons/017.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">轻松愉快之玩转SpringData</h3>
 
@@ -701,8 +649,7 @@
 							<a
 								href="https://coding.imooc.com/class/189.html?mc_marking=801d66a46227018ab24294f67a7106f9&amp;mc_channel=yunjisuandashuju3"
 								target="_blank" title="系统学习Docker 践行DevOps理念" class="clearfix">
-								<img src="<%=path%>/imgs/yzy/5a9614850001bc3405400300.jpg"
-								class="l">
+								<img src="<%=path%>/imgs/lessons/018.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">系统学习Docker 践行DevOps理念</h3>
 
@@ -726,8 +673,7 @@
 							<a
 								href="https://www.imooc.com/learn/881?mc_marking=e07ac49babff573ce3e8d8b30309fda0&amp;mc_channel=yunjisuandashuju4"
 								target="_blank" title="HBase入门" class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/598986ae0001f07706000338-240-135.jpg"
-								class="l">
+								src="<%=path%>/imgs/lessons/019.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">HBase入门</h3>
 
@@ -744,7 +690,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="submenu f hide" data-id="f" style="display: none;">
+				<div class="submenu f" data-id="f" style="display: none;">
 					<div class="innerBox clearfix">
 						<div class="subinnerBox">
 							<div class="cates-box">
@@ -802,8 +748,8 @@
 							<a
 								href="https://coding.imooc.com/class/223.html?mc_marking=ff804d9f130f69a791663d835e705536&amp;mc_channel=yunweiceshi1"
 								target="_blank" title="阿里大牛亲授  阿里云主机(ECS)与CentOS7实战"
-								class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5b0b60480001b95e06000338.jpg" class="l">
+								class="clearfix"> <img src="<%=path%>/imgs/lessons/020.jpg"
+								class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">阿里大牛亲授 阿里云主机(ECS)与CentOS7实战</h3>
 
@@ -827,9 +773,7 @@
 							<a
 								href="https://www.imooc.com/learn/847?mc_marking=9be27062db20d24fc4597bf965970e0e&amp;mc_channel=yunweiceshi2"
 								target="_blank" title="使用java构建和维护接口自动化测试框架" class="clearfix">
-								<img
-								src="<%=path%>/imgs/yzy/593a3b0f0001383606000338-240-135.jpg"
-								class="l">
+								<img src="<%=path%>/imgs/lessons/021.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">使用java构建和维护接口自动化测试框架</h3>
 
@@ -846,7 +790,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="submenu g hide" data-id="g" style="display: none;">
+				<div class="submenu g" data-id="g" style="display: none;">
 					<div class="innerBox clearfix">
 						<div class="subinnerBox">
 							<div class="cates-box">
@@ -890,8 +834,7 @@
 							<a
 								href="https://coding.imooc.com/class/159.html?mc_marking=2d295e18c5ff34cf65b367b242f57d36&amp;mc_channel=yunweiceshi3"
 								target="_blank" title="移动端App UI 设计入门与实战" class="clearfix">
-								<img src="<%=path%>/imgs/yzy/5a123d7e00011fa705400300.jpg"
-								class="l">
+								<img src="<%=path%>/imgs/lessons/022.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">移动端App UI 设计入门与实战</h3>
 
@@ -915,8 +858,8 @@
 							<a
 								href="https://coding.imooc.com/class/184.html?mc_marking=5d87a2d206b48b37497f848ca9cd269f&amp;mc_channel=yunweiceshi4"
 								target="_blank" title="高薪设计师必修课 AE移动UI动效设计从入门到实战"
-								class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/5aa9d2c1000104d510800600.jpg" class="l">
+								class="clearfix"> <img src="<%=path%>/imgs/lessons/023.jpg"
+								class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">高薪设计师必修课 AE移动UI动效设计从入门到实战</h3>
 
@@ -940,8 +883,7 @@
 							<a
 								href="https://www.imooc.com/learn/795?mc_marking=f04136011775d92c5132282b92e4f640&amp;mc_channel=uisheji1"
 								target="_blank" title="Axure入门初体验" class="clearfix"> <img
-								src="<%=path%>/imgs/yzy/587db7af00016b7e06000338-240-135.jpg"
-								class="l">
+								src="<%=path%>/imgs/lessons/024.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">Axure入门初体验</h3>
 
@@ -960,9 +902,7 @@
 							<a
 								href="https://www.imooc.com/learn/506?mc_marking=5584c73796a2fc09e16c0b7a9b897d89&amp;mc_channel=uisheji2"
 								target="_blank" title="前端工程师必备的PS技能——切图篇" class="clearfix">
-								<img
-								src="<%=path%>/imgs/yzy/578741d3000151e806000338-240-135.jpg"
-								class="l">
+								<img src="<%=path%>/imgs/lessons/025.jpg" class="l">
 								<div class="l course-card">
 									<h3 class="course-card-name">前端工程师必备的PS技能——切图篇</h3>
 
@@ -3245,6 +3185,11 @@ Github：https://github.com/enbandari">北京邮电大学硕士毕业，就职�
 		}, function() {
 			$(this).removeClass('js-menu-item-on');
 			$('.submenu').eq($(this).index()).css('display', 'none');
+		});
+		$('.submenu').hover(function() {
+			$(this).css('display', 'block');
+		}, function() {
+			$(this).css('display', 'none');
 		});
 	</script>
 </body>
